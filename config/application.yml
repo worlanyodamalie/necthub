@@ -1,0 +1,18 @@
+# Add configuration values here, as shown below.
+#
+# pusher_app_id: "2954"
+# pusher_key: 7381a978f7dd7f9a1117
+# pusher_secret: abdc3b896a0ffb85d373
+# stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
+# stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
+#
+# production:
+#   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
+#   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+
+  pg_username: postgres
+  pg_password: Alm@n3t#!123
+  MAILGUN_API_KEY: 'key-3c0f3516a55068d529299a72ce05037f'
+  MAILGUN_DOMAIN: 'sandbox4dcf6dd6795d40298e0b9eae03a0778b.mailgun.org'
+  username: 'postmaster@sandbox4dcf6dd6795d40298e0b9eae03a0778b.mailgun.org'
+  password: '2cec78103f5fd05e4677fde1ee84f2a0'
