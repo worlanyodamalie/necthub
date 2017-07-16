@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyString
+  city: MyString
+  country: MyString
+  campaign_duration: MyString
+  organisation: one
+
+two:
+  title: MyString
+  description: MyString
+  city: MyString
+  country: MyString
+  campaign_duration: MyString
+  organisation: two
