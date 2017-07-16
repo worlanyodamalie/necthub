@@ -1,0 +1,66 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element" style="height: 90px;">
+                    <span>
+                        <img alt="image" src="<%= image_url 'logo12342.png' %>"/>
+                    </span><!--
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">David Williams</strong>
+                            </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="">Profile</a>
+                        </li>
+                        <li><a href="">Contacts</a>
+                        </li>
+                        <li><a href="">Mailbox</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="">Logout</a>
+                        </li>
+                    </ul>-->
+                </div>
+                <div class="logo-element">
+                    <img alt="image" src="<%= image_url 'logo-mob1.png' %>"/>
+                </div>
+            </li>
+            <li class="<%= is_active_controller('dashboards') %>">
+                <%= link_to dashboard_path do %>
+                <i class="fa fa-dashboard"></i> <span class="nav-label" data-i18n="nav.dashboard">Dashboard </span>
+                <% end %>
+            </li>
+            <li class="<%= is_active_controller('tabmembershipdata') %>">
+                <%= link_to membershipdata_path do %>
+                <i class="fa fa-users"></i> <span class="nav-label" data-i18n="nav.tables">Members </span>
+                <% end %>
+            </li>
+            <li class="<%= is_active_controller('tables') %>">
+                <%= link_to email_organisations_path do %>
+                <i class="fa fa-send"></i> <span class="nav-label" data-i18n="nav.tables">E-Mail </span>
+                <% end %>
+            </li>
+            <li class="<%= is_active_controller('tables') %>">
+                <%= link_to sms_organisations_path do %>
+                <i class="fa fa-envelope"></i> <span class="nav-label" data-i18n="nav.tables">SMS</span>
+                <% end %>
+            </li>
+
+            <li class="<%= is_active_controller('fundraisings')  %>">
+              <%= link_to fundraisings_path do %>
+                <i class="fa fa-money"></i> <span class="nav-label" data-i18n="nav.animations">Fundraising </span>
+                <% end %>
+            </li>
+            <li class="<%= is_active_controller('events') %>">
+                <%= link_to events_path do %>
+                <i class="fa fa-magic"></i> <span class="nav-label" data-i18n="nav.animations">Events </span>
+                <% end %>
+            </li>
+        </ul>
+
+    </div>
+</nav>
