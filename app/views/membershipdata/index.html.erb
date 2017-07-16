@@ -21,13 +21,13 @@
             <div class="ibox-content text-center p-md">
                 <%= form_tag import_membershipdata_path , multipart: true do%>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-8">
                             <h3 class="col-sm-7">Upload your existing member data here</h3>
                             <div class="col-sm-5">
                                 <%= file_field_tag :files , :class => "form-control m-b" %>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             <%= submit_tag "Upload" , :class => "btn btn-primary" %>
                         </div>
                     </div>
