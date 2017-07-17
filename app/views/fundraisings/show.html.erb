@@ -19,8 +19,10 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="m-b-md">
-            <a href="#" class="btn btn-white pull-right">Back</a><!-- Route to previous page -->
-            <h2>Campaign Title</h2>
+            <!-- Route to previous page -->
+            <%= link_to "Back" , fundraisings_path, :class => "btn btn-white pull-right" %>
+            <h2>  <%= @fundraising.try(:title) %>
+</h2>
         </div>
     </div>
 </div>
@@ -45,7 +47,7 @@
         <dl class="dl-horizontal">
             <dt>Description: </dt>
             <dd>
-                <p>Full description is in the backend and will be called from there</p>
+                <p><%= @fundraising.try(:description)%></p>
             </dd>
         </dl>
         <dl class="dl-horizontal">
@@ -58,7 +60,8 @@
         </dl>
     </div>
     <div class="col-lg-4">
-        <img alt="image" src="<%= image_url 'http://via.placeholder.com/350x150' %>"/>
+
+         <%= image_tag @fundraising.campaign_pic.thumb.url if @fundraising.campaign_pic? %>
     </div>
 </div>
 

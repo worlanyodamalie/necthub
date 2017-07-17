@@ -27,8 +27,7 @@
 
                 <div class="ibox-content">
 
-                    <form method="POST" class="form-horizontal" enctype="multipart/form-data">
-                    <br />
+                <%= form_for (@event) ,html: {multipart: true } do |f|%>
                     <div align="center">
                         <p>Fill in your event details here</p>
                     </div>
@@ -40,7 +39,8 @@
                             </div>
                             <br />
                             <div class="col-sm-7">
-                                <input type="text" placeholder="Name" class="form-control input-lg m-b" />
+                             <%= f.text_field :event_name , :placeholder => "Title" , :class => "form-control input-lg m-b"  %>
+
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,8 @@
                             </div>
                             <br />
                             <div class="col-sm-7">
-                                <input type="text" placeholder="Date" class="form-control input-lg m-b" />
+             <%= f.datetime_field :event_date , :class => "form-control input-lg m-b" %>
+
                             </div>
                         </div>
                     </div>
@@ -63,7 +64,7 @@
                             </div>
                             <br />
                             <div class="col-sm-7">
-                                <input type="text" placeholder="Description" class="form-control input-lg m-b" />
+                                <%= f.text_field :event_type , :class => "form-control input-lg m-b"  %>
                             </div>
                         </div>
                     </div>
@@ -74,19 +75,21 @@
                             </div>
                             <br />
                             <div class="col-sm-7">
-                                <input type="file" class="form-control input-lg m-b" />
-                            </div>
+                         <%= f.file_field :event_pic , :class => "form-control input-lg m-b" %>                            </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-4 col-sm-offset-2">
                             <!-- "a href" link goes back to previous page -->
-                            <a href="" class="btn btn-white" >Back</a>
-                            <%= link_to "Create Event" , events_path,  :class => "btn btn-primary" %>
+
+                            <%= link_to "Back" , events_path,  :class => "btn btn-white" %>
+                            <%= f.submit "Create Event" , :class => "btn btn-primary" %>
+
                    <!--         <button class="btn btn-primary" type="submit">Create Event!</button> -->
                         </div>
                     </div>
-                    </form>
+                 <% end %>
+
 
                 </div>
             </div>
