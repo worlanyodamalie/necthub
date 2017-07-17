@@ -5,7 +5,8 @@ class FundraisingsController < ApplicationController
 
 
   def index
-    @fundraisings = current_organisation.fundraisings
+
+     @fundraisings = current_organisation.fundraisings
   end
 
   def new
@@ -15,14 +16,19 @@ class FundraisingsController < ApplicationController
   def create
     @fundraising = current_organisation.fundraisings.build(fundraising_params)
        if @fundraising.save
+         flash[:notice] = "Fundraising campaign created successfully"
+
          render 'index'
-         else
+        else
+           flash[:alert] = "Something went wrong"
+
            render 'new'
         end
 
   end
 
   def show
+    @fundraising = Fundraising.find(params[:id])
   end
 
   private
