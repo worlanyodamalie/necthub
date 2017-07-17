@@ -6,4 +6,5 @@ class Organisation < ApplicationRecord
 
   has_many :membershipdata
   has_many :events
+  has_many :fundraisings
 end
