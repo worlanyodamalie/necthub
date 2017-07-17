@@ -15,3 +15,5 @@ Rails.application.config.assets.precompile += %w( 'appviews.css', 'cssanimations
 Rails.application.config.assets.precompile += %w( 'appviews.js', 'cssanimations.js', 'dashboards.js', 'forms.js', 'gallery.js', 'graphs.js', 'mailbox.js', 'miscellaneous.js', 'pages.js', 'tables.js', 'uielements.js', 'widgets.js', 'commerce.js' )
 Rails.application.config.assets.precompile += %w( fundraisings.css )
 Rails.application.config.assets.precompile += %w( fundraisings.js )
+Rails.application.config.assets.precompile += %w( static_pages.scss )
+Rails.application.config.assets.precompile += %w( static_pages.js )
