@@ -37,68 +37,32 @@
                 <h1 class="text-navy">Your Events</h1>
                 <br /><br />
 
+
+
                 <div class="row">
+        <% @events.each do |event| %>
         <div class="col-lg-4">
             <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px;">
                 <div class="ibox-title">
-                    <h5>Event Title</h5>
+                    <h5><%=event.try(:event_name)%></h5>
                 </div>
                 <div class="ibox-content">
                     <div><!-- Image here -->
-                        <img alt="image" src="<%= image_url 'http://via.placeholder.com/350x150' %>"/>
+                        <%= image_tag event.event_pic.nthumb.url if event.event_pic? %>
                     </div>
                     <br />
                     <h4>Info</h4>
                     <p>
-                        It is a long established fact that a reader will be distracted by the readable content
-                        of a page when looking at its layout. The point of using Lorem Ipsum is that it has.
+                        <%= event.try(:event_type)%>
                     </p>
                     <br />
 
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px;">
-                <div class="ibox-title">
-                    <h5>Campaign Title</h5>
-                </div>
-                <div class="ibox-content">
-                    <div><!-- Image here -->
-                        <img alt="image" src="<%= image_url 'http://via.placeholder.com/350x150' %>"/>
-                    </div>
-                    <br />
-                    <h4>Info</h4>
-                    <p>
-                        It is a long established fact that a reader will be distracted by the readable content
-                        of a page when looking at its layout. The point of using Lorem Ipsum is that it has.
-                    </p>
-                    <br />
-
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px;">
-                <div class="ibox-title">
-                    <h5>Campaign Title</h5>
-                </div>
-                <div class="ibox-content">
-                    <div><!-- Image here -->
-                        <img alt="image" src="<%= image_url 'http://via.placeholder.com/350x150' %>"/>
-                    </div>
-                    <br />
-                    <h4>Info</h4>
-                    <p>
-                        It is a long established fact that a reader will be distracted by the readable content
-                        of a page when looking at its layout. The point of using Lorem Ipsum is that it has.
-                    </p>
-                    <br />
-
-                </div>
-            </div>
-        </div>
+         <% end %>
     </div>
+
             </div>
             </div>
         </div>

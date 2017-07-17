@@ -1,0 +1,51 @@
+
+<br />
+            <div >
+                <h4>Please fill out your  details</h4>
+            </div>
+            <hr />
+
+            <div >
+
+                <div >
+                    <%= form_for(@membershipdatum) do |f| %>
+                        <div >
+                            <%= f.label :FirstName ,"First Name"  %>
+                            <%= f.text_field :FirstName  %>
+                        </div>
+                        <div >
+                            <%= f.label :LastName ,"Last Name"  %>
+                            <%= f.text_field :LastName  %>
+                        </div>
+                        <div >
+                            <%= f.label :YearCompleted , "Year Completed" %>
+                            <%= f.text_field :YearCompleted  %>
+                        </div>
+                        <div >
+                            <%= f.label :Email , "Email" %>
+                            <%= f.text_field :Email  %>
+                        </div>
+                        <div >
+                            <%= f.label :Organisation , "Organisation" %>
+                            <%= f.text_field :Organisation  %>
+                        </div>
+                        <div >
+                            <%= f.label :WorkPlace , "WorkPlace" %>
+                            <%= f.text_field :WorkPlace  %>
+                        </div>
+                          <div >
+                            <%= f.label :PhoneNumber , "PhoneNumber" %>
+                            <%= f.text_field :PhoneNumber  %>
+                        </div>
+                        <br /><br />
+                        <div>
+                            <%= f.submit "Submit"  %>
+                        </div>
+                    <% end %>
+                </div>
+                <div></div>
+            </div>
+
+<br />
+
+<!--[event,current_organisation.build] -->

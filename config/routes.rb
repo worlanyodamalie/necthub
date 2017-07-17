@@ -176,6 +176,8 @@ Rails.application.routes.draw do
 
      resources :events
 
+     resources :fundraisings
+
   end
 
   devise_scope :organisation do
