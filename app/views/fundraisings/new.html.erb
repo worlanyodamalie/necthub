@@ -24,8 +24,9 @@
                 <h2>Create your fundraising campaign</h2>
             </div>
             <div class="ibox-content">
-                <form method="POST" class="form-horizontal" enctype="multipart/form-data">
-                    <br />
+
+            <%= form_for (@fundraising) , html: {multipart: true } do |f|%>
+                         <br />
                     <div align="center">
                         <p>Filling in your fundraising details here will go a long way to help you reach your targeted audience even faster</p>
                     </div>
@@ -33,11 +34,13 @@
                     <div class="form-group">
                         <div class="container">
                             <div>
-                                <label class="control-label">Campaign Title</label>
+                            <label class="control-label">Campaign Title</label>%>
+
                             </div>
                             <br />
                             <div class="col-sm-7">
-                                <input type="text" placeholder="Title" class="form-control input-lg m-b" />
+                                <%= f.text_field :title , :placeholder => "Title" , :class => "form-control input-lg m-b"  %>
+                                <%#<input type="text" placeholder="Title" class="form-control input-lg m-b" />%>
                             </div>
                         </div>
                     </div>
@@ -48,7 +51,9 @@
                             </div>
                             <br />
                             <div class="col-sm-7">
-                                <input type="text" placeholder="Description" class="form-control input-lg m-b" />
+                       <%= f.text_field :description , :placeholder => "Description" , :class => "form-control input-lg m-b"  %>
+
+                                <%#<input type="text" placeholder="Description" class="form-control input-lg m-b" />%>
                             </div>
                         </div>
                     </div>
@@ -59,7 +64,7 @@
                             </div>
                             <br />
                             <div class="col-sm-7">
-                                <input type="file" class="form-control input-lg m-b" />
+                                  <%= f.file_field : , :class => "form-control input-lg m-b" %>
                             </div>
                         </div>
                     </div>
@@ -70,7 +75,7 @@
                             </div>
                             <br />
                             <div class="col-sm-7">
-                                <input type="text" placeholder="City" class="form-control input-lg m-b" />
+                                 <%= f.text_field :city , :placeholder => "Title" , :class => "form-control input-lg m-b"  %>
                             </div>
                         </div>
                     </div>
@@ -346,7 +351,10 @@
                             <%= link_to "Start My Campaign" , single_page_fundraisings_path, :class => "btn btn-primary" %>
                         </div>
                     </div>
-                </form>
+
+            <% end %>
+                <form method="POST" class="form-horizontal" enctype="multipart/form-data">
+                                   </form>
             </div>
         </div>
     </div>
