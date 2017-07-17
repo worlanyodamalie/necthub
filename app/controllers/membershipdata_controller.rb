@@ -10,6 +10,10 @@ class MembershipdataController < ApplicationController
   def members
   end
 
+  def new
+    @membershipdatum = Membershipdatum.new
+  end
+
 
   def upload_params
     params[:files]
