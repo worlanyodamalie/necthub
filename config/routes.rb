@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  #devise_for :users
+  devise_for :users, path: 'users', controllers: { omniauth_callbacks: 'users/omniauth' }
   #get 'fundraisings/index'
 
   get 'static_pages/home'
@@ -149,6 +151,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
   get '/home', to: 'static_pages#home'
+  get '/user', to: 'static_pages#user'
 
   resources :membershipdata do
     collection do
