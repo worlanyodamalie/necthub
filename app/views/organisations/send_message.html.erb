@@ -1,0 +1,30 @@
+
+<br>
+<br>
+<br>
+
+<p>Send Message</p>
+
+<%= form_tag(:action => 'send_sms')%>
+
+
+
+<div class="form-group">
+
+  <%= label_tag(:from, "FROM") %>
+  <%= text_field_tag :from  %>
+</div>
+
+<div class="form-group">
+  <%= label_tag(:to, "TO") %>
+  <%= text_field_tag :to , value: "" %>
+
+</div>
+
+
+<div class="form-group">
+  <%= label_tag(:msg, "Message") %>
+  <%= text_area_tag :msg, "", class: "form-control" %>
+</div>
+
+<%= submit_tag("Send", :class => "btn btn-primary") %>
