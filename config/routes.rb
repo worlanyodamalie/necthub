@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/index'
+
   #devise_for :users
   devise_for :users, path: 'users', controllers: { omniauth_callbacks: 'users/omniauth' }
   #get 'fundraisings/index'

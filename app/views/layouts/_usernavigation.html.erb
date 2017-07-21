@@ -1,0 +1,40 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element" style="height: 90px;">
+                    <span>
+                        <img alt="image" src="<%= image_url 'logo12342.png' %>"/>
+                    </span><!--
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">David Williams</strong>
+                            </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="">Profile</a>
+                        </li>
+                        <li><a href="">Contacts</a>
+                        </li>
+                        <li><a href="">Mailbox</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="">Logout</a>
+                        </li>
+                    </ul>-->
+                </div>
+                <div class="logo-element">
+                    <img alt="image" src="<%= image_url 'logo-mob1.png' %>"/>
+                </div>
+            </li>
+            <li class="<%= is_active_controller('dashboards') %>">
+                <%= link_to dashboard_path do %>
+                <i class="fa fa-sticky-note"></i> <span class="nav-label" data-i18n="nav.dashboard">Job Postings </span>
+                <% end %>
+            </li>            
+        </ul>
+
+    </div>
+</nav>
