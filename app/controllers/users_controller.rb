@@ -3,4 +3,12 @@ class UsersController < ApplicationController
   
   def index
   end
+
+  def jobs
+  end
+  
+  def events
+  end
+  
+  
 end

@@ -30,15 +30,8 @@
 
 
 </head>
-<body>
-<!-- Wrapper-->
-    <div id="wrapper" class="<%= params[:controller] %>.<%= params[:action] %>">
+<body class="gray-bg">
 
-        <!-- Navigation -->
-        <%= render 'layouts/usernavigation' %>
-
-        <!-- Page wraper -->
-        <div id="page-wrapper" class="gray-bg <%= @extra_class %>">
 
             <!-- Page wrapper -->
             <%= render 'layouts/usertopnavbar' %>
@@ -50,11 +43,7 @@
             <!-- Main view  -->
             <%= yield %>
 
-        </div>
-        <!-- End page wrapper-->
 
-    </div>
-    <!-- End wrapper-->
 
 
     <!-- Include javascript per-view -->
