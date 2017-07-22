@@ -28,3 +28,4 @@ config/database.yml
 .vagrant/
 config/application.yml
 config/database.yml
+size.sh
