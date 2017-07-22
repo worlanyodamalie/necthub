@@ -29,3 +29,5 @@ config/database.yml
 config/application.yml
 config/database.yml
 size.sh
+purge.sh
+find_fattest.sh
