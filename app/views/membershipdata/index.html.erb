@@ -1,14 +1,7 @@
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-10">
         <h2>Members</h2>
-        <ol class="breadcrumb">
-            <li>
-        </li>
-        <li class="active">
-            <strong>Members</strong>
-        </li>
-    </ol>
-</div>
+    </div>
 <div class="col-lg-2">
 
 </div>
@@ -110,10 +103,6 @@ $(function() {
     $('.dataTables-example').DataTable({
         dom: '<"html5buttons"B>lTfgitp',
         buttons: [
-            { extend: 'copy'},
-            {extend: 'csv'},
-            {extend: 'excel', title: 'ExampleFile'},
-            {extend: 'pdf', title: 'ExampleFile'},
 
             {extend: 'print',
                 customize: function (win){
