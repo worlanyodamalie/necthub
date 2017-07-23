@@ -78,11 +78,6 @@ Rails.application.routes.draw do
     resources :users
 
 
-    # resources :groups do
-    #    resources :organisations
-    #    resources :users
-    # end
-
   end
 
   devise_scope :organisation do
