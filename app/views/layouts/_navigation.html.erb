@@ -60,6 +60,12 @@
                 <i class="fa fa-magic"></i> <span class="nav-label" data-i18n="nav.animations">Events </span>
                 <% end %>
             </li>
+
+             <li class="<%= is_active_controller('groups') %>">
+                <%= link_to new_group_path do %>
+                <i class="fa fa-magic"></i> <span class="nav-label" data-i18n="nav.animations">Create Group </span>
+                <% end %>
+            </li>
         </ul>
 
     </div>
