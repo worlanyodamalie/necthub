@@ -83,11 +83,6 @@ class OrganisationsController < ApplicationController
   def members
   end
 
-<<<<<<< HEAD
-=======
-  def sms
-  end
->>>>>>> 92e20068f98dfd6b41a6ab11791935f656e69b5f
 
 
 end

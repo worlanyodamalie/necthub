@@ -4,7 +4,7 @@
         <div class="widget navy-bg p-lg text-center">
             <div class="m-b-md">
                 <i class="fa fa-users fa-4x"></i>
-                <h1 class="m-xs">51</h1>
+                <h1 class="m-xs"><%= current_organisation.membershipdata.count %></h1>
                 <h3 class="font-bold no-margins">
                     Members
                 </h3>
@@ -84,7 +84,7 @@
         <div class="widget lazur-bg p-lg text-center">
             <div class="m-b-md">
                 <i class="fa fa-money fa-4x"></i>
-                <h1 class="m-xs">42</h1>
+                <h1 class="m-xs"><%= current_organisation.fundraisings.count %></h1>
                 <h3 class="font-bold no-margins">
                     Fundraising
                 </h3>
@@ -96,7 +96,7 @@
         <div class="widget p-lg text-center" style="background-color: #337ab7;color: #ffffff;">
             <div class="m-b-md">
                 <i class="fa fa-magic fa-4x"></i>
-                <h1 class="m-xs">50</h1>
+                <h1 class="m-xs"><%= current_organisation.events.count %></h1>
                 <h3 class="font-bold no-margins">
                     Events
                 </h3>
