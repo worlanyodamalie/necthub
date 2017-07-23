@@ -1,0 +1,134 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Events</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="<%= url_for :controller => 'dashboards', :action => 'dashboard_1' %>">Home</a>
+        </li>
+        <li class="active">
+            <strong>Events</strong>
+        </li>
+    </ol>
+</div>
+<div class="col-lg-2">
+
+</div>
+        </div>
+<div class="wrapper wrapper-content">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <div class="row">
+                    <div class="col-lg-6" align="center">
+                        <h2>Create new event</h2>
+                    </div>
+                    <div class="col-lg-6" align="center">
+                        <a href="<%= url_for :controller => 'miscellaneous', :action => 'spinners' %>" class="btn btn-primary">New Event</a>
+                    </div>
+                </div>
+                    
+                </div>
+                
+            <div class="ibox-content text-center css-animation-box"><!-- Copy -->
+                <br /><br />
+                <h1 class="text-navy">Your Events</h1>
+                <br /><br />
+
+                <div class="row">
+        <div class="col-lg-4">
+            <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px;">
+                <div class="ibox-title">
+                    <h5>Event Title</h5>
+                </div>
+                <div class="ibox-content">
+                    <div><!-- Image here -->
+                        <img alt="image" src="<%= image_url 'http://via.placeholder.com/350x150' %>"/>
+                    </div>
+                    <br />
+                    <h4>Info</h4>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content
+                        of a page when looking at its layout. The point of using Lorem Ipsum is that it has.
+                    </p>
+                    <br />
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px;">
+                <div class="ibox-title">
+                    <h5>Campaign Title</h5>
+                </div>
+                <div class="ibox-content">
+                    <div><!-- Image here -->
+                        <img alt="image" src="<%= image_url 'http://via.placeholder.com/350x150' %>"/>
+                    </div>
+                    <br />
+                    <h4>Info</h4>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content
+                        of a page when looking at its layout. The point of using Lorem Ipsum is that it has.
+                    </p>
+                    <br />
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px;">
+                <div class="ibox-title">
+                    <h5>Campaign Title</h5>
+                </div>
+                <div class="ibox-content">
+                    <div><!-- Image here -->
+                        <img alt="image" src="<%= image_url 'http://via.placeholder.com/350x150' %>"/>
+                    </div>
+                    <br />
+                    <h4>Info</h4>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content
+                        of a page when looking at its layout. The point of using Lorem Ipsum is that it has.
+                    </p>
+                    <br />
+
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+$(function() {
+
+    $('.summernote').summernote();
+
+    var edit = function () {
+        $('.click2edit').summernote({ focus: true });
+    };
+
+    $("#edit").click(function () {
+        $('.click2edit').summernote({ focus: true });
+    });
+
+    $("#save").click(function () {
+        var aHTML = $('.click2edit').code(); //save HTML If you need(aHTML: array).
+        $('.click2edit').destroy();
+    });
+
+});
+
+</script>
+
+<% end %>
