@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NectHub - Me</title>
+
+
+    <!-- Main css styles -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    
+    <%= stylesheet_link_tag    'static_pages', media: 'all', 'data-turbolinks-track' => true %>
+
+    <!-- Main javascript files -->
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
+    <style>
+        .sidebar-outer {
+            position: relative;
+        }
+        @media (min-width: 768px) {
+            .sidebar {
+                position: fixed;
+            }
+        }
+    </style>
+        
+    <style>
+
+        @media only screen 
+            and (min-device-width: 320px) 
+            and (max-device-width: 480px)
+            and (-webkit-min-device-pixel-ratio: 2) {
+                #donate_button {      
+                    margin-left: ;
+                    margin-top: ;
+            }
+        }
+        @media screen and (min-width: 768px){   
+            .links_margin_top {
+                margin-top: 1.0em;
+                font-size: 1.2em;
+                background-color: rgba(255, 255, 255, 0);
+                border: rgba(255, 255, 255, 0);
+                color: #ffffff;
+            }
+            #donate_button {
+                margin-top: 1.0em;
+                margin-left: 30em;
+                font-size: 1.2em;
+                background-color: #ffffff;
+                border: rgba(255, 255, 255, 0);
+                color: #676a6c;
+            }
+            #home_link {
+                margin-left: 20em;
+            }
+            #jobs_link {
+                margin-left: 0.5em;
+            }
+            #events_link {
+                margin-left: 0.5em;
+            }
+            
+        }
+    </style>
+
+
+
+</head>
+<body class="gray-bg">
+
+
+            <!-- Page wrapper -->
+            <%= render 'layouts/usertopnavbar' %>
+
+
+             <% flash.each do |name, msg| %>
+           <%= content_tag :div, msg, id: "flash_#{name}" %>
+             <% end %>
+            <!-- Main view  -->
+            <%= yield %>
+
+
+
+
+    <!-- Include javascript per-view -->
+    <!-- For demo purpose we include javascript in view but you can easily start SeedProject and organize it with Rails asset pipeline as you want -->
+    <%= yield :javascript %>
+
+</body>
+</html>

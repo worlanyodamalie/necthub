@@ -38,6 +38,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
   get '/home', to: 'static_pages#home'
+  get '/user', to: 'static_pages#user'
 
   resources :membershipdata do
     collection do
