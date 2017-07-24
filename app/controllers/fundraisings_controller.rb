@@ -16,11 +16,11 @@ class FundraisingsController < ApplicationController
   def create
     @fundraising = current_organisation.fundraisings.build(fundraising_params)
        if @fundraising.save
-         flash[:notice] = "Fundraising campaign created successfully"
+         #flash[:notice] = "Fundraising campaign created successfully"
 
          render 'index'
         else
-           flash[:alert] = "Something went wrong"
+          # flash[:alert] = "Something went wrong"
 
            render 'new'
         end

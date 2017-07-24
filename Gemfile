@@ -20,7 +20,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem 'mailgun-ruby', '~>1.1.6', require: 'mailgun'
+#gem 'mailgun-ruby', '~>1.1.6', require: 'mailgun'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
@@ -40,9 +40,9 @@ gem 'roo'
 gem 'roo-xls'
 gem 'devise'
 # Use Omniauth Facebook plugin
-gem 'omniauth-facebook', '~> 4.0'
+#gem 'omniauth-facebook', '~> 4.0'
 # Use ActiveRecord Sessions
-gem 'activerecord-session_store', '~> 1.0'
+#gem 'activerecord-session_store', '~> 1.0'
 #End here
 gem 'awesome_print', require:"ap"
 # Use Capistrano for deployment

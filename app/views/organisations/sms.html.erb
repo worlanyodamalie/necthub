@@ -35,25 +35,28 @@
                 <input type="text" class="form-control input-lg m-b-xs" id="filter"
                        placeholder="Search in table" />
                        <br /><br /><br />
-
+              <% form_tag(:action => 'new')  %>
                     <table class="footable table table-stripped" data-page-size="8" data-filter=#filter>
                     <thead>
                     <tr>
-                        <th><input type="checkbox" class="i-checks" name="input[]"></th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th data-hide="phone,tablet">Phone Number</th>
-                        <th data-hide="phone,tablet">Year Group</th>
+                                <th><input class="selectAll"   type="checkbox">  <th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Phone Number</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="gradeX">
-                        <td><input type="checkbox" class="i-checks" name="input[]"></td>
-                        <td>k</td>
-                        <td>s</td>
-                        <td>4116156</td>
-                        <td class="center">2017</td>
-                    </tr>
+                    <%  @organisations.each  do |org|%>
+                            <tr class="gradeX">
+                            <td> <input id="checkBox" class="selectAll"  value="<%=[ org.PhoneNumber  ] %>" type="checkbox"> <td>
+                            <td > <%= org.try(:FirstName) %> </td>
+                            <td><%=  org.try(:LastName)%></td>
+                            <td><%=  org.try(:PhoneNumber)%></td>
+                            </tr>
+                            <% end %>
+
+
+
                     </tbody>
                     <tfoot>
                     <tr>
@@ -65,13 +68,86 @@
                 </table>
                 <br />
                 <div align="right">
-                    <a href="" class="btn btn-primary">Next</a>
+
+                    <a href="" class="btn btn-primary" id="email_id" , data="" >Next</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 </div>
+
+
+ <%#<script>
+
+var url = "/organisations/send_message";
+ function setCookies(cname,cvalue,exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays*24*60*60*1000));
+      var expires = "expires=" + d.toGMTString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+  function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+$(document).ready(function () {
+        $('input[type=checkbox]').click(function(){
+            var contacts = '';
+            var  nvalue;
+            var output = $('input[type=checkbox]:checked').map(function(   ){
+                nvalue =  this.value.replace(/[\]\['"]+/g, '');
+                contacts = contacts + nvalue + ',';
+                scontacts = contacts.slice(0,-1);
+                return scontacts; }).get();
+
+                 console.log(scontacts);
+
+
+
+              $('#email_id').attr("data" , scontacts);
+
+              setCookies("email_token", scontacts   , 6000);
+        });
+
+        $('#email_id').click(function(){
+
+             console.log($(this).attr("data"));
+
+             console.log(getCookie);
+
+            $(location).attr('href',url);
+
+            $('#recipient_id').val($(this).attr("data"));
+        });
+
+        var unformattedArray = getCookie("email_token");
+
+        console.log("Unformatted:", unformattedArray);
+
+
+        $("#to").attr("value", unformattedArray);
+
+
+   });
+
+
+ </script>%>
+
+
+
+
 
 
 <% content_for :javascript do %>

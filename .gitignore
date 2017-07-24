@@ -23,8 +23,11 @@ config/database.yml
 # Ignore Byebug command history file.
 .byebug_history
 
-/readyrails.box
-/Vagrantfile
+readyrails.box
+Vagrantfile
 .vagrant/
 config/application.yml
 config/database.yml
+size.sh
+purge.sh
+find_fattest.sh
