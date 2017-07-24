@@ -1,0 +1,128 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Add New Member</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="">Home</a>
+        </li>
+        <li class="active">
+            <strong>Add new member</strong>
+        </li>
+    </ol>
+</div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title" align="center">
+                <h2>Add new member to the database</h2>
+            </div>
+            <div class="ibox-content">
+
+            <%= form_for(@membershipdatum) do |f| %>
+                         <br />
+                    <div align="center">
+                        <p>Fill in the new members details</p>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <div class="container">
+                            <div>
+                            <label class="control-label">First Name</label>
+
+                            </div>
+                            <br />
+                            <div class="col-sm-7">
+                                <%= f.text_field :FirstName, :placeholder => "First Name", :class => "form-control input-lg m-b" %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="container">
+                            <div>
+                                <label class="control-label">Last Name</label>
+                            </div>
+                            <br />
+                            <div class="col-sm-7">
+                                <%= f.text_field :LastName , :placeholder => "Last Name" , :class => "form-control input-lg m-b"  %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="container">
+                            <div>
+                                <label class="control-label">Year Completed</label>
+                            </div>
+                            <br />
+                            <div class="col-sm-7">
+                                  <%= f.text_field :YearCompleted , :placeholder => "Year Completed" , :class => "form-control input-lg m-b" %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="container">
+                            <div>
+                                <label class="control-label">E-Mail</label>
+                            </div>
+                            <br />
+                            <div class="col-sm-7">
+                                 <%= f.text_field :Email , :placeholder => "Email" , :class => "form-control input-lg m-b"  %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="container">
+                            <div>
+                                <label class="control-label">Organisation</label>
+                            </div>
+                            <br />
+                            <div class="col-sm-7 ">
+                                <%=f.text_field :Organisation , :placeholder => "Organisation" , :class => "form-control input-lg m-b"  %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="container">
+                            <div>
+                                <label class="control-label">Work Place</label>
+                            </div>
+                            <br />
+                            <div class="col-sm-7">
+                                <%=f.text_field :WorkPlace , :placeholder => "Work Place" , :class => "form-control input-lg m-b"  %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="container">
+                            <div>
+                                <label class="control-label">Phone Number</label>
+                            </div>
+                            <br />
+                            <div class="col-sm-7">
+                                <%=f.text_field :PhoneNumber , :placeholder => "Phone Number" , :class => "form-control input-lg m-b"  %>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            <!-- "a href" link goes back to previous page -->
+                            <a href="" class="btn btn-white" >Back</a>
+                          <%= f.submit "Add new member" , :class => "btn btn-primary" %>
+
+                        </div>
+                        <br />
+                    </div>
+
+            <% end %>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--[event,current_organisation.build] -->

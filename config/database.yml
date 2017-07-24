@@ -17,7 +17,7 @@
 #
 default: &default
   adapter: postgresql
-  encoding: LATIN1
+  encoding: UTF-8
   username:  <%= ENV['pg_username'] %>
   password:  <%= ENV['pg_password'] %>
 

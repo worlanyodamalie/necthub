@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'users/index'
+
+  #devise_for :users
+  devise_for :users, path: 'users', controllers: { omniauth_callbacks: 'users/omniauth' }
   #get 'fundraisings/index'
 
   get 'static_pages/home'
@@ -108,7 +112,7 @@ Rails.application.routes.draw do
   # get "uielements/buttons"
   # get "uielements/video"
   # get "uielements/tables_panels"
-  # get "uielements/tabs"
+  # get 'uielements/tabs'
   # get "uielements/notifications_tooltips"
   # get "uielements/badges_labels_progress"
 
@@ -149,11 +153,19 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
   get '/home', to: 'static_pages#home'
+  get '/user', to: 'static_pages#user'
 
   resources :membershipdata do
     collection do
       get :members
       post :import
+    end
+  end
+
+ resources :users do
+    collection do
+      get :jobs
+      get :events
     end
   end
 
@@ -175,6 +187,8 @@ Rails.application.routes.draw do
      resources :membershipdata
 
      resources :events
+
+     resources :fundraisings
 
   end
 

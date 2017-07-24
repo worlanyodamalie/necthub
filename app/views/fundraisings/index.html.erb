@@ -1,19 +1,12 @@
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-10">
         <h2>Fundraising</h2>
-        <ol class="breadcrumb">
-            <li>
-                <a href="">Home</a>
-        </li>
-        <li class="active">
-            <strong>Fundraising</strong>
-        </li>
-    </ol>
-</div>
-<div class="col-lg-2">
+    </div>
+    <div class="col-lg-2">
 
+    </div>
 </div>
-        </div>
+
 <div class="wrapper wrapper-content animated fadeIn">
 <div class="row">
     <div class="col-lg-12">
@@ -35,13 +28,60 @@
                 <br /><br />
 
                 <div class="row">
-        <div class="col-lg-4">
+
+               <% @fundraisings.each do |fundraising|%>
+               <div class="col-lg-4">
+            <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px;">
+
+                <div class="ibox-title">
+                    <h5>
+                    <%= fundraising.try(:title) %>
+                    </h5>
+                </div>
+                <div class="ibox-content">
+                    <div><!-- Image here -->
+                    <%= image_tag fundraising.campaign_pic.thumb.url if fundraising.campaign_pic? %>
+
+                    </div>
+                    <br />
+                    <h4>Info</h4>
+                    <p>
+                        <%= fundraising.try(:description) %>
+                    </p>
+                    <br />
+                    <div>
+                        <span>Status of funds:</span>
+                        <div class="stat-percent">48%</div>
+                        <div class="progress progress-mini">
+                            <div style="width: 48%;" class="progress-bar"></div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row  m-t-sm">
+                        <div class="col-sm-4">
+
+                        </div>
+                        <div class="col-sm-4">
+
+                        </div>
+                        <div class="col-sm-4 text-right">
+
+                             <%= link_to "View More" , {:controller=>"fundraisings", :action=>"show", :id => fundraising.id} , :class => "btn btn-primary"%>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <% end %>
+       <!-- <div class="col-lg-4">
             <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px;">
                 <div class="ibox-title">
                     <h5>Campaign Title</h5>
                 </div>
                 <div class="ibox-content">
-                    <div><!-- Image here -->
+                    <div>
                         <img alt="image" src="<%= image_url 'http://via.placeholder.com/350x150' %>"/>
                     </div>
                     <br />
@@ -73,14 +113,14 @@
 
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4">
+        </div> -->
+      <!--  <div class="col-lg-4">
             <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px;">
                 <div class="ibox-title">
                     <h5>Campaign Title</h5>
                 </div>
                 <div class="ibox-content">
-                    <div><!-- Image here -->
+                    <div>
                         <img alt="image" src="<%= image_url 'http://via.placeholder.com/350x150' %>"/>
                     </div>
                     <br />
@@ -112,46 +152,7 @@
 
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px;">
-                <div class="ibox-title">
-                    <h5>Campaign Title</h5>
-                </div>
-                <div class="ibox-content">
-                    <div><!-- Image here -->
-                        <img alt="image" src="<%= image_url 'http://via.placeholder.com/350x150' %>"/>
-                    </div>
-                    <br />
-                    <h4>Info</h4>
-                    <p>
-                        It is a long established fact that a reader will be distracted by the readable content
-                        of a page when looking at its layout. The point of using Lorem Ipsum is that it has.
-                    </p>
-                    <br />
-                    <div>
-                        <span>Status of funds:</span>
-                        <div class="stat-percent">48%</div>
-                        <div class="progress progress-mini">
-                            <div style="width: 48%;" class="progress-bar"></div>
-                        </div>
-                    </div>
-                    <br />
-                    <div class="row  m-t-sm">
-                        <div class="col-sm-4">
-
-                        </div>
-                        <div class="col-sm-4">
-
-                        </div>
-                        <div class="col-sm-4 text-right">
-                            <a href="" class="btn btn-primary">View more</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+        </div> -->
     </div>
             </div>
         </div>

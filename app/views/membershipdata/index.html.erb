@@ -1,14 +1,7 @@
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-10">
         <h2>Members</h2>
-        <ol class="breadcrumb">
-            <li>
-        </li>
-        <li class="active">
-            <strong>Members</strong>
-        </li>
-    </ol>
-</div>
+    </div>
 <div class="col-lg-2">
 
 </div>
@@ -21,13 +14,13 @@
             <div class="ibox-content text-center p-md">
                 <%= form_tag import_membershipdata_path , multipart: true do%>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-8">
                             <h3 class="col-sm-7">Upload your existing member data here</h3>
                             <div class="col-sm-5">
                                 <%= file_field_tag :files , :class => "form-control m-b" %>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             <%= submit_tag "Upload" , :class => "btn btn-primary" %>
                         </div>
                     </div>
@@ -46,7 +39,8 @@
             <h2>Your member data</h2>
         </div>
         <div class="col-lg-6" align="center">
-            <a href="" class="btn btn-primary">Add New</a>
+         <%= link_to "Add New" , new_membershipdatum_path , :class => "btn btn-primary" %>
+            
         </div>
     </div>
 </div>
@@ -109,10 +103,6 @@ $(function() {
     $('.dataTables-example').DataTable({
         dom: '<"html5buttons"B>lTfgitp',
         buttons: [
-            { extend: 'copy'},
-            {extend: 'csv'},
-            {extend: 'excel', title: 'ExampleFile'},
-            {extend: 'pdf', title: 'ExampleFile'},
 
             {extend: 'print',
                 customize: function (win){
