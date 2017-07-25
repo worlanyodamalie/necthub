@@ -54,6 +54,8 @@ Rails.application.routes.draw do
     collection do
       get :events
       get :jobs
+      get :profile
+      get :fundraising
       end
   end
   resources :groups
