@@ -19,6 +19,7 @@ Rails.application.config.assets.precompile += %w( organisations.js )
 Rails.application.config.assets.precompile += %w( organisations.css )
 Rails.application.config.assets.precompile += %w( membershipdata.js )
 Rails.application.config.assets.precompile += %w( membershipdata.css )
-
+Rails.application.config.assets.precompile += %w( groups.css )
+Rails.application.config.assets.precompile += %w( groups.js )
 # Rails.application.config.assets.precompile += %w( static_pages.scss )
 # Rails.application.config.assets.precompile += %w( static_pages.js )

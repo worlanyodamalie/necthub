@@ -38,25 +38,26 @@
               <% form_tag(:action => 'new')  %>
                     <table class="footable table table-stripped" data-page-size="8" data-filter=#filter>
                     <thead>
-                    <tr>
-                                <th><input class="selectAll"   type="checkbox">  <th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Phone Number</th>
-                    </tr>
+                        <tr>
+                            <th><input type="checkbox" class="i-checks" name="input[]"></th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th data-hide="phone,tablet">Phone Number</th>
+                            <th data-hide="phone,tablet">Workplace</th>
+                            <th data-hide="phone,tablet">Year Group</th>
+                        </tr>
                     </thead>
                     <tbody>
-                    <%  @organisations.each  do |org|%>
+                        <%  @organisations.each  do |org|%>
                             <tr class="gradeX">
-                            <td> <input id="checkBox" class="selectAll"  value="<%=[ org.PhoneNumber  ] %>" type="checkbox"> <td>
-                            <td > <%= org.try(:FirstName) %> </td>
-                            <td><%=  org.try(:LastName)%></td>
-                            <td><%=  org.try(:PhoneNumber)%></td>
+                                <td><input class="i-checks"  value="<%=[ org.PhoneNumber  ] %>" type="checkbox"> </td>
+                                <td><%= org.try(:FirstName) %></td>
+                                <td><%=  org.try(:LastName)%></td>
+                                <td><%=  org.try(:PhoneNumber)%></td>
+                                <td><%=  org.try(:WorkPlace)%></td>
+                                <td><%=  org.try(:YearCompleted)%></td>
                             </tr>
-                            <% end %>
-
-
-
+                        <% end %>
                     </tbody>
                     <tfoot>
                     <tr>
@@ -78,7 +79,7 @@
 </div>
 
 
- <%#<script>
+ <script>
 
 var url = "/organisations/send_message";
  function setCookies(cname,cvalue,exdays) {
@@ -143,7 +144,7 @@ $(document).ready(function () {
    });
 
 
- </script>%>
+ </script>
 
 
 
