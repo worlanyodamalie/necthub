@@ -36,7 +36,7 @@
             </li>
             <li class="<%= is_active_controller('membershipdata') %>">
                 <%= link_to membershipdata_path do %>
-                <i class="fa fa-users"></i> <span class="nav-label" data-i18n="nav.tables">Members </span>
+                <i class="fa fa-user"></i> <span class="nav-label" data-i18n="nav.tables">Members </span>
                 <% end %>
             </li>
             <li class="<%= is_active_controller('tables') %>">
@@ -45,7 +45,7 @@
                 <% end %>
             </li>
             <li class="<%= is_active_controller('tables') %>">
-                <%= link_to send_message_organisations_path do %>
+                <%= link_to sms_organisations_path do %>
                 <i class="fa fa-envelope"></i> <span class="nav-label" data-i18n="nav.tables">SMS</span>
                 <% end %>
 
@@ -64,7 +64,7 @@
 
              <li class="<%= is_active_controller('groups') %>">
                 <%= link_to new_group_path do %>
-                <i class="fa fa-magic"></i> <span class="nav-label" data-i18n="nav.animations">Create Group </span>
+                <i class="fa fa-group"></i> <span class="nav-label" data-i18n="nav.animations">Create Group </span>
                 <% end %>
             </li>
         </ul>

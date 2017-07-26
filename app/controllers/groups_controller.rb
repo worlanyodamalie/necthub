@@ -1,7 +1,7 @@
 class GroupsController < ApplicationController
   before_action :authenticate_organisation!
 
-  layout "users"
+  layout "/organisations"
 
 
   def index
