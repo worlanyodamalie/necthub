@@ -24,7 +24,7 @@
         </div>
     </div>
 
-   <div class="row">
+    <div class="row">
         <div class="col-lg-1">
         </div>
         <div class="col-lg-2">
@@ -51,11 +51,12 @@
                                 <div class="ibox-title" style="background-color: #1ab394; color: #ffffff;">
                                     <h5><%= group_event.try(:event_name)%></h5>
                                 </div>
-                                <div class="ibox-content">
-                                    <div><!-- Image here -->
-                                        <%= image_tag group_event.event_pic.nthumb.url if group_event.event_pic? %>
+                                <div class="ibox-content" align="center">
+                                    <div class="pic-width">
+                                        <%= image_tag group_event.event_pic.nthumb.url if group_event.event_pic?%>
                                     </div>
-                                    <div><!-- Image here -->
+                                    <br />
+                                    <div>
                                         <%= group_event.try(:event_date)%>
                                     </div>
                                     <br />
