@@ -28,7 +28,11 @@ Rails.application.routes.draw do
 
   resources :events
 
-  resources :users
+  resources :users do
+    collection do
+      get :profile
+    end
+  end
 
   resources :groups do
      collection do
@@ -36,7 +40,6 @@ Rails.application.routes.draw do
       get :eventsearch
       get :jobs
       get :jobsearch
-      get :profile
       get :skills
       get :skillsearch
       get :fundraising
@@ -64,8 +67,6 @@ Rails.application.routes.draw do
      resources :fundraisings
 
 
-    resources :groups
-    resources :users
 
 
   end
