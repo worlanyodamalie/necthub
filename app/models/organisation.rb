@@ -7,7 +7,7 @@ class Organisation < ApplicationRecord
   has_many :membershipdata
   has_many :events
   has_many :fundraisings
-  has_many :users
-  has_many :groups, through: :users
+  has_many :groups
+  has_many :users, through: :groups
 
 end

@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
     end
   end
 
-   def store_action_user
+  def store_action_user
     return unless request.get?
     if (request.path != "/users/sign_in" &&
         request.path != "/users/sign_up" &&

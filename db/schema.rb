@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170722161605) do
+ActiveRecord::Schema.define(version: 20170726133613) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,8 +41,12 @@ ActiveRecord::Schema.define(version: 20170722161605) do
 
   create_table "groups", force: :cascade do |t|
     t.string   "group_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "user_id"
+    t.integer  "organisation_id"
+    t.index ["organisation_id"], name: "index_groups_on_organisation_id", using: :btree
+    t.index ["user_id"], name: "index_groups_on_user_id", using: :btree
   end
 
   create_table "membershipdata", force: :cascade do |t|
@@ -100,17 +104,15 @@ ActiveRecord::Schema.define(version: 20170722161605) do
     t.string   "first_name"
     t.string   "Last_name"
     t.string   "organisation_name"
-    t.integer  "organisation_id"
-    t.integer  "group_id"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
-    t.index ["group_id"], name: "index_users_on_group_id", using: :btree
-    t.index ["organisation_id"], name: "index_users_on_organisation_id", using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
   add_foreign_key "events", "organisations"
   add_foreign_key "fundraisings", "organisations"
+  add_foreign_key "groups", "organisations"
+  add_foreign_key "groups", "users"
   add_foreign_key "membershipdata", "organisations"
 end
