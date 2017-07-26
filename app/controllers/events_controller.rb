@@ -19,10 +19,11 @@ class EventsController < ApplicationController
     @a_event = current_organisation.events.build(event_params)
     if @a_event.save
       #flash[:notice] = "Added event successfully"
-      render 'index'
+      redirect_to events_path
     else
       #flash[:alert] = "Event not added"
-      render 'new'
+      #render 'new'
+      redirect_to new_event_path
       end
   end
 

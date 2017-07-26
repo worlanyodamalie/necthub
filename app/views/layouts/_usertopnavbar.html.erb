@@ -27,13 +27,15 @@
                             <span class="text-muted text-xs block" style="color: white;">Me <b class="caret"></b></span>
                         </span>
                     </a>
+                    <% if user_signed_in? %>
                     <ul class="dropdown-menu animated fadeIn m-t-xs">
-                        <li><a href="">Profile</a>
+                        <li>   <%= link_to "Profile" , edit_user_registration_path %>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="">Log out</a>
+                        <li><%= link_to 'Log Out' , destroy_user_session_path %></a>
                         </li>
                     </ul>
+                    <% end %>
 
             </li>
 
