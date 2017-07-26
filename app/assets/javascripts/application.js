@@ -13,4 +13,3 @@
 //= require slimscroll/jquery.slimscroll.min.js
 //= require inspinia.js
 //= require static_pages.js
-

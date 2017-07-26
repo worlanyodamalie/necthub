@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
 
   #after_filter :store_action
   after_action :store_action
+  after_action :store_action_user
   include MembershipdataHelper
 
 
@@ -16,6 +17,18 @@ class ApplicationController < ActionController::Base
         request.path != "/organisations/sign_out" &&
         !request.xhr?) # don't store ajax calls
       store_location_for(:organisation, "/dashboard")
+    end
+  end
+
+  def store_action_user
+    return unless request.get?
+    if (request.path != "/users/sign_in" &&
+        request.path != "/users/sign_up" &&
+        request.path != "/users/password/new" &&
+        request.path != "/users/password/edit" &&
+        request.path != "/users/sign_out" &&
+        !request.xhr?) # don't store ajax calls
+      store_location_for(:user, "/userfeed")
     end
   end
 

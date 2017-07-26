@@ -1,154 +1,39 @@
 Rails.application.routes.draw do
-  get 'users/index'
+
+
+  #get 'users/index'
+
+  #get 'groups/index'
 
   #devise_for :users
-  devise_for :users, path: 'users', controllers: { omniauth_callbacks: 'users/omniauth' }
-  #get 'fundraisings/index'
 
-  get 'static_pages/home'
-
-  # You can have the root of your site routed with "root"
- # root to: 'dashboards#dashboard_1'
-
-  # All routes
-  # get "dashboards/dashboard_1"
-  # get "dashboards/dashboard_2"
-  # get "dashboards/dashboard_3"
-  # get "dashboards/dashboard_4"
-  # get "dashboards/dashboard_4_1"
-  # get "dashboards/dashboard_5"
-
-  # get "layoutsoptions/index"
-  # get "layoutsoptions/off_canvas"
-
-  # get "graphs/flot"
-  # get "graphs/morris"
-  # get "graphs/rickshaw"
-  # get "graphs/chartjs"
-  # get "graphs/chartist"
-  # get "graphs/peity"
-  # get "graphs/sparkline"
-  # get "graphs/c3charts"
-
-  # get "mailbox/inbox"
-  # get "mailbox/email_view"
-  # get "mailbox/compose_email"
-  # get "mailbox/email_templates"
-  # get "mailbox/basic_action_email"
-  # get "mailbox/alert_email"
-  # get "mailbox/billing_email"
-
-  # get "metrics/index"
-
-  # get "widgets/index"
-
-  # get "forms/basic_forms"
-  # get "forms/advanced"
-  # get "forms/wizard"
-  # get "forms/file_upload"
-  # get "forms/text_editor"
-  # get "forms/markdown"
-
-  # get "appviews/contacts"
-  # get "appviews/profile"
-  # get "appviews/profile_two"
-  # get "appviews/contacts_two"
-  # get "appviews/projects"
-  # get "appviews/project_detail"
-  # get "appviews/file_menager"
-  # get "appviews/vote_list"
-  # get "appviews/calendar"
-  # get "appviews/faq"
-  # get "appviews/timeline"
-  # get "appviews/pin_board"
-  # get "appviews/teams_board"
-  # get "appviews/social_feed"
-  # get "appviews/clients"
-  # get "appviews/outlook_view"
-  # get "appviews/blog"
-  # get "appviews/article"
-  # get "appviews/issue_tracker"
-
-  # get "pages/search_results"
-  # get "pages/lockscreen"
-  # get "pages/invoice"
-  # get "pages/invoice_print"
-  # get "pages/login"
-  # get "pages/login_2"
-  # get "pages/forgot_password"
-  # get "pages/register"
-  # get "pages/not_found_error"
-  # get "pages/internal_server_error"
-  # get "pages/empty_page"
-
-  # get "miscellaneous/notification"
-  # get "miscellaneous/nestablelist"
-  # get "miscellaneous/timeline_second_version"
-  # get "miscellaneous/forum_view"
-  # get "miscellaneous/forum_post_view"
-  # get "miscellaneous/google_maps"
-  # get "miscellaneous/code_editor"
-  # get "miscellaneous/modal_window"
-  # get "miscellaneous/validation"
-  # get "miscellaneous/tree_view"
-  # get "miscellaneous/chat_view"
-  # get "miscellaneous/agile_board"
-  # get "miscellaneous/diff"
-  # get "miscellaneous/sweet_alert"
-  # get "miscellaneous/idle_timer"
-  # get "miscellaneous/spinners"
-  # get "miscellaneous/live_favicon"
-  # get "miscellaneous/masonry"
-  # get "miscellaneous/tour"
-  # get "miscellaneous/loading_buttons"
-  # get "miscellaneous/clipboard"
-  # get "miscellaneous/truncate"
-  # get "miscellaneous/i18support"
-
-  # get "uielements/typography"
-  # get "uielements/icons"
-  # get "uielements/draggable_panels"
-  # get "uielements/resizeable_panels"
-  # get "uielements/buttons"
-  # get "uielements/video"
-  # get "uielements/tables_panels"
-  # get 'uielements/tabs'
-  # get "uielements/notifications_tooltips"
-  # get "uielements/badges_labels_progress"
-
-  # get "gridoptions/index"
-
-  # get "tables/static_tables"
-  # get "tables/data_tables"
-  # get "tables/foo_tables"
-  # get "tables/jqgrid"
-
-  # get "commerce/products_grid"
-  # get "commerce/products_list"
-  # get "commerce/product_edit"
-  # get "commerce/product_detail"
-  # get "commerce/orders"
-  # get "commerce/cart"
-  # get "commerce/payments"
-
-  # get "gallery/basic_gallery"
-  # get "gallery/slick_carusela"
-  # get "gallery/bootstrap_carusela"
-
-  #get "cssanimations/index"
-
-  #get "landing/index"
+  #get 'static_pages/home'
 
 
-  #get 'events/index'
+  devise_for :organisations, path: 'organisations' , :controllers => { registrations: "registrations" }
 
-  #get 'membershipdata/index'
+  devise_for :users, path: 'users' , :controllers => { registration: "signups" }
 
-  # get 'static_pages/home'
 
-  # get 'organisations/index'
+    # as :users do
+    #   get '/login' => 'sessions#new',  as: :new_user_session
+    #   post '/login' => 'sessions#create', as: :user_session
+    #   delete '/logout' => 'sessions#destroy', as: :destroy_user
+    #   get '/register' => 'signups#new', as: :new_user_registration
+    #   post '/register' => 'signups#create',  as: :user_registration
 
-  devise_for :organisations, :controllers => { registrations: 'registrations' }
+    #   end
+
+
+
+  ## custom routes for users
+# as :user do
+#   #get 'login' => 'users/sessions#new', as: :new_user_session
+#   #post 'login' => 'users/sessions#create', as: :user_session
+#   #delete 'logout' => 'users/sessions#destroy', as: :destroy_user_session
+#   get 'register' => 'users/signups#new'
+# end
+
   # # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'static_pages#home'
 
@@ -162,14 +47,23 @@ Rails.application.routes.draw do
     end
   end
 
- resources :users do
-    collection do
-      get :jobs
-      get :events
-    end
-  end
 
   resources :events
+
+  resources :users
+
+  resources :groups do
+     collection do
+      get :events
+      get :eventsearch
+      get :jobs
+      get :jobsearch
+      get :profile
+      get :skills
+      get :skillsearch
+      get :fundraising
+      end
+  end
 
   resources :fundraisings do
     collection do
@@ -181,8 +75,9 @@ Rails.application.routes.draw do
     collection do
        get :email
        get :sms
+       get :send_message
+       post :send_sms
        get :send_email
-       post :send_email
     end
      resources :membershipdata
 
@@ -190,10 +85,19 @@ Rails.application.routes.draw do
 
      resources :fundraisings
 
+
+    resources :groups
+    resources :users
+
+
   end
 
   devise_scope :organisation do
      get '/dashboard', to: 'organisations#index'
+  end
+
+  devise_scope :user do
+     get '/userfeed', to: 'groups#index'
   end
 
 end

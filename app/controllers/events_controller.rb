@@ -4,22 +4,24 @@ class EventsController < ApplicationController
   layout "organisations"
 
   def index
+    #byebug
     @events = current_organisation.events
+
     #@organisation = Event.new
   end
 
   def new
-    @event = Event.new
+    @a_event = Event.new
   end
 
   def create
 
-    @event = current_organisation.events.build(event_params)
-    if @event.save
-      flash[:notice] = "Added event successfully"
+    @a_event = current_organisation.events.build(event_params)
+    if @a_event.save
+      #flash[:notice] = "Added event successfully"
       render 'index'
     else
-      flash[:alert] = "Event not added"
+      #flash[:alert] = "Event not added"
       render 'new'
       end
   end
