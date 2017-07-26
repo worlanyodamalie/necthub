@@ -57,7 +57,9 @@ Rails.application.routes.draw do
       get :events
       get :jobs
       get :profile
+      get :skills
       get :fundraising
+      get :skillsearch
       end
   end
 
