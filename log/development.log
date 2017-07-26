@@ -8044,3 +8044,504 @@ Processing by UsersController#skills as HTML
 Completed 200 OK in 47ms (Views: 30.4ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/events" for 127.0.0.1 at 2017-07-26 15:14:56 +0000
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (48.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (34.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (105.2ms)
+  Rendered layouts/_navigation.html.erb (5.8ms)
+  Rendered layouts/_topnavbar.html.erb (2.4ms)
+Completed 200 OK in 434ms (Views: 158.9ms | ActiveRecord: 132.6ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-07-26 15:14:58 +0000
+Processing by EventsController#new as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/organisations
+  Rendered events/new.html.erb within layouts/organisations (34.9ms)
+  Rendered layouts/_navigation.html.erb (2.7ms)
+  Rendered layouts/_topnavbar.html.erb (1.1ms)
+Completed 200 OK in 102ms (Views: 76.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/skills" for 127.0.0.1 at 2017-07-26 15:15:22 +0000
+Processing by UsersController#skills as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/skills.html.erb within layouts/users
+  Rendered users/skills.html.erb within layouts/users (0.6ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.4ms)
+Completed 200 OK in 34ms (Views: 20.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fundraisings" for 127.0.0.1 at 2017-07-26 15:15:44 +0000
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (19.7ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (53.9ms)
+  Rendered layouts/_navigation.html.erb (3.5ms)
+  Rendered layouts/_topnavbar.html.erb (1.0ms)
+Completed 200 OK in 161ms (Views: 63.8ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/fundraisings/new" for 127.0.0.1 at 2017-07-26 15:15:46 +0000
+Processing by FundraisingsController#new as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/new.html.erb within layouts/organisations
+  Rendered fundraisings/new.html.erb within layouts/organisations (245.2ms)
+  Rendered layouts/_navigation.html.erb (2.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.8ms)
+Completed 200 OK in 313ms (Views: 282.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-07-26 15:15:53 +0000
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (6.6ms)
+  Rendered layouts/_navigation.html.erb (1.9ms)
+  Rendered layouts/_topnavbar.html.erb (0.8ms)
+Completed 200 OK in 52ms (Views: 37.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-07-26 15:15:54 +0000
+Processing by EventsController#new as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/organisations
+  Rendered events/new.html.erb within layouts/organisations (2.3ms)
+  Rendered layouts/_navigation.html.erb (2.0ms)
+  Rendered layouts/_topnavbar.html.erb (0.8ms)
+Completed 200 OK in 46ms (Views: 30.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-07-26 15:17:03 +0000
+Processing by EventsController#new as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/organisations
+  Rendered events/new.html.erb within layouts/organisations (3.2ms)
+  Rendered layouts/_navigation.html.erb (2.5ms)
+  Rendered layouts/_topnavbar.html.erb (1.0ms)
+Completed 200 OK in 51ms (Views: 37.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2017-07-26 15:17:05 +0000
+Processing by GroupsController#new as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/new.html.erb within layouts//organisations
+  Rendered groups/new.html.erb within layouts//organisations (2.7ms)
+  Rendered layouts/_navigation.html.erb (2.0ms)
+  Rendered layouts/_topnavbar.html.erb (0.9ms)
+Completed 200 OK in 70ms (Views: 33.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-07-26 15:17:07 +0000
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (6.4ms)
+  Rendered layouts/_navigation.html.erb (2.2ms)
+  Rendered layouts/_topnavbar.html.erb (1.0ms)
+Completed 200 OK in 50ms (Views: 36.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/jobs" for 127.0.0.1 at 2017-07-26 15:22:15 +0000
+Processing by UsersController#jobs as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/jobs.html.erb within layouts/users
+  Rendered users/jobs.html.erb within layouts/users (0.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.2ms)
+Completed 200 OK in 32ms (Views: 18.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/jobs" for 127.0.0.1 at 2017-07-26 15:22:37 +0000
+Processing by UsersController#jobs as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/jobs.html.erb within layouts/users
+  Rendered users/jobs.html.erb within layouts/users (0.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.1ms)
+Completed 200 OK in 30ms (Views: 18.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/events" for 127.0.0.1 at 2017-07-26 15:22:40 +0000
+Processing by UsersController#events as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/events.html.erb within layouts/users
+  Rendered users/events.html.erb within layouts/users (0.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.1ms)
+Completed 200 OK in 31ms (Views: 18.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/jobs" for 127.0.0.1 at 2017-07-26 15:23:19 +0000
+Processing by UsersController#jobs as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/jobs.html.erb within layouts/users
+  Rendered users/jobs.html.erb within layouts/users (1.2ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.1ms)
+Completed 200 OK in 34ms (Views: 22.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/jobs" for 127.0.0.1 at 2017-07-26 15:23:20 +0000
+Processing by UsersController#jobs as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/jobs.html.erb within layouts/users
+  Rendered users/jobs.html.erb within layouts/users (0.9ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.3ms)
+Completed 200 OK in 34ms (Views: 21.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/jobs" for 127.0.0.1 at 2017-07-26 15:23:21 +0000
+Processing by UsersController#jobs as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/jobs.html.erb within layouts/users
+  Rendered users/jobs.html.erb within layouts/users (0.9ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.7ms)
+Completed 200 OK in 36ms (Views: 25.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/jobs" for 127.0.0.1 at 2017-07-26 15:23:22 +0000
+Processing by UsersController#jobs as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/jobs.html.erb within layouts/users
+  Rendered users/jobs.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.5ms)
+Completed 200 OK in 31ms (Views: 20.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/jobs" for 127.0.0.1 at 2017-07-26 15:24:24 +0000
+Processing by UsersController#jobs as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/jobs.html.erb within layouts/users
+  Rendered users/jobs.html.erb within layouts/users (0.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.1ms)
+Completed 200 OK in 32ms (Views: 21.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/jobsearch" for 127.0.0.1 at 2017-07-26 15:24:58 +0000
+Started GET "/users/jobsearch" for 127.0.0.1 at 2017-07-26 15:25:17 +0000
+Started GET "/users/jobsearch" for 127.0.0.1 at 2017-07-26 15:25:31 +0000
+Processing by UsersController#jobsearch as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/jobsearch.html.erb within layouts/users
+  Rendered users/jobsearch.html.erb within layouts/users (3.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.5ms)
+Completed 200 OK in 1463ms (Views: 1354.2ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/users/jobsearch" for 127.0.0.1 at 2017-07-26 15:26:06 +0000
+Processing by UsersController#jobsearch as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/jobsearch.html.erb within layouts/users
+  Rendered users/jobsearch.html.erb within layouts/users (0.6ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.8ms)
+Completed 200 OK in 34ms (Views: 22.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/jobsearch" for 127.0.0.1 at 2017-07-26 15:26:24 +0000
+Processing by UsersController#jobsearch as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/jobsearch.html.erb within layouts/users
+  Rendered users/jobsearch.html.erb within layouts/users (6.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.4ms)
+Completed 200 OK in 1466ms (Views: 1358.9ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/users/jobsearch" for 127.0.0.1 at 2017-07-26 15:32:27 +0000
+Processing by UsersController#jobsearch as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/jobsearch.html.erb within layouts/users
+  Rendered users/jobsearch.html.erb within layouts/users (0.9ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.1ms)
+Completed 200 OK in 42ms (Views: 26.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/events" for 127.0.0.1 at 2017-07-26 15:32:46 +0000
+Processing by UsersController#events as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/events.html.erb within layouts/users
+  Rendered users/events.html.erb within layouts/users (5.4ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.4ms)
+Completed 200 OK in 1439ms (Views: 1336.4ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/users/events" for 127.0.0.1 at 2017-07-26 15:33:18 +0000
+Processing by UsersController#events as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/events.html.erb within layouts/users
+  Rendered users/events.html.erb within layouts/users (0.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.5ms)
+Completed 200 OK in 37ms (Views: 23.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/events" for 127.0.0.1 at 2017-07-26 15:33:19 +0000
+Processing by UsersController#events as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/events.html.erb within layouts/users
+  Rendered users/events.html.erb within layouts/users (1.0ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.4ms)
+Completed 200 OK in 43ms (Views: 30.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/events" for 127.0.0.1 at 2017-07-26 15:33:21 +0000
+Processing by UsersController#events as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/events.html.erb within layouts/users
+  Rendered users/events.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.1ms)
+Completed 200 OK in 39ms (Views: 23.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:33:30 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.6ms)
+Completed 200 OK in 43ms (Views: 29.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:33:45 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.4ms)
+Completed 200 OK in 38ms (Views: 27.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:33:53 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.9ms)
+Completed 200 OK in 33ms (Views: 24.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:34:21 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.1ms)
+Completed 200 OK in 38ms (Views: 23.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:34:39 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.3ms)
+Completed 200 OK in 36ms (Views: 25.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:35:02 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.0ms)
+Completed 200 OK in 35ms (Views: 23.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:35:19 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (1.6ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.5ms)
+Completed 200 OK in 58ms (Views: 45.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/events" for 127.0.0.1 at 2017-07-26 15:35:30 +0000
+Processing by UsersController#events as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/events.html.erb within layouts/users
+  Rendered users/events.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.5ms)
+Completed 200 OK in 53ms (Views: 34.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/events" for 127.0.0.1 at 2017-07-26 15:38:17 +0000
+Processing by UsersController#events as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/events.html.erb within layouts/users
+  Rendered users/events.html.erb within layouts/users (1.5ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.4ms)
+Completed 200 OK in 47ms (Views: 29.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:38:20 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (1.6ms)
+  Rendered layouts/_usertopnavbar.html.erb (5.1ms)
+Completed 200 OK in 48ms (Views: 35.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:38:20 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (1.0ms)
+  Rendered layouts/_usertopnavbar.html.erb (4.5ms)
+Completed 200 OK in 44ms (Views: 32.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:39:28 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (1.9ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.3ms)
+Completed 200 OK in 58ms (Views: 32.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:39:51 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (1.6ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.2ms)
+Completed 200 OK in 42ms (Views: 29.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:40:04 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.1ms)
+Completed 200 OK in 39ms (Views: 25.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:40:04 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (1.4ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.3ms)
+Completed 200 OK in 52ms (Views: 39.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:40:05 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.9ms)
+Completed 200 OK in 35ms (Views: 24.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:40:05 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.6ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.6ms)
+Completed 200 OK in 29ms (Views: 20.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:40:05 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.6ms)
+Completed 200 OK in 43ms (Views: 28.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:40:05 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.3ms)
+Completed 200 OK in 34ms (Views: 22.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:40:05 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.4ms)
+Completed 200 OK in 36ms (Views: 25.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:40:06 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.7ms)
+Completed 200 OK in 37ms (Views: 25.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:40:14 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.7ms)
+Completed 200 OK in 29ms (Views: 20.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:40:25 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.8ms)
+Completed 200 OK in 36ms (Views: 25.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:40:46 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.1ms)
+Completed 200 OK in 33ms (Views: 23.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:40:55 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.9ms)
+Completed 200 OK in 36ms (Views: 26.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:41:15 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (1.0ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.9ms)
+Completed 200 OK in 39ms (Views: 29.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:41:28 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.6ms)
+Completed 200 OK in 32ms (Views: 23.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/eventsearch" for 127.0.0.1 at 2017-07-26 15:41:29 +0000
+Processing by UsersController#eventsearch as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/eventsearch.html.erb within layouts/users
+  Rendered users/eventsearch.html.erb within layouts/users (0.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.5ms)
+Completed 200 OK in 39ms (Views: 28.7ms | ActiveRecord: 0.5ms)
+
+

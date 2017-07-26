@@ -53,11 +53,13 @@ Rails.application.routes.draw do
   resources :users do
     collection do
       get :events
+      get :eventsearch
       get :jobs
+      get :jobsearch
       get :profile
       get :skills
-      get :fundraising
       get :skillsearch
+      get :fundraising
       end
   end
   resources :groups
