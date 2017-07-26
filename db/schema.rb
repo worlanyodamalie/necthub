@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170726133613) do
+ActiveRecord::Schema.define(version: 20170726162615) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,16 @@ ActiveRecord::Schema.define(version: 20170726133613) do
     t.index ["user_id"], name: "index_groups_on_user_id", using: :btree
   end
 
+  create_table "jobs", force: :cascade do |t|
+    t.string   "company_name"
+    t.string   "position"
+    t.string   "job_description"
+    t.integer  "organisation_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["organisation_id"], name: "index_jobs_on_organisation_id", using: :btree
+  end
+
   create_table "membershipdata", force: :cascade do |t|
     t.string   "FirstName"
     t.string   "LastName"
@@ -81,15 +91,6 @@ ActiveRecord::Schema.define(version: 20170726133613) do
     t.index ["reset_password_token"], name: "index_organisations_on_reset_password_token", unique: true, using: :btree
   end
 
-  create_table "sessions", force: :cascade do |t|
-    t.string   "session_id", null: false
-    t.text     "data"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.index ["session_id"], name: "index_sessions_on_session_id", unique: true, using: :btree
-    t.index ["updated_at"], name: "index_sessions_on_updated_at", using: :btree
-  end
-
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -114,5 +115,6 @@ ActiveRecord::Schema.define(version: 20170726133613) do
   add_foreign_key "fundraisings", "organisations"
   add_foreign_key "groups", "organisations"
   add_foreign_key "groups", "users"
+  add_foreign_key "jobs", "organisations"
   add_foreign_key "membershipdata", "organisations"
 end

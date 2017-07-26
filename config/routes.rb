@@ -1,38 +1,16 @@
 Rails.application.routes.draw do
 
 
-  #get 'users/index'
 
-  #get 'groups/index'
+  get 'jobs/new'
 
-  #devise_for :users
-
-  #get 'static_pages/home'
-
+  get 'jobs/index'
 
   devise_for :organisations, path: 'organisations' , :controllers => { registrations: "registrations" }
 
   devise_for :users, path: 'users' , :controllers => { registration: "signups" }
 
 
-    # as :users do
-    #   get '/login' => 'sessions#new',  as: :new_user_session
-    #   post '/login' => 'sessions#create', as: :user_session
-    #   delete '/logout' => 'sessions#destroy', as: :destroy_user
-    #   get '/register' => 'signups#new', as: :new_user_registration
-    #   post '/register' => 'signups#create',  as: :user_registration
-
-    #   end
-
-
-
-  ## custom routes for users
-# as :user do
-#   #get 'login' => 'users/sessions#new', as: :new_user_session
-#   #post 'login' => 'users/sessions#create', as: :user_session
-#   #delete 'logout' => 'users/sessions#destroy', as: :destroy_user_session
-#   get 'register' => 'users/signups#new'
-# end
 
   # # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'static_pages#home'

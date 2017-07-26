@@ -44,31 +44,33 @@
             <div class="ibox float-e-margins">
                 <div class="ibox-content border-bottom text-center p-md">
                     <div class="row">
+                       <%for group_event in @group_events do %>
                         <div class="col-lg-6">
+
                             <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px;">
                                 <div class="ibox-title" style="background-color: #1ab394; color: #ffffff;">
-                                    <h5>Meet and Greet for 2004 year group</h5>
+                                    <h5><%= group_event.try(:event_name)%></h5>
                                 </div>
                                 <div class="ibox-content">
                                     <div><!-- Image here -->
-                                        pic here
+                                        <%= image_tag group_event.event_pic.nthumb.url if group_event.event_pic? %>
                                     </div>
                                     <div><!-- Image here -->
-                                        date here
+                                        <%= group_event.try(:event_date)%>
                                     </div>
                                     <br />
                                     <h4>Info</h4>
                                     <p>
-                                        Meet and greet for 2004 year group. We would like to get together to
-                                        form new deals and partnerships with our old school mates so we can all
-                                        get ahead in life.
+                                         <%= group_event.try(:event_type)%>
                                     </p>
                                     <br />
                                     <!-- Work on rsvp thingy -->
                                 </div>
                             </div>
                         </div>
+                         <% end %>
                     </div>
+
                 </div>
                 <br />
             </div>

@@ -12,6 +12,9 @@ class GroupsController < ApplicationController
     @group = Group.new
   end
 
+  def events
+     @group_events = current_organisation.events
+  end
 
 
   def create

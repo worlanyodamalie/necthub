@@ -5,7 +5,7 @@ class EventsController < ApplicationController
 
   def index
     #byebug
-    @events = current_organisation.events
+    @events = current_organisation.events.all
 
     #@organisation = Event.new
   end
