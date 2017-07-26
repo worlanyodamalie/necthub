@@ -12,7 +12,7 @@ class JobsController < ApplicationController
     @job = Job.new
   end
 
-   def create
+  def create
 
     @job = current_organisation.jobs.build(job_params)
     if @job.save

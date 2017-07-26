@@ -303,3 +303,133 @@ Processing by GroupsController#events as HTML
 Completed 200 OK in 165ms (Views: 110.9ms | ActiveRecord: 2.3ms)
 
 
+Started GET "/organisations/sign_up" for 10.0.2.2 at 2017-07-26 18:57:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  [1m[36mOrganisation Load (1.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 262ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/dashboard" for 10.0.2.2 at 2017-07-26 18:57:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/index.html.erb within layouts/organisations (309.6ms)
+  Rendered layouts/_navigation.html.erb (9.5ms)
+  Rendered layouts/_topnavbar.html.erb (3.6ms)
+Completed 200 OK in 13230ms (Views: 13179.3ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/jobs" for 10.0.2.2 at 2017-07-26 18:58:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/organisations
+  [1m[36mJob Load (0.9ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/organisations (7.4ms)
+Completed 500 Internal Server Error in 444ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/jobs" for 10.0.2.2 at 2017-07-26 18:59:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (1.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/organisations
+  [1m[36mJob Load (1.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/organisations (25.8ms)
+  Rendered layouts/_navigation.html.erb (6.0ms)
+  Rendered layouts/_topnavbar.html.erb (2.2ms)
+Completed 200 OK in 12487ms (Views: 12053.9ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/assets/jobs-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 10.0.2.2 at 2017-07-26 18:59:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/jobs-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" for 10.0.2.2 at 2017-07-26 18:59:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/jobs" for 10.0.2.2 at 2017-07-26 19:03:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/organisations
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/organisations (5.5ms)
+  Rendered layouts/_navigation.html.erb (4.2ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 166ms (Views: 121.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/jobs" for 10.0.2.2 at 2017-07-26 19:04:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/organisations
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/organisations (5.3ms)
+  Rendered layouts/_navigation.html.erb (4.4ms)
+  Rendered layouts/_topnavbar.html.erb (1.2ms)
+Completed 200 OK in 184ms (Views: 127.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/jobs/new" for 10.0.2.2 at 2017-07-26 19:04:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by JobsController#new as HTML
+  [1m[36mOrganisation Load (1.2ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/new.html.erb within layouts/organisations
+  Rendered jobs/new.html.erb within layouts/organisations (22.2ms)
+  Rendered layouts/_navigation.html.erb (4.3ms)
+  Rendered layouts/_topnavbar.html.erb (1.6ms)
+Completed 200 OK in 208ms (Views: 144.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/groups/jobs" for 10.0.2.2 at 2017-07-26 19:04:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  Rendered groups/jobs.html.erb within layouts/users (1.5ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.7ms)
+Completed 200 OK in 112ms (Views: 74.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/jobs" for 10.0.2.2 at 2017-07-26 19:05:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "job"=>{"company_name"=>"Ghalani", "position"=>"Marketing and Sales Person", "job_description"=>"Will be selling the app to farmers and farm owners"}, "commit"=>"Create Job"}
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "jobs" ("company_name", "position", "job_description", "organisation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["company_name", "Ghalani"], ["position", "Marketing and Sales Person"], ["job_description", "Will be selling the app to farmers and farm owners"], ["organisation_id", 1], ["created_at", "2017-07-26 19:05:32.375352"], ["updated_at", "2017-07-26 19:05:32.375352"]]
+  [1m[35m (57.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering jobs/index.html.erb within layouts/organisations
+  Rendered jobs/index.html.erb within layouts/organisations (50.6ms)
+Completed 500 Internal Server Error in 263ms (ActiveRecord: 59.6ms)
+
+
+Started GET "/jobs" for 10.0.2.2 at 2017-07-26 19:05:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/organisations
+  [1m[36mJob Load (0.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/organisations (5.8ms)
+  Rendered layouts/_navigation.html.erb (3.0ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 183ms (Views: 136.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/groups/jobs" for 10.0.2.2 at 2017-07-26 19:35:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (1.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/jobs.html.erb within layouts/users (63.0ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.1ms)
+Completed 200 OK in 7963ms (Views: 7447.6ms | ActiveRecord: 34.6ms)
+
+

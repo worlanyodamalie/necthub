@@ -13,7 +13,11 @@ class GroupsController < ApplicationController
   end
 
   def events
-     @group_events = current_organisation.events
+     @group_events = current_organisation.events.all
+  end
+
+  def jobs
+    @group_jobs = current_organisation.jobs.all
   end
 
 

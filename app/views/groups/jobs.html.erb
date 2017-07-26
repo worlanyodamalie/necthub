@@ -71,26 +71,29 @@
             <div class="ibox float-e-margins">
                 <div class="ibox-content border-bottom text-center p-md">
                     <div class="row">
+
+                    <% for group_job in @group_jobs%>
                         <div class="col-lg-3">
                             <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px; box-shadow: #f4f4f4 0px 2px 2px 2px;">
                                 <div class="ibox-title" style="background-color: #1ab394; color: #ffffff;">
-                                    <h5>Ghalani</h5>
+                                    <h5><%= group_job.try(:company_name)%></h5>
                                 </div>
                                 <div class="ibox-content">
                                     <div>
-                                        Marketing and Sales Person
+                                        <%= group_job.try(:position)%>
                                     </div>
                                     <br />
                                     <h4>Info</h4>
                                     <p>
-                                        Will be selling the app to farmers and farm owners
+                                        <%= group_job.try(:job_description)%>
                                     </p>
                                     <br />
 
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <% end %>
+                        <%#<div class="col-lg-3">
                             <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px; box-shadow: #f4f4f4 0px 2px 2px 2px;">
                                 <div class="ibox-title" style="background-color: #1ab394; color: #ffffff;">
                                     <h5>AF Radio</h5>
@@ -108,8 +111,8 @@
 
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3">
+                        </div>%>
+                        <%#<div class="col-lg-3">
                             <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px; box-shadow: #f4f4f4 0px 2px 2px 2px;">
                                 <div class="ibox-title" style="background-color: #1ab394; color: #ffffff;">
                                     <h5>Hubtel</h5>
@@ -127,8 +130,8 @@
 
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3">
+                        </div>%>
+                        <%#<div class="col-lg-3">
                             <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px; box-shadow: #f4f4f4 0px 2px 2px 2px;">
                                 <div class="ibox-title" style="background-color: #1ab394; color: #ffffff;">
                                     <h5>GT Bank</h5>
@@ -146,7 +149,7 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </div>%>
                     </div>
                 </div>
             </div>
