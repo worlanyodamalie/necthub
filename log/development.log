@@ -1,0 +1,39 @@
+Started GET "/groups/events" for 10.0.2.2 at 2017-07-26 14:52:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (1.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts//organisations
+  Rendered groups/events.html.erb within layouts//organisations (11.1ms)
+  Rendered layouts/_navigation.html.erb (6.4ms)
+  Rendered layouts/_topnavbar.html.erb (2.4ms)
+Completed 200 OK in 61967ms (Views: 61572.2ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/assets/groups-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 10.0.2.2 at 2017-07-26 14:53:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/application-6a0a4c1948e26fc01c3115def2a48c29fe70e51216546f2fe25cd86aa8dc4b47.js" for 10.0.2.2 at 2017-07-26 14:53:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/groups-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" for 10.0.2.2 at 2017-07-26 14:53:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/groups/events" for 10.0.2.2 at 2017-07-26 14:54:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (1.2ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts//organisations
+  Rendered groups/events.html.erb within layouts//organisations (1.4ms)
+  Rendered layouts/_navigation.html.erb (3.6ms)
+  Rendered layouts/_topnavbar.html.erb (1.3ms)
+Completed 200 OK in 166ms (Views: 126.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/groups/events" for 10.0.2.2 at 2017-07-26 14:55:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (2.2ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  Rendered groups/events.html.erb within layouts/users (16.3ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.4ms)
+Completed 200 OK in 8420ms (Views: 7973.6ms | ActiveRecord: 20.6ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
