@@ -2824,3 +2824,745 @@ Completed 200 OK in 244ms (Views: 166.5ms | ActiveRecord: 3.4ms)
 
 Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-24 10:25:54 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 10.0.2.2 at 2017-07-26 10:15:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (52.2ms)
+Completed 200 OK in 17363ms (Views: 17145.8ms)
+
+
+Started GET "/organisations/sign_up" for 10.0.2.2 at 2017-07-26 10:15:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  [1m[36mOrganisation Load (117.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2576ms (ActiveRecord: 1029.0ms)
+
+
+Started GET "/dashboard" for 10.0.2.2 at 2017-07-26 10:15:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (76.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (22.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/index.html.erb within layouts/organisations (514.5ms)
+  Rendered layouts/_navigation.html.erb (6.1ms)
+  Rendered layouts/_topnavbar.html.erb (2.9ms)
+Completed 200 OK in 999ms (Views: 661.2ms | ActiveRecord: 108.1ms)
+
+
+Started GET "/events" for 10.0.2.2 at 2017-07-26 10:15:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (48.5ms)
+  Rendered layouts/_navigation.html.erb (3.8ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 280ms (Views: 183.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/events/new" for 10.0.2.2 at 2017-07-26 10:15:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#new as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/organisations
+  Rendered events/new.html.erb within layouts/organisations (68.5ms)
+  Rendered layouts/_navigation.html.erb (3.6ms)
+  Rendered layouts/_topnavbar.html.erb (1.3ms)
+Completed 200 OK in 414ms (Views: 215.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/events" for 10.0.2.2 at 2017-07-26 10:17:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"event_name"=>"Alumni Get-Together", "event_date"=>"2017-01-08T13:00", "event_type"=>"Get-Together", "event_pic"=>#<ActionDispatch::Http::UploadedFile:0xbdcbd4c4 @tempfile=#<Tempfile:/tmp/RackMultipart20170726-1241-196feni.jpg>, @original_filename="fast-food.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"event[event_pic]\"; filename=\"fast-food.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Event"}
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (61.4ms)[0m  [1m[32mINSERT INTO "events" ("event_name", "event_type", "event_date", "organisation_id", "created_at", "updated_at", "event_pic") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["event_name", "Alumni Get-Together"], ["event_type", "Get-Together"], ["event_date", "2017-01-08 13:00:00"], ["organisation_id", 1], ["created_at", "2017-07-26 10:17:12.674481"], ["updated_at", "2017-07-26 10:17:12.674481"], ["event_pic", "fast-food.jpg"]]
+  [1m[35m (20.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/index.html.erb within layouts/organisations
+  Rendered events/index.html.erb within layouts/organisations (61.3ms)
+Completed 500 Internal Server Error in 2517ms (ActiveRecord: 82.8ms)
+
+
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "events"[0m
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+Started GET "/events" for 10.0.2.2 at 2017-07-26 10:24:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  Rendered events/index.html.erb within layouts/organisations (1.9ms)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/events" for 10.0.2.2 at 2017-07-26 10:24:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (1.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (13.3ms)
+  Rendered layouts/_navigation.html.erb (3.5ms)
+  Rendered layouts/_topnavbar.html.erb (1.2ms)
+Completed 200 OK in 170ms (Views: 127.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/events/new" for 10.0.2.2 at 2017-07-26 10:24:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#new as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/organisations
+  Rendered events/new.html.erb within layouts/organisations (3.0ms)
+  Rendered layouts/_navigation.html.erb (3.4ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 157ms (Views: 117.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/events" for 10.0.2.2 at 2017-07-26 10:26:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"event_name"=>"General Assembly", "event_date"=>"2017-02-28T23:00", "event_type"=>"Alumni Meeting", "event_pic"=>#<ActionDispatch::Http::UploadedFile:0xbdbb7354 @tempfile=#<Tempfile:/tmp/RackMultipart20170726-1241-jgp3jd.jpg>, @original_filename="mesters.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"event[event_pic]\"; filename=\"mesters.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Event"}
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "events" ("event_name", "event_type", "event_date", "organisation_id", "created_at", "updated_at", "event_pic") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["event_name", "General Assembly"], ["event_type", "Alumni Meeting"], ["event_date", "2017-02-28 23:00:00"], ["organisation_id", 1], ["created_at", "2017-07-26 10:26:26.179021"], ["updated_at", "2017-07-26 10:26:26.179021"], ["event_pic", "mesters.jpg"]]
+  [1m[35m (10.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/index.html.erb within layouts/organisations
+  Rendered events/index.html.erb within layouts/organisations (2.0ms)
+  Rendered layouts/_navigation.html.erb (6.2ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 682ms (Views: 162.4ms | ActiveRecord: 11.9ms)
+
+
+Started POST "/events" for 10.0.2.2 at 2017-07-26 10:26:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"event_name"=>"General Assembly", "event_date"=>"2017-02-28T23:00", "event_type"=>"Alumni Meeting", "event_pic"=>#<ActionDispatch::Http::UploadedFile:0xbd8b6ce0 @tempfile=#<Tempfile:/tmp/RackMultipart20170726-1241-1e48u7m.jpg>, @original_filename="mesters.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"event[event_pic]\"; filename=\"mesters.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Event"}
+  [1m[36mOrganisation Load (0.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "events" ("event_name", "event_type", "event_date", "organisation_id", "created_at", "updated_at", "event_pic") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["event_name", "General Assembly"], ["event_type", "Alumni Meeting"], ["event_date", "2017-02-28 23:00:00"], ["organisation_id", 1], ["created_at", "2017-07-26 10:26:36.664480"], ["updated_at", "2017-07-26 10:26:36.664480"], ["event_pic", "mesters.jpg"]]
+  [1m[35m (31.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/index.html.erb within layouts/organisations
+  Rendered events/index.html.erb within layouts/organisations (1.8ms)
+  Rendered layouts/_navigation.html.erb (4.0ms)
+  Rendered layouts/_topnavbar.html.erb (1.3ms)
+Completed 200 OK in 682ms (Views: 153.5ms | ActiveRecord: 32.4ms)
+
+
+Started GET "/fundraisings" for 10.0.2.2 at 2017-07-26 10:27:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.2ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (8.3ms)
+  Rendered layouts/_navigation.html.erb (4.5ms)
+  Rendered layouts/_topnavbar.html.erb (1.6ms)
+Completed 200 OK in 401ms (Views: 138.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/fundraisings-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 10.0.2.2 at 2017-07-26 10:27:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/fundraisings-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" for 10.0.2.2 at 2017-07-26 10:27:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/events" for 10.0.2.2 at 2017-07-26 10:27:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (30.1ms)
+  Rendered layouts/_navigation.html.erb (4.8ms)
+  Rendered layouts/_topnavbar.html.erb (1.8ms)
+Completed 200 OK in 200ms (Views: 149.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/new" for 10.0.2.2 at 2017-07-26 10:27:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#new as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/organisations
+  Rendered events/new.html.erb within layouts/organisations (4.3ms)
+  Rendered layouts/_navigation.html.erb (3.6ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 164ms (Views: 119.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/events" for 10.0.2.2 at 2017-07-26 10:27:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"event_name"=>"Get-Together", "event_date"=>"2017-01-28T14:01", "event_type"=>"Meeting", "event_pic"=>#<ActionDispatch::Http::UploadedFile:0xbb3aa1cc @tempfile=#<Tempfile:/tmp/RackMultipart20170726-1241-1n58xce.jpg>, @original_filename="mesters.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"event[event_pic]\"; filename=\"mesters.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Event"}
+  [1m[36mOrganisation Load (1.1ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "events" ("event_name", "event_type", "event_date", "organisation_id", "created_at", "updated_at", "event_pic") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["event_name", "Get-Together"], ["event_type", "Meeting"], ["event_date", "2017-01-28 14:01:00"], ["organisation_id", 1], ["created_at", "2017-07-26 10:27:59.334229"], ["updated_at", "2017-07-26 10:27:59.334229"], ["event_pic", "mesters.jpg"]]
+  [1m[35m (36.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/index.html.erb within layouts/organisations
+  Rendered events/index.html.erb within layouts/organisations (42.9ms)
+Completed 500 Internal Server Error in 646ms (ActiveRecord: 38.1ms)
+
+
+Started GET "/groups/new" for 10.0.2.2 at 2017-07-26 10:31:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#new as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/new.html.erb within layouts/users
+  Rendered groups/new.html.erb within layouts/users (5.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (4.7ms)
+Completed 200 OK in 492ms (Views: 340.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/fundraisings" for 10.0.2.2 at 2017-07-26 10:31:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.3ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (8.7ms)
+  Rendered layouts/_navigation.html.erb (4.4ms)
+  Rendered layouts/_topnavbar.html.erb (1.7ms)
+Completed 200 OK in 188ms (Views: 133.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/fundraisings" for 10.0.2.2 at 2017-07-26 10:31:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (1.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.4ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (9.7ms)
+  Rendered layouts/_navigation.html.erb (6.3ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 175ms (Views: 132.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/events" for 10.0.2.2 at 2017-07-26 10:31:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (42.0ms)
+  Rendered layouts/_navigation.html.erb (5.6ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 218ms (Views: 171.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/events" for 10.0.2.2 at 2017-07-26 10:31:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (47.1ms)
+  Rendered layouts/_navigation.html.erb (4.8ms)
+  Rendered layouts/_topnavbar.html.erb (1.3ms)
+Completed 200 OK in 218ms (Views: 172.7ms | ActiveRecord: 1.2ms)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "events"[0m
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[35mSQL (3.8ms)[0m  [1m[31mDELETE FROM "events"[0m
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+Started GET "/events" for 10.0.2.2 at 2017-07-26 10:35:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (6.9ms)
+  Rendered layouts/_navigation.html.erb (4.8ms)
+  Rendered layouts/_topnavbar.html.erb (1.6ms)
+Completed 200 OK in 165ms (Views: 121.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events/new" for 10.0.2.2 at 2017-07-26 10:35:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#new as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/organisations
+  Rendered events/new.html.erb within layouts/organisations (3.5ms)
+  Rendered layouts/_navigation.html.erb (4.2ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 177ms (Views: 134.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/events" for 10.0.2.2 at 2017-07-26 10:36:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"event_name"=>"My Event", "event_date"=>"2017-04-12T17:19", "event_type"=>"An Event", "event_pic"=>#<ActionDispatch::Http::UploadedFile:0xbdba9bf0 @tempfile=#<Tempfile:/tmp/RackMultipart20170726-1241-1qdd8mf.jpg>, @original_filename="mesters.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"event[event_pic]\"; filename=\"mesters.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Event"}
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "events" ("event_name", "event_type", "event_date", "organisation_id", "created_at", "updated_at", "event_pic") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["event_name", "My Event"], ["event_type", "An Event"], ["event_date", "2017-04-12 17:19:00"], ["organisation_id", 1], ["created_at", "2017-07-26 10:36:19.321457"], ["updated_at", "2017-07-26 10:36:19.321457"], ["event_pic", "mesters.jpg"]]
+  [1m[35m (37.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/index.html.erb within layouts/organisations
+  Rendered events/index.html.erb within layouts/organisations (39.2ms)
+Completed 500 Internal Server Error in 674ms (ActiveRecord: 39.1ms)
+
+
+  [1m[35mSQL (34.2ms)[0m  [1m[31mDELETE FROM "events"[0m
+Started GET "/events" for 10.0.2.2 at 2017-07-26 10:38:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (3.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (5.7ms)
+  Rendered layouts/_navigation.html.erb (3.9ms)
+  Rendered layouts/_topnavbar.html.erb (1.1ms)
+Completed 200 OK in 183ms (Views: 121.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/events/new" for 10.0.2.2 at 2017-07-26 10:38:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#new as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/organisations
+  Rendered events/new.html.erb within layouts/organisations (3.9ms)
+  Rendered layouts/_navigation.html.erb (5.1ms)
+  Rendered layouts/_topnavbar.html.erb (1.5ms)
+Completed 200 OK in 159ms (Views: 115.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/events" for 10.0.2.2 at 2017-07-26 10:39:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"event_name"=>"Alumni Get-Together", "event_date"=>"2017-11-30T01:00", "event_type"=>"event", "event_pic"=>#<ActionDispatch::Http::UploadedFile:0xb4ce7b38 @tempfile=#<Tempfile:/tmp/RackMultipart20170726-1241-1ah7g96.jpg>, @original_filename="mesters.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"event[event_pic]\"; filename=\"mesters.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Event"}
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "events" ("event_name", "event_type", "event_date", "organisation_id", "created_at", "updated_at", "event_pic") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["event_name", "Alumni Get-Together"], ["event_type", "event"], ["event_date", "2017-11-30 01:00:00"], ["organisation_id", 1], ["created_at", "2017-07-26 10:39:13.995696"], ["updated_at", "2017-07-26 10:39:13.995696"], ["event_pic", "mesters.jpg"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/index.html.erb within layouts/organisations
+  Rendered events/index.html.erb within layouts/organisations (40.6ms)
+Completed 500 Internal Server Error in 581ms (ActiveRecord: 4.5ms)
+
+
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[35mSQL (3.3ms)[0m  [1m[31mDELETE FROM "events"[0m
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+Started GET "/dashboard" for 10.0.2.2 at 2017-07-26 10:45:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (1.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/index.html.erb within layouts/organisations (281.4ms)
+  Rendered layouts/_navigation.html.erb (7.3ms)
+  Rendered layouts/_topnavbar.html.erb (2.7ms)
+Completed 200 OK in 9878ms (Views: 9605.8ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/events" for 10.0.2.2 at 2017-07-26 10:46:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (15.4ms)
+  Rendered layouts/_navigation.html.erb (3.5ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 174ms (Views: 134.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/new" for 10.0.2.2 at 2017-07-26 10:46:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#new as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/organisations
+  Rendered events/new.html.erb within layouts/organisations (52.5ms)
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/events" for 10.0.2.2 at 2017-07-26 10:46:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (6.8ms)
+  Rendered layouts/_navigation.html.erb (5.7ms)
+  Rendered layouts/_topnavbar.html.erb (1.0ms)
+Completed 200 OK in 178ms (Views: 132.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/fundraisings" for 10.0.2.2 at 2017-07-26 10:46:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.2ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (8.5ms)
+  Rendered layouts/_navigation.html.erb (3.6ms)
+  Rendered layouts/_topnavbar.html.erb (1.7ms)
+Completed 200 OK in 168ms (Views: 126.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events" for 10.0.2.2 at 2017-07-26 10:46:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (5.3ms)
+  Rendered layouts/_navigation.html.erb (3.6ms)
+  Rendered layouts/_topnavbar.html.erb (1.0ms)
+Completed 200 OK in 170ms (Views: 124.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/events/new" for 10.0.2.2 at 2017-07-26 10:46:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#new as HTML
+  [1m[36mOrganisation Load (1.1ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/organisations
+  Rendered events/new.html.erb within layouts/organisations (45.7ms)
+  Rendered layouts/_navigation.html.erb (4.7ms)
+  Rendered layouts/_topnavbar.html.erb (1.3ms)
+Completed 200 OK in 207ms (Views: 164.7ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/events" for 10.0.2.2 at 2017-07-26 10:47:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"event_name"=>"event", "event_date"=>"2017-12-01T12:59", "event_type"=>"Alumni Meeting", "event_pic"=>#<ActionDispatch::Http::UploadedFile:0xbb965530 @tempfile=#<Tempfile:/tmp/RackMultipart20170726-1626-a7yvym.jpg>, @original_filename="mesters.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"event[event_pic]\"; filename=\"mesters.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Event"}
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "events" ("event_name", "event_type", "event_date", "organisation_id", "created_at", "updated_at", "event_pic") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["event_name", "event"], ["event_type", "Alumni Meeting"], ["event_date", "2017-12-01 12:59:00"], ["organisation_id", 1], ["created_at", "2017-07-26 10:47:23.539336"], ["updated_at", "2017-07-26 10:47:23.539336"], ["event_pic", "mesters.jpg"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/index.html.erb within layouts/organisations
+  Rendered events/index.html.erb within layouts/organisations (37.0ms)
+Completed 500 Internal Server Error in 636ms (ActiveRecord: 3.6ms)
+
+
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "events"[0m
+Started GET "/events" for 10.0.2.2 at 2017-07-26 10:50:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  Rendered events/index.html.erb within layouts/organisations (2.3ms)
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/events" for 10.0.2.2 at 2017-07-26 10:50:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  Rendered events/index.html.erb within layouts/organisations (2.8ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.7ms)
+
+
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+Started GET "/events/new" for 10.0.2.2 at 2017-07-26 10:53:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#new as HTML
+  [1m[36mOrganisation Load (1.2ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/organisations
+  Rendered events/new.html.erb within layouts/organisations (74.7ms)
+  Rendered layouts/_navigation.html.erb (5.4ms)
+  Rendered layouts/_topnavbar.html.erb (2.1ms)
+Completed 200 OK in 8873ms (Views: 8545.2ms | ActiveRecord: 15.9ms)
+
+
+Started POST "/events" for 10.0.2.2 at 2017-07-26 10:54:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"event_name"=>"General Meeting", "event_date"=>"2017-12-01T13:00", "event_type"=>"Alumni Meeting", "event_pic"=>#<ActionDispatch::Http::UploadedFile:0xb8804914 @tempfile=#<Tempfile:/tmp/RackMultipart20170726-1695-81h02w.jpg>, @original_filename="mesters.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"event[event_pic]\"; filename=\"mesters.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Event"}
+  [1m[36mOrganisation Load (1.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "events" ("event_name", "event_type", "event_date", "organisation_id", "created_at", "updated_at", "event_pic") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["event_name", "General Meeting"], ["event_type", "Alumni Meeting"], ["event_date", "2017-12-01 13:00:00"], ["organisation_id", 1], ["created_at", "2017-07-26 10:54:16.360714"], ["updated_at", "2017-07-26 10:54:16.360714"], ["event_pic", "mesters.jpg"]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/index.html.erb within layouts/organisations
+  Rendered events/index.html.erb within layouts/organisations (48.8ms)
+Completed 500 Internal Server Error in 785ms (ActiveRecord: 7.1ms)
+
+
+  [1m[35mSQL (6.4ms)[0m  [1m[31mDELETE FROM "events"[0m
+Started GET "/events/new" for 10.0.2.2 at 2017-07-26 10:55:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#new as HTML
+  [1m[36mOrganisation Load (1.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/organisations
+  Rendered events/new.html.erb within layouts/organisations (63.8ms)
+  Rendered layouts/_navigation.html.erb (5.9ms)
+  Rendered layouts/_topnavbar.html.erb (3.1ms)
+Completed 200 OK in 7148ms (Views: 6793.4ms | ActiveRecord: 18.2ms)
+
+
+Started POST "/events" for 10.0.2.2 at 2017-07-26 10:57:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"event_name"=>"Alumni Get-Together", "event_date"=>"2017-11-01T01:00", "event_type"=>"event", "event_pic"=>#<ActionDispatch::Http::UploadedFile:0xb805a100 @tempfile=#<Tempfile:/tmp/RackMultipart20170726-1754-yjboql.jpg>, @original_filename="mesters.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"event[event_pic]\"; filename=\"mesters.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Event"}
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "events" ("event_name", "event_type", "event_date", "organisation_id", "created_at", "updated_at", "event_pic") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["event_name", "Alumni Get-Together"], ["event_type", "event"], ["event_date", "2017-11-01 01:00:00"], ["organisation_id", 1], ["created_at", "2017-07-26 10:57:41.500510"], ["updated_at", "2017-07-26 10:57:41.500510"], ["event_pic", "mesters.jpg"]]
+  [1m[35m (13.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/index.html.erb within layouts/organisations
+  Rendered events/index.html.erb within layouts/organisations (49.0ms)
+Completed 500 Internal Server Error in 760ms (ActiveRecord: 15.3ms)
+
+
+Started GET "/events" for 10.0.2.2 at 2017-07-26 12:28:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (1.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrganisation Load (1.0ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  [1m[36mOrganisation Load (1.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+Started GET "/events" for 10.0.2.2 at 2017-07-26 12:32:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Completed 500 Internal Server Error in 243762ms (ActiveRecord: 17.3ms)
+
+
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (2.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3028ms (ActiveRecord: 2.3ms)
+
+
+Started POST "/events" for 10.0.2.2 at 2017-07-26 12:32:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"event_name"=>"Alumni Get-Together", "event_date"=>"2017-11-01T01:00", "event_type"=>"event", "event_pic"=>#<ActionDispatch::Http::UploadedFile:0xbc7b61c0 @tempfile=#<Tempfile:/tmp/RackMultipart20170726-2309-l9n66k.jpg>, @original_filename="mesters.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"event[event_pic]\"; filename=\"mesters.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Event"}
+  [1m[36mOrganisation Load (1.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "events" ("event_name", "event_type", "event_date", "organisation_id", "created_at", "updated_at", "event_pic") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["event_name", "Alumni Get-Together"], ["event_type", "event"], ["event_date", "2017-11-01 01:00:00"], ["organisation_id", 1], ["created_at", "2017-07-26 12:32:54.712525"], ["updated_at", "2017-07-26 12:32:54.712525"], ["event_pic", "mesters.jpg"]]
+  [1m[35m (30.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/index.html.erb within layouts/organisations
+  Rendered events/index.html.erb within layouts/organisations (288.4ms)
+Completed 500 Internal Server Error in 2294ms (ActiveRecord: 40.7ms)
+
+
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[35mSQL (36.4ms)[0m  [1m[31mDELETE FROM "events"[0m
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+Started GET "/events/new" for 10.0.2.2 at 2017-07-26 12:35:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#new as HTML
+  [1m[36mOrganisation Load (1.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/organisations
+  Rendered events/new.html.erb within layouts/organisations (76.7ms)
+  Rendered layouts/_navigation.html.erb (6.2ms)
+  Rendered layouts/_topnavbar.html.erb (2.4ms)
+Completed 200 OK in 12924ms (Views: 12466.7ms | ActiveRecord: 18.3ms)
+
+
+Started POST "/events" for 10.0.2.2 at 2017-07-26 12:37:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"event_name"=>"event", "event_date"=>"2017-12-30T13:00", "event_type"=>"Alumni Meeting", "event_pic"=>#<ActionDispatch::Http::UploadedFile:0xb3255040 @tempfile=#<Tempfile:/tmp/RackMultipart20170726-2378-1qoy6lt.jpg>, @original_filename="mesters.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"event[event_pic]\"; filename=\"mesters.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Event"}
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "events" ("event_name", "event_type", "event_date", "organisation_id", "created_at", "updated_at", "event_pic") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["event_name", "event"], ["event_type", "Alumni Meeting"], ["event_date", "2017-12-30 13:00:00"], ["organisation_id", 1], ["created_at", "2017-07-26 12:37:03.487458"], ["updated_at", "2017-07-26 12:37:03.487458"], ["event_pic", "mesters.jpg"]]
+  [1m[35m (41.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering events/index.html.erb within layouts/organisations
+  Rendered events/index.html.erb within layouts/organisations (53.2ms)
+Completed 500 Internal Server Error in 824ms (ActiveRecord: 43.6ms)
+
+
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[31mDELETE FROM "events"[0m
+  [1m[35m (11.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35m (36.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2310131145680354640);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20170722161605)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (217.9ms)[0m  [1m[35mDROP INDEX  "index_users_on_reset_password_token"[0m
+  [1m[35m (1.5ms)[0m  [1m[35mDROP INDEX  "index_users_on_email"[0m
+  [1m[35m (159.6ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35mSQL (79.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170722161605"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2310131145680354640)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2310131145680354640);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20170722161605)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (629.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "first_name" character varying, "Last_name" character varying, "organisation_name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170722161605"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (74.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(2310131145680354640)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2310131145680354640);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddIdsToGroups (20170726133613)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (32.5ms)[0m  [1m[35mALTER TABLE "groups" ADD "user_id" integer[0m
+  [1m[35m (34.3ms)[0m  [1m[35mCREATE  INDEX  "index_groups_on_user_id" ON "groups"  ("user_id")[0m
+  [1m[35m (106.2ms)[0m  [1m[35mALTER TABLE "groups" ADD CONSTRAINT "fk_rails_5e78cd340a"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "groups" ADD "organisation_id" integer[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE  INDEX  "index_groups_on_organisation_id" ON "groups"  ("organisation_id")[0m
+  [1m[35m (4.2ms)[0m  [1m[35mALTER TABLE "groups" ADD CONSTRAINT "fk_rails_32205fdfff"
+FOREIGN KEY ("organisation_id")
+  REFERENCES "organisations" ("id")
+[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170726133613"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2310131145680354640)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/users/sign_up" for 10.0.2.2 at 2017-07-26 13:42:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.8ms)
+  Rendered users/registrations/new.html.erb within layouts/application (517.8ms)
+Completed 200 OK in 9954ms (Views: 9697.8ms | ActiveRecord: 19.1ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2017-07-26 13:44:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"organisation_name"=>"PERSCO", "first_name"=>"Isaac", "Last_name"=>"Osoro", "email"=>"isaac.osoro@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: organisation_name, first_name, Last_name
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "isaac.osoro@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "isaac.osoro@gmail.com"], ["encrypted_password", "$2a$11$3csEVCN1WflKZoW3gY1u8u4.RnZATVmTMNySFufsnbfgLyS20YALO"], ["created_at", "2017-07-26 13:44:54.931338"], ["updated_at", "2017-07-26 13:44:54.931338"]]
+  [1m[35m (11.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (82.2ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-07-26 13:44:54.952968"], ["last_sign_in_at", "2017-07-26 13:44:54.952968"], ["current_sign_in_ip", "10.0.2.2/32"], ["last_sign_in_ip", "10.0.2.2/32"], ["updated_at", "2017-07-26 13:44:54.956850"], ["id", 1]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/userfeed
+Completed 302 Found in 762ms (ActiveRecord: 99.8ms)
+
+
+Started GET "/userfeed" for 10.0.2.2 at 2017-07-26 13:44:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (1.2ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (2.4ms)
+  Rendered layouts/_usertopnavbar.html.erb (4.9ms)
+Completed 200 OK in 453ms (Views: 371.3ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/userfeed" for 10.0.2.2 at 2017-07-26 13:47:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (1.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (1.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.3ms)
+Completed 200 OK in 127ms (Views: 76.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/jobs" for 10.0.2.2 at 2017-07-26 13:48:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#jobs as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/jobs.html.erb within layouts/users
+  Rendered users/jobs.html.erb within layouts/users (1.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.0ms)
+Completed 200 OK in 121ms (Views: 80.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/events" for 10.0.2.2 at 2017-07-26 13:48:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#events as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/events.html.erb within layouts/users
+  Rendered users/events.html.erb within layouts/users (1.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.0ms)
+Completed 200 OK in 127ms (Views: 82.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/userfeed" for 10.0.2.2 at 2017-07-26 13:58:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (1.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (1.5ms)
+  Rendered layouts/_usertopnavbar.html.erb (628.3ms)
+Completed 500 Internal Server Error in 767ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2017-07-26 14:03:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/userfeed
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 483ms (ActiveRecord: 31.1ms)
+
+
+Started GET "/userfeed" for 10.0.2.2 at 2017-07-26 14:03:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (1.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (9.5ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.9ms)
+Completed 200 OK in 9289ms (Views: 9173.6ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/userfeed" for 10.0.2.2 at 2017-07-26 14:03:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (1.4ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.8ms)
+Completed 200 OK in 150ms (Views: 98.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/userfeed" for 10.0.2.2 at 2017-07-26 14:07:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (1.1ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (1.3ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.1ms)
+Completed 200 OK in 131ms (Views: 76.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/groups/events" for 10.0.2.2 at 2017-07-26 14:07:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  Rendered groups/events.html.erb within layouts/users (1.6ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.7ms)
+Completed 200 OK in 140ms (Views: 87.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/jobs" for 10.0.2.2 at 2017-07-26 14:07:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  Rendered groups/jobs.html.erb within layouts/users (1.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.1ms)
+Completed 200 OK in 124ms (Views: 82.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/events" for 10.0.2.2 at 2017-07-26 14:07:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  Rendered groups/events.html.erb within layouts/users (1.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.0ms)
+Completed 200 OK in 123ms (Views: 80.7ms | ActiveRecord: 0.7ms)
+
+

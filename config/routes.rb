@@ -50,13 +50,14 @@ Rails.application.routes.draw do
 
   resources :events
 
-  resources :users do
-    collection do
+  resources :users
+
+  resources :groups do
+     collection do
       get :events
       get :jobs
       end
   end
-  resources :groups
 
   resources :fundraisings do
     collection do

@@ -33,14 +33,15 @@
 
 
                 <div class="row">
-        <% @events.each do |event| %>
+       
+       <% for event in @events do %>
         <div class="col-lg-4">
             <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px;">
                 <div class="ibox-title">
-                    <h5><%=event.try(:event_name)%></h5>
+                    <h5><%= event.try(:event_name)%></h5>
                 </div>
                 <div class="ibox-content">
-                    <div><!-- Image here -->
+                    <div><!-- Image here    event_pic.nthumb.url if event.event_pic?  -->
                         <%= image_tag event.event_pic.nthumb.url if event.event_pic? %>
                     </div>
                     <br />
@@ -54,6 +55,7 @@
             </div>
         </div>
          <% end %>
+
     </div>
 
             </div>

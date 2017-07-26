@@ -24,7 +24,7 @@
 
                 <div class="ibox-content">
 
-                <%= form_for (@event) ,html: {multipart: true } do |f|%>
+                <%= form_for (@a_event) ,html: {multipart: true } do |f|%>
                     <div align="center">
                         <p>Fill in your event details here</p>
                     </div>
@@ -82,7 +82,7 @@
 
                             <%= link_to "Back" , events_path,  :class => "btn btn-white" %>
                             <%= f.submit "Create Event" , :class => "btn btn-primary" %>
-                            
+
                         </div>
                     </div>
                     <br />

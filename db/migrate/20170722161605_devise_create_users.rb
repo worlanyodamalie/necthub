@@ -33,9 +33,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.string :first_name
       t.string :Last_name
       t.string :organisation_name
-      t.references :organisation
-      t.references :group
-
+      
       t.timestamps null: false
     end
 
