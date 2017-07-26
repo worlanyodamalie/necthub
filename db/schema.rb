@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170726133613) do
+ActiveRecord::Schema.define(version: 20170726162615) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,6 +47,16 @@ ActiveRecord::Schema.define(version: 20170726133613) do
     t.integer  "organisation_id"
     t.index ["organisation_id"], name: "index_groups_on_organisation_id", using: :btree
     t.index ["user_id"], name: "index_groups_on_user_id", using: :btree
+  end
+
+  create_table "jobs", force: :cascade do |t|
+    t.string   "company_name"
+    t.string   "position"
+    t.string   "job_description"
+    t.integer  "organisation_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["organisation_id"], name: "index_jobs_on_organisation_id", using: :btree
   end
 
   create_table "membershipdata", force: :cascade do |t|
@@ -105,5 +115,6 @@ ActiveRecord::Schema.define(version: 20170726133613) do
   add_foreign_key "fundraisings", "organisations"
   add_foreign_key "groups", "organisations"
   add_foreign_key "groups", "users"
+  add_foreign_key "jobs", "organisations"
   add_foreign_key "membershipdata", "organisations"
 end
