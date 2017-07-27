@@ -5,7 +5,7 @@ class GroupsController < ApplicationController
 
 
   def index
-
+     @group_announcements = current_organisation.announcements.all
   end
 
   def new

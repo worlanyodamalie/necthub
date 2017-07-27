@@ -9,6 +9,7 @@ class Organisation < ApplicationRecord
   has_many :jobs
   has_many :fundraisings
   has_many :groups
+  has_many :announcements
   has_many :users, through: :groups
 
 end

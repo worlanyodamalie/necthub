@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
 
+  get 'annoucements/index'
+
+  get 'annoucements/new'
+
   devise_for :organisations, path: 'organisations' , :controllers => { registrations: "registrations" }
 
   devise_for :users, path: 'users' , :controllers => { registration: "signups" }
@@ -27,7 +31,7 @@ Rails.application.routes.draw do
     end
   end
 
-  # resources :users,
+  resources :announcements
 
   resources :users, :path_names => { :show => 'user'} ,  only: [:show, :edit, :update] do
      collection do
