@@ -4,7 +4,7 @@ class JobsController < ApplicationController
   layout "users", :only => [:jobsearch]
 
   layout "organisations"
-  
+
   def index
     @jobs = current_organisation.jobs.all
   end

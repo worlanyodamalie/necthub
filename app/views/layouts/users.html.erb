@@ -32,15 +32,33 @@
             width: 200px;
         }
 
+        /* Portrait and Landscape */
         @media only screen 
-            and (min-device-width: 320px) 
-            and (max-device-width: 480px)
-            and (-webkit-min-device-pixel-ratio: 2) {
-                #donate_button {      
-                    margin-left: ;
-                    margin-top: ;
+        and (min-device-width: 375px) 
+        and (max-device-width: 667px) 
+        and (-webkit-min-device-pixel-ratio: 2) { 
+            .logo-margin img {
+                margin-left: 0em;
+            }
+
+            .links_margin_top {
+                margin-top: 1.0em;
+                font-size: 1.2em;
+                background-color: rgba(255, 255, 255, 0);
+                border: rgba(255, 255, 255, 0);
+                color: #ffffff;
+            }
+
+            #donate_button {
+                margin-top: 1.0em;
+                margin-left: 30em;
+                font-size: 1.2em;
+                background-color: #ffffff;
+                border: rgba(255, 255, 255, 0);
+                color: #676a6c;
             }
         }
+
         @media screen and (min-width: 768px){   
             .links_margin_top {
                 margin-top: 1.0em;

@@ -6,15 +6,51 @@
                     <div class="row">
                         <div class="col-lg-3">
                         </div>
-                        <%= form_tag(jobsearch_jobs_path, method: "get" )  %>
                         <div class="col-lg-5">
                             <div class="form-group">
-                                <%= text_field_tag :search, nil, placeholder: "Type in a keyword eg. Company name, Job Description", class: "form-control input-lg m-b" , required: true %>
+                                <input type="text" class="form-control input-lg m-b" placeholder="Type in a keyword eg. Company name, Job" />
+                            </div>
+                        </div> <!--
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <select class="form-control input-lg m-b">
+                                    <option>Select a job type</option>
+                                    <option>Accounting / Audit / Tax</option>
+                                    <option>Administration & Office Support</option>
+                                    <option>Agriculture/Farming</option>
+                                    <option>Banking / Finance / Insurance</option>
+                                    <option>Building Design/Architecture</option>
+                                    <option>Construction</option>
+                                    <option>Consulting/Business Strategy & Planning</option>
+                                    <option>Creatives(Arts, Design, Fashion)</option>
+                                    <option>Customer Service</option>
+                                    <option>Education/Teaching/Training</option>
+                                    <option>Engineering</option>
+                                    <option>Executive / Top Management</option>
+                                    <option>Healthcare / Pharmaceutical</option>
+                                    <option>Hospitality / Leisure / Travels</option>
+                                    <option>Human Resources</option>
+                                    <option>Information Technology</option>
+                                    <option>Legal</option>
+                                    <option>Logistics / Transportation</option>
+                                    <option>Manufacturing / Production</option>
+                                    <option>Marketing / Advertising / Communications</option>
+                                    <option>NGO/Community Services & Dev</option>
+                                    <option>Oil&Gas / Mining / Energy</option>
+                                    <option>Project / Programme Management</option>
+                                    <option>QA&QC / HSE</option>
+                                    <option>Real Estate / Property</option>
+                                    <option>Research</option>
+                                    <option>Sales/Business Development</option>
+                                    <option>Supply Chain / Procurement</option>
+                                    <option>Telecommunications</option>
+                                    <option>Vocational Trade and Services</option>
+                                </select>
                             </div>
                         </div> -->
                         <div class="col-lg-1">
                             <div class="form-group">
-                                <%= submit_tag("Search", :class => "btn btn-primary" , :style => "margin-top: 0.4em;")    %>
+                                <button type="submit" class="btn btn-primary" style="margin-top: 0.4em;">Search</button>
                             </div>
                         </div>
                         <div class="col-lg-3">
@@ -30,34 +66,31 @@
         </div>
         <div class="col-lg-10">
             <div class="ibox-content border-bottom text-center p-md">
-                <h4>New job updates</h4>
+                <h4>Your search results</h4>
             </div>
             <div class="ibox float-e-margins">
                 <div class="ibox-content border-bottom text-center p-md">
                     <div class="row">
-
-                    <% for group_job in @group_jobs%>
                         <div class="col-lg-3">
                             <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px; box-shadow: #f4f4f4 0px 2px 2px 2px;">
                                 <div class="ibox-title" style="background-color: #1ab394; color: #ffffff;">
-                                    <h5><%= group_job.try(:company_name)%></h5>
+                                    <h5>Ghalani</h5>
                                 </div>
                                 <div class="ibox-content">
                                     <div>
-                                        <%= group_job.try(:position)%>
+                                        Marketing and Sales Person
                                     </div>
                                     <br />
                                     <h4>Info</h4>
                                     <p>
-                                        <%= group_job.try(:job_description)%>
+                                        Will be selling the app to farmers and farm owners
                                     </p>
                                     <br />
 
                                 </div>
                             </div>
                         </div>
-                        <% end %>
-                        <%#<div class="col-lg-3">
+                        <div class="col-lg-3">
                             <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px; box-shadow: #f4f4f4 0px 2px 2px 2px;">
                                 <div class="ibox-title" style="background-color: #1ab394; color: #ffffff;">
                                     <h5>AF Radio</h5>
@@ -75,8 +108,8 @@
 
                                 </div>
                             </div>
-                        </div>%>
-                        <%#<div class="col-lg-3">
+                        </div>
+                        <div class="col-lg-3">
                             <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px; box-shadow: #f4f4f4 0px 2px 2px 2px;">
                                 <div class="ibox-title" style="background-color: #1ab394; color: #ffffff;">
                                     <h5>Hubtel</h5>
@@ -94,8 +127,8 @@
 
                                 </div>
                             </div>
-                        </div>%>
-                        <%#<div class="col-lg-3">
+                        </div>
+                        <div class="col-lg-3">
                             <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px; box-shadow: #f4f4f4 0px 2px 2px 2px;">
                                 <div class="ibox-title" style="background-color: #1ab394; color: #ffffff;">
                                     <h5>GT Bank</h5>
@@ -113,7 +146,7 @@
 
                                 </div>
                             </div>
-                        </div>%>
+                        </div>
                     </div>
                 </div>
             </div>

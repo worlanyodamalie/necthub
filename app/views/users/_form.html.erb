@@ -1,56 +1,82 @@
+<div class="row">
+        <div class="col-lg-3">
 
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content border-bottom text-center p-md">
+                    <h3>Editing my profile</h3>
+                </div>
+                <div class="ibox-content border-bottom p-md">
+                    <div class="row">
+                          <%= form_for(@user) do |f| %>
+                            <div class="col-lg-4">
+                                <div class="ibox-content border-bottom text-center p-md" style="background-color: #1ab394; color: #ffffff;">
+                                    <br />
+                                     <div class="form-group">
+                                          <h3><b>Upload Picture</b></h3>
+                                      <%= f.file_field :user_pic , :class => "form-control input-lg m-b" %>
+                                        </div>
+                                  <!--  <img src="http://res.cloudinary.com/necthub/image/upload/v1500854799/profile_hq1hjc.jpg" class="img-circle" style="border: 5px solid #ffffff" /> -->
+                                    <br />
+                                </div>
+                                <div class="ibox-content border-bottom text-center p-md" style="">
+                                  <a href="" class="btn btn-primary">Change Picture</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-1">
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="form-group">
+                                    <h3><b>First Name</b></h3>
+                                    <%= f.text_field :first_name, :class => "form-control input-lg m-b", autofocus: true  %>
+                                </div>
+                                <hr />
+                                <div class="form-group">
+                                    <h3><b>Last Name</b></h3>
+                                    <%= f.text_field :first_name, :class => "form-control input-lg m-b"  %>
+                                </div>
+                                <hr />
+                                <div class="form-group">
+                                    <h3><b>E-mail</b></h3>
+                                    <%= f.email_field :email, :class => "form-control input-lg m-b" %>
+                                </div>
+                                <hr />
+                                <div class="form-group">
+                                    <h3><b>Phone Number</b></h3>
+                                    <%= f.text_field :phone_number, :class => "form-control input-lg m-b" %>
+                                </div>
+                                <hr />
+                                <div class="form-group">
+                                    <h3><b>Profession</b></h3>
+                                    <%= f.text_field :profession, :class => "form-control input-lg m-b" %>
+                                </div>
+                                <hr />
+                                <div class="form-group">
+                                    <h3><b>Education</b></h3>
+                                    <%= f.text_field :education, :class => "form-control input-lg m-b" %>
+                                </div>
+                                <hr />
+                                <div class="form-group">
+                                    <h3><b>Skills</b></h3>
+                                    <%= f.text_field :skills, :class => "form-control input-lg m-b" %>
+                                </div>
+                                <hr />
+                                <br />
+                                <br />
+                                <br />
+                                <div class="">
+                                  <%= f.submit "Update", :class => "btn btn-primary" %>
+                                </div>
+                            <% end %>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            </div>
+        </div>
+    </div>
 
-<%= form_for(@user) do |f| %>
-
-   <%= f.file_field :user_pic  %>
-
-   <div class="field">
-    <p>Upload Picture </p>
-    <%= f.file_field :user_pic  %>
-  </div>
-
-
-  <div class="field">
-    <p>First Name </p>
-    <%= f.text_field :first_name  %>
-  </div>
-
-  <div class="field">
-    <p>Last Name </p>
-    <%= f.text_field :Last_name  %>
-  </div>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-   <div class="field">
-    <p> Phone Number  </p> <br />
-    <%= f.text_field :phone_number %>
-  </div>
-
-   <div class="field">
-    <p> Profession  </p> <br />
-    <%= f.text_field :profession %>
-  </div>
-
-   <div class="field">
-    <p> Education  </p> <br />
-    <%= f.text_field :education %>
-  </div>
-
-
-   <div class="field">
-    <p> Skills  </p> <br />
-    <%= f.text_field :skills %>
-  </div>
-
-
-  <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
-<% end %>
-
-
-
+</div>
