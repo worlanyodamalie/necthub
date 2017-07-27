@@ -29,7 +29,7 @@
                     <img alt="image" src="<%= image_url 'logo-mob1.png' %>"/>
                 </div>
             </li>
-            <li class="<%= is_active_controller('dashboards') %>">
+            <li class="<%= is_active_controller('organisations') %>">
                 <%= link_to dashboard_path do %>
                 <i class="fa fa-dashboard"></i> <span class="nav-label" data-i18n="nav.dashboard">Dashboard </span>
                 <% end %>
@@ -37,11 +37,6 @@
             <li class="<%= is_active_controller('membershipdata') %>">
                 <%= link_to membershipdata_path do %>
                 <i class="fa fa-user"></i> <span class="nav-label" data-i18n="nav.tables">Members </span>
-                <% end %>
-            </li>
-            <li class="<%= is_active_controller('tables') %>">
-                <%= link_to email_organisations_path do %>
-                <i class="fa fa-send"></i> <span class="nav-label" data-i18n="nav.tables">E-Mail </span>
                 <% end %>
             </li>
             <li class="<%= is_active_controller('tables') %>">
