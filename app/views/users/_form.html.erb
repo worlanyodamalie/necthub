@@ -2,6 +2,14 @@
 
 <%= form_for(@user) do |f| %>
 
+   <%= f.file_field :user_pic  %>
+
+   <div class="field">
+    <p>Upload Picture </p>
+    <%= f.file_field :user_pic  %>
+  </div>
+
+
   <div class="field">
     <p>First Name </p>
     <%= f.text_field :first_name  %>
