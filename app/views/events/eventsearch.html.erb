@@ -1,0 +1,85 @@
+<div class="row wrapper border-bottom page-heading">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content text-center p-md">
+                    <div class="row">
+                        <div class="col-lg-3">
+                        </div>
+                        <div class="col-lg-5">
+                         <%= form_tag(eventsearch_events_path, method: "get" )  %>
+                            <div class="form-group">
+                               <%= text_field_tag :search, nil, placeholder: "Type in a keyword eg. Event name, date", class: "form-control" , required: true %>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div class="form-group">
+                                 <%= submit_tag("Search", :class => "btn btn-primary" , :style => "margin-top: 0.4em;") %>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-7">
+            <div class="ibox-content border-bottom text-center p-md">
+                <h4>Your search results</h4>
+            </div>
+            <div class="ibox float-e-margins">
+                <div class="ibox-content border-bottom text-center p-md">
+                    <div class="row">
+                     <% @eventsearchs.each do |eventsearch| %>
+                        <div class="col-lg-4">
+                            <div class="ibox" style="border: 1px solid #f1e4e4;">
+                                <div class="ibox-title" style="background-color: #1ab394; color: #ffffff;">
+                                    <h5><%= eventsearch.event_name%></h5>
+                                </div>
+                                <div class="ibox-content">
+                                    <div><!-- Image here -->
+                                       <%= image_tag eventsearch.event_pic.nthumb.url if eventsearch.event_pic? %>
+                                    </div>
+                                    <div><!-- Image here -->
+                                        <%= eventsearch.event_date%>
+                                    </div>
+                                    <br />
+                                    <h4>Info</h4>
+                                    <p>
+                                        <%= eventsearch.event_type%>
+                                    </p>
+                                    <br />
+                                    <!-- Work on rsvp thingy -->
+                                </div>
+                            </div>
+                        </div>
+                      <% end %>
+
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content text-center p-md">
+                    Upcoming events
+                    <hr />
+                    <p align="left">Meet and greet for 2004 year group</p>
+                    <p align="left">Eating competition for MEST Alumni</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1">
+        </div>
+    </div>
+</div>
+
+
+
+

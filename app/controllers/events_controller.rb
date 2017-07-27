@@ -3,11 +3,21 @@ class EventsController < ApplicationController
 
   layout "organisations"
 
+  layout "users", :only => [:eventsearch]
+
   def index
     #byebug
     @events = current_organisation.events.all
 
     #@organisation = Event.new
+  end
+
+  def eventsearch
+    if params[:search].present?
+      @eventsearchs = Event.perform_search(params[:search])
+    else
+      redirect_to eventsearch_events_path,  notice: "No Search results available at the moment"
+    end
   end
 
   def new
