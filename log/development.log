@@ -1,0 +1,1120 @@
+Started GET "/groups" for 127.0.0.1 at 2017-07-27 15:24:05 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (1.2ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (3.8ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (40.2ms)
+Completed 200 OK in 2277ms (Views: 1987.2ms | ActiveRecord: 52.5ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2017-07-27 15:25:00 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (0.8ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.5ms)
+Completed 200 OK in 45ms (Views: 30.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 15:25:01 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/jobs.html.erb within layouts/users (3.7ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.4ms)
+Completed 200 OK in 91ms (Views: 26.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 15:25:03 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (1.0ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/jobs.html.erb within layouts/users (3.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (3.6ms)
+Completed 200 OK in 42ms (Views: 29.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 15:25:05 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/jobs.html.erb within layouts/users (2.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (6.7ms)
+Completed 200 OK in 40ms (Views: 26.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 15:25:06 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (31.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.2ms)
+Completed 200 OK in 110ms (Views: 54.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 15:33:03 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/jobs.html.erb within layouts/users (2.6ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (6.5ms)
+Completed 200 OK in 39ms (Views: 26.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 15:33:04 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (6.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (3.9ms)
+Completed 200 OK in 41ms (Views: 27.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 15:33:05 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (7.8ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (6.3ms)
+Completed 200 OK in 60ms (Views: 41.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 15:33:07 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (5.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (4.5ms)
+Completed 200 OK in 45ms (Views: 28.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 15:33:07 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (5.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (4.8ms)
+Completed 200 OK in 50ms (Views: 33.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 15:34:19 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (7.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (4.3ms)
+Completed 200 OK in 45ms (Views: 31.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 15:34:20 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (8.9ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (6.5ms)
+Completed 200 OK in 65ms (Views: 42.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 15:34:23 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/jobs.html.erb within layouts/users (3.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (4.6ms)
+Completed 200 OK in 35ms (Views: 23.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 15:34:40 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/jobs.html.erb within layouts/users (3.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (3.8ms)
+Completed 200 OK in 41ms (Views: 27.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 15:34:43 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (5.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (4.7ms)
+Completed 200 OK in 51ms (Views: 36.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 15:34:44 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (7.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.7ms)
+Completed 200 OK in 61ms (Views: 35.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/events/eventsearch?utf8=%E2%9C%93&search=true&commit=Search" for 127.0.0.1 at 2017-07-27 15:34:51 +0000
+Processing by EventsController#eventsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"true", "commit"=>"Search"}
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/eventsearch.html.erb within layouts/users
+  [1m[36mEvent Load (164.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN (SELECT "events"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("events"."event_name"::text, '')) || to_tsvector('simple', coalesce("events"."event_date"::text, ''))), (to_tsquery('simple', ''' ' || 'true' || ' ''' || ':*')), 2)) AS rank FROM "events" WHERE (((to_tsvector('simple', coalesce("events"."event_name"::text, '')) || to_tsvector('simple', coalesce("events"."event_date"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'true' || ' ''' || ':*'))))) AS pg_search_862417b9e7c3720bcb3263 ON "events"."id" = pg_search_862417b9e7c3720bcb3263.pg_search_id ORDER BY pg_search_862417b9e7c3720bcb3263.rank DESC, "events"."id" ASC, "events"."event_name" ASC[0m
+  Rendered events/eventsearch.html.erb within layouts/users (287.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.8ms)
+Completed 200 OK in 337ms (Views: 155.5ms | ActiveRecord: 165.6ms)
+
+
+Started GET "/events/eventsearch?utf8=%E2%9C%93&search=true&commit=Search" for 127.0.0.1 at 2017-07-27 15:35:19 +0000
+Processing by EventsController#eventsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"true", "commit"=>"Search"}
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/eventsearch.html.erb within layouts/users
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN (SELECT "events"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("events"."event_name"::text, '')) || to_tsvector('simple', coalesce("events"."event_date"::text, ''))), (to_tsquery('simple', ''' ' || 'true' || ' ''' || ':*')), 2)) AS rank FROM "events" WHERE (((to_tsvector('simple', coalesce("events"."event_name"::text, '')) || to_tsvector('simple', coalesce("events"."event_date"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'true' || ' ''' || ':*'))))) AS pg_search_862417b9e7c3720bcb3263 ON "events"."id" = pg_search_862417b9e7c3720bcb3263.pg_search_id ORDER BY pg_search_862417b9e7c3720bcb3263.rank DESC, "events"."id" ASC, "events"."event_name" ASC[0m
+  Rendered events/eventsearch.html.erb within layouts/users (4.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.6ms)
+Completed 200 OK in 55ms (Views: 34.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/events/eventsearch?utf8=%E2%9C%93&search=true&commit=Search" for 127.0.0.1 at 2017-07-27 15:35:53 +0000
+Processing by EventsController#eventsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"true", "commit"=>"Search"}
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/eventsearch.html.erb within layouts/users
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN (SELECT "events"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("events"."event_name"::text, '')) || to_tsvector('simple', coalesce("events"."event_date"::text, ''))), (to_tsquery('simple', ''' ' || 'true' || ' ''' || ':*')), 2)) AS rank FROM "events" WHERE (((to_tsvector('simple', coalesce("events"."event_name"::text, '')) || to_tsvector('simple', coalesce("events"."event_date"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'true' || ' ''' || ':*'))))) AS pg_search_862417b9e7c3720bcb3263 ON "events"."id" = pg_search_862417b9e7c3720bcb3263.pg_search_id ORDER BY pg_search_862417b9e7c3720bcb3263.rank DESC, "events"."id" ASC, "events"."event_name" ASC[0m
+  Rendered events/eventsearch.html.erb within layouts/users (4.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.2ms)
+Completed 200 OK in 45ms (Views: 26.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/events/eventsearch?utf8=%E2%9C%93&search=true&commit=Search" for 127.0.0.1 at 2017-07-27 15:35:54 +0000
+Processing by EventsController#eventsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"true", "commit"=>"Search"}
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/eventsearch.html.erb within layouts/users
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN (SELECT "events"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("events"."event_name"::text, '')) || to_tsvector('simple', coalesce("events"."event_date"::text, ''))), (to_tsquery('simple', ''' ' || 'true' || ' ''' || ':*')), 2)) AS rank FROM "events" WHERE (((to_tsvector('simple', coalesce("events"."event_name"::text, '')) || to_tsvector('simple', coalesce("events"."event_date"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'true' || ' ''' || ':*'))))) AS pg_search_862417b9e7c3720bcb3263 ON "events"."id" = pg_search_862417b9e7c3720bcb3263.pg_search_id ORDER BY pg_search_862417b9e7c3720bcb3263.rank DESC, "events"."id" ASC, "events"."event_name" ASC[0m
+  Rendered events/eventsearch.html.erb within layouts/users (4.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (4.6ms)
+Completed 200 OK in 43ms (Views: 26.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/events/eventsearch?utf8=%E2%9C%93&search=true&commit=Search" for 127.0.0.1 at 2017-07-27 15:37:14 +0000
+Processing by EventsController#eventsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"true", "commit"=>"Search"}
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/eventsearch.html.erb within layouts/users
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN (SELECT "events"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("events"."event_name"::text, '')) || to_tsvector('simple', coalesce("events"."event_date"::text, ''))), (to_tsquery('simple', ''' ' || 'true' || ' ''' || ':*')), 2)) AS rank FROM "events" WHERE (((to_tsvector('simple', coalesce("events"."event_name"::text, '')) || to_tsvector('simple', coalesce("events"."event_date"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'true' || ' ''' || ':*'))))) AS pg_search_862417b9e7c3720bcb3263 ON "events"."id" = pg_search_862417b9e7c3720bcb3263.pg_search_id ORDER BY pg_search_862417b9e7c3720bcb3263.rank DESC, "events"."id" ASC, "events"."event_name" ASC[0m
+  Rendered events/eventsearch.html.erb within layouts/users (5.2ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.2ms)
+Completed 200 OK in 66ms (Views: 38.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 15:40:00 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/jobs.html.erb within layouts/users (3.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.2ms)
+Completed 200 OK in 44ms (Views: 30.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/jobs/jobsearch?utf8=%E2%9C%93&search=boom&commit=Search" for 127.0.0.1 at 2017-07-27 15:40:04 +0000
+Processing by JobsController#jobsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"boom", "commit"=>"Search"}
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/jobsearch.html.erb within layouts/users
+  [1m[36mJob Load (1.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" INNER JOIN (SELECT "jobs"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("jobs"."company_name"::text, '')) || to_tsvector('simple', coalesce("jobs"."position"::text, ''))), (to_tsquery('simple', ''' ' || 'boom' || ' ''' || ':*')), 2)) AS rank FROM "jobs" WHERE (((to_tsvector('simple', coalesce("jobs"."company_name"::text, '')) || to_tsvector('simple', coalesce("jobs"."position"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'boom' || ' ''' || ':*'))))) AS pg_search_5d9a17cb70b9733aadc073 ON "jobs"."id" = pg_search_5d9a17cb70b9733aadc073.pg_search_id ORDER BY pg_search_5d9a17cb70b9733aadc073.rank DESC, "jobs"."id" ASC, "jobs"."company_name" ASC[0m
+  Rendered jobs/jobsearch.html.erb within layouts/users (3.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.7ms)
+Completed 200 OK in 55ms (Views: 33.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/jobs/jobsearch?utf8=%E2%9C%93&search=boom&commit=Search" for 127.0.0.1 at 2017-07-27 15:40:07 +0000
+Processing by JobsController#jobsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"boom", "commit"=>"Search"}
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/jobsearch.html.erb within layouts/users
+  [1m[36mJob Load (1.1ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" INNER JOIN (SELECT "jobs"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("jobs"."company_name"::text, '')) || to_tsvector('simple', coalesce("jobs"."position"::text, ''))), (to_tsquery('simple', ''' ' || 'boom' || ' ''' || ':*')), 2)) AS rank FROM "jobs" WHERE (((to_tsvector('simple', coalesce("jobs"."company_name"::text, '')) || to_tsvector('simple', coalesce("jobs"."position"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'boom' || ' ''' || ':*'))))) AS pg_search_5d9a17cb70b9733aadc073 ON "jobs"."id" = pg_search_5d9a17cb70b9733aadc073.pg_search_id ORDER BY pg_search_5d9a17cb70b9733aadc073.rank DESC, "jobs"."id" ASC, "jobs"."company_name" ASC[0m
+  Rendered jobs/jobsearch.html.erb within layouts/users (4.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (4.0ms)
+Completed 200 OK in 40ms (Views: 25.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-07-27 15:40:11 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/users
+  Rendered users/show.html.erb within layouts/users (2.0ms)
+  Rendered layouts/_usertopnavbar.html.erb (1.7ms)
+Completed 200 OK in 57ms (Views: 22.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2017-07-27 15:40:14 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/users
+  Rendered users/_form.html.erb (25.2ms)
+  Rendered users/edit.html.erb within layouts/users (34.4ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.4ms)
+Completed 200 OK in 69ms (Views: 56.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 15:40:17 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/jobs.html.erb within layouts/users (3.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (4.1ms)
+Completed 200 OK in 40ms (Views: 26.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 15:40:40 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/jobs.html.erb within layouts/users (2.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (3.5ms)
+Completed 200 OK in 39ms (Views: 25.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 15:40:41 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/jobs.html.erb within layouts/users (5.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (3.7ms)
+Completed 200 OK in 39ms (Views: 27.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2017-07-27 15:45:24 +0000
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 51ms (Views: 38.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-07-27 15:45:28 +0000
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 71ms (Views: 29.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/fundraisings" for 127.0.0.1 at 2017-07-27 15:45:36 +0000
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.6ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (29.5ms)
+  Rendered layouts/_navigation.html.erb (2.4ms)
+  Rendered layouts/_topnavbar.html.erb (1.2ms)
+Completed 200 OK in 118ms (Views: 58.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2017-07-27 15:45:38 +0000
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 35ms (Views: 22.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2017-07-27 15:45:40 +0000
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 30ms (Views: 19.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2017-07-27 15:45:41 +0000
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 25.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-07-27 15:45:48 +0000
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 59ms (Views: 38.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2017-07-27 15:49:27 +0000
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/index.html.erb within layouts/organisations (28.3ms)
+  Rendered layouts/_navigation.html.erb (3.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.8ms)
+Completed 200 OK in 103ms (Views: 71.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/membershipdata" for 127.0.0.1 at 2017-07-27 15:49:28 +0000
+Processing by MembershipdataController#index as HTML
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering membershipdata/index.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.3ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered membershipdata/index.html.erb within layouts/organisations (30.8ms)
+  Rendered layouts/_navigation.html.erb (4.4ms)
+  Rendered layouts/_topnavbar.html.erb (1.9ms)
+Completed 200 OK in 95ms (Views: 67.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/organisations/sms" for 127.0.0.1 at 2017-07-27 15:49:29 +0000
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.4ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (5.2ms)
+  Rendered layouts/_navigation.html.erb (2.6ms)
+  Rendered layouts/_topnavbar.html.erb (0.9ms)
+Completed 200 OK in 51ms (Views: 37.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/green.png" for 127.0.0.1 at 2017-07-27 15:49:29 +0000
+Started GET "/fundraisings" for 127.0.0.1 at 2017-07-27 15:49:30 +0000
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.4ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (7.4ms)
+  Rendered layouts/_navigation.html.erb (3.6ms)
+  Rendered layouts/_topnavbar.html.erb (1.2ms)
+Completed 200 OK in 54ms (Views: 42.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-07-27 15:49:32 +0000
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 59ms (Views: 34.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2017-07-27 15:49:37 +0000
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/index.html.erb within layouts/organisations (11.1ms)
+  Rendered layouts/_navigation.html.erb (3.0ms)
+  Rendered layouts/_topnavbar.html.erb (1.5ms)
+Completed 200 OK in 74ms (Views: 54.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/fundraisings" for 127.0.0.1 at 2017-07-27 15:49:40 +0000
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.5ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (5.9ms)
+  Rendered layouts/_navigation.html.erb (4.7ms)
+  Rendered layouts/_topnavbar.html.erb (1.3ms)
+Completed 200 OK in 50ms (Views: 38.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-07-27 15:49:41 +0000
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 36ms (Views: 23.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-07-27 15:49:48 +0000
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 35ms (Views: 21.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2017-07-27 15:49:50 +0000
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 30ms (Views: 19.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-07-27 15:49:53 +0000
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 30ms (Views: 19.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2017-07-27 15:49:57 +0000
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/index.html.erb within layouts/organisations (7.4ms)
+  Rendered layouts/_navigation.html.erb (2.0ms)
+  Rendered layouts/_topnavbar.html.erb (0.9ms)
+Completed 200 OK in 57ms (Views: 44.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/membershipdata" for 127.0.0.1 at 2017-07-27 15:49:58 +0000
+Processing by MembershipdataController#index as HTML
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering membershipdata/index.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.5ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered membershipdata/index.html.erb within layouts/organisations (4.8ms)
+  Rendered layouts/_navigation.html.erb (3.9ms)
+  Rendered layouts/_topnavbar.html.erb (1.0ms)
+Completed 200 OK in 54ms (Views: 41.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/organisations/sms" for 127.0.0.1 at 2017-07-27 15:49:58 +0000
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.3ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (5.6ms)
+  Rendered layouts/_navigation.html.erb (2.4ms)
+  Rendered layouts/_topnavbar.html.erb (2.3ms)
+Completed 200 OK in 56ms (Views: 44.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/green.png" for 127.0.0.1 at 2017-07-27 15:49:59 +0000
+Started GET "/fundraisings" for 127.0.0.1 at 2017-07-27 15:49:59 +0000
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (1.1ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.3ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (12.5ms)
+  Rendered layouts/_navigation.html.erb (2.9ms)
+  Rendered layouts/_topnavbar.html.erb (1.6ms)
+Completed 200 OK in 59ms (Views: 46.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-07-27 15:50:02 +0000
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 37ms (Views: 24.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-07-27 15:50:36 +0000
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (1.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 1599ms (Views: 1449.8ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/membershipdata" for 127.0.0.1 at 2017-07-27 15:50:41 +0000
+Processing by MembershipdataController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering membershipdata/index.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.5ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered membershipdata/index.html.erb within layouts/organisations (34.9ms)
+  Rendered layouts/_navigation.html.erb (4.2ms)
+  Rendered layouts/_topnavbar.html.erb (3.9ms)
+Completed 200 OK in 99ms (Views: 67.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/organisations/sms" for 127.0.0.1 at 2017-07-27 15:50:42 +0000
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (1.0ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (7.4ms)
+  Rendered layouts/_navigation.html.erb (3.1ms)
+  Rendered layouts/_topnavbar.html.erb (1.0ms)
+Completed 200 OK in 63ms (Views: 48.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/green.png" for 127.0.0.1 at 2017-07-27 15:50:43 +0000
+Started GET "/fundraisings" for 127.0.0.1 at 2017-07-27 15:50:46 +0000
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.5ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (34.9ms)
+  Rendered layouts/_navigation.html.erb (2.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.8ms)
+Completed 200 OK in 107ms (Views: 63.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-07-27 15:50:47 +0000
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 35ms (Views: 21.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2017-07-27 15:50:49 +0000
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 50ms (Views: 19.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2017-07-27 15:50:51 +0000
+Processing by GroupsController#new as HTML
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/new.html.erb within layouts/users
+  Rendered groups/new.html.erb within layouts/users (9.0ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (31.8ms)
+Completed 200 OK in 121ms (Views: 57.0ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2017-07-27 15:52:35 +0000
+Processing by GroupsController#new as HTML
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/new.html.erb within layouts/users
+  Rendered groups/new.html.erb within layouts/users (1.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (4.7ms)
+Completed 200 OK in 40ms (Views: 27.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/fundraisings" for 127.0.0.1 at 2017-07-27 15:52:37 +0000
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.5ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (6.6ms)
+  Rendered layouts/_navigation.html.erb (4.1ms)
+  Rendered layouts/_topnavbar.html.erb (1.3ms)
+Completed 200 OK in 48ms (Views: 36.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2017-07-27 15:52:39 +0000
+Processing by GroupsController#new as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/new.html.erb within layouts/users
+  Rendered groups/new.html.erb within layouts/users (2.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.6ms)
+Completed 200 OK in 51ms (Views: 36.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/fundraisings" for 127.0.0.1 at 2017-07-27 15:55:36 +0000
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.3ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (67.6ms)
+  Rendered layouts/_navigation.html.erb (2.4ms)
+  Rendered layouts/_topnavbar.html.erb (1.9ms)
+Completed 200 OK in 1697ms (Views: 1544.5ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-07-27 15:55:40 +0000
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (18.6ms)
+  Rendered layouts/_navigation.html.erb (2.2ms)
+  Rendered layouts/_topnavbar.html.erb (1.5ms)
+Completed 200 OK in 102ms (Views: 53.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2017-07-27 15:55:41 +0000
+Processing by GroupsController#new as HTML
+  [1m[36mOrganisation Load (1.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/new.html.erb within layouts/users
+  Rendered groups/new.html.erb within layouts/users (11.2ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (43.3ms)
+Completed 200 OK in 128ms (Views: 77.0ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2017-07-27 15:55:43 +0000
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (1.1ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 90ms (Views: 31.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2017-07-27 15:55:46 +0000
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 43ms (Views: 29.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/fundraisings" for 127.0.0.1 at 2017-07-27 15:55:47 +0000
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.4ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (6.6ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_topnavbar.html.erb (0.8ms)
+Completed 200 OK in 48ms (Views: 36.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/organisations/sms" for 127.0.0.1 at 2017-07-27 15:55:48 +0000
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.5ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (36.6ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_topnavbar.html.erb (1.2ms)
+Completed 200 OK in 96ms (Views: 64.7ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/green.png" for 127.0.0.1 at 2017-07-27 15:55:49 +0000
+Started GET "/membershipdata" for 127.0.0.1 at 2017-07-27 15:55:51 +0000
+Processing by MembershipdataController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering membershipdata/index.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.5ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered membershipdata/index.html.erb within layouts/organisations (8.8ms)
+  Rendered layouts/_navigation.html.erb (4.4ms)
+  Rendered layouts/_topnavbar.html.erb (1.1ms)
+Completed 200 OK in 77ms (Views: 57.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2017-07-27 15:55:52 +0000
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 34ms (Views: 21.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2017-07-27 15:56:06 +0000
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 44ms (Views: 25.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2017-07-27 15:56:20 +0000
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/organisations
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered jobs/index.html.erb within layouts/organisations (14.9ms)
+  Rendered layouts/_navigation.html.erb (2.3ms)
+  Rendered layouts/_topnavbar.html.erb (1.7ms)
+Completed 200 OK in 1580ms (Views: 1441.7ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/groups/new" for 127.0.0.1 at 2017-07-27 15:56:24 +0000
+Processing by GroupsController#new as HTML
+  [1m[36mOrganisation Load (1.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/new.html.erb within layouts/users
+  Rendered groups/new.html.erb within layouts/users (8.5ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (32.5ms)
+Completed 200 OK in 108ms (Views: 59.2ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-07-27 15:56:26 +0000
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (3.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered events/index.html.erb within layouts/organisations (30.6ms)
+  Rendered layouts/_navigation.html.erb (2.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.7ms)
+Completed 200 OK in 108ms (Views: 58.9ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/fundraisings" for 127.0.0.1 at 2017-07-27 15:56:27 +0000
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.4ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (34.9ms)
+  Rendered layouts/_navigation.html.erb (3.3ms)
+  Rendered layouts/_topnavbar.html.erb (1.0ms)
+Completed 200 OK in 113ms (Views: 67.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/organisations/sms" for 127.0.0.1 at 2017-07-27 15:56:28 +0000
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (1.1ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (30.4ms)
+  Rendered layouts/_navigation.html.erb (4.0ms)
+  Rendered layouts/_topnavbar.html.erb (2.2ms)
+Completed 200 OK in 98ms (Views: 65.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/green.png" for 127.0.0.1 at 2017-07-27 15:56:28 +0000
+Started GET "/membershipdata" for 127.0.0.1 at 2017-07-27 15:56:31 +0000
+Processing by MembershipdataController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering membershipdata/index.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.4ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered membershipdata/index.html.erb within layouts/organisations (4.6ms)
+  Rendered layouts/_navigation.html.erb (2.2ms)
+  Rendered layouts/_topnavbar.html.erb (1.2ms)
+Completed 200 OK in 53ms (Views: 38.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/organisations/sms" for 127.0.0.1 at 2017-07-27 15:56:54 +0000
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.4ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (3.4ms)
+  Rendered layouts/_navigation.html.erb (1.9ms)
+  Rendered layouts/_topnavbar.html.erb (0.9ms)
+Completed 200 OK in 44ms (Views: 31.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/green.png" for 127.0.0.1 at 2017-07-27 15:56:54 +0000
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 15:58:19 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (1.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/jobs.html.erb within layouts/users (7.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (6.6ms)
+Completed 200 OK in 67ms (Views: 44.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/groups/" for 127.0.0.1 at 2017-07-27 16:44:07 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (0.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.1ms)
+Completed 200 OK in 50ms (Views: 30.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/skillssearch" for 127.0.0.1 at 2017-07-27 17:44:10 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"skillssearch"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 6ms (ActiveRecord: 1.0ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find User with 'id'=skillssearch:
+  activerecord (5.0.4) lib/active_record/core.rb:173:in `find'
+  app/controllers/users_controller.rb:24:in `set_user'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:150:in `block (2 levels) in halting_and_conditional'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:454:in `block in call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:454:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.4) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.4) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.4) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/4d428202351bcf9d/variables" for 127.0.0.1 at 2017-07-27 17:44:11 +0000
+Started GET "/users/skillsearch" for 127.0.0.1 at 2017-07-27 17:44:33 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"skillsearch"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.9ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find User with 'id'=skillsearch:
+  activerecord (5.0.4) lib/active_record/core.rb:173:in `find'
+  app/controllers/users_controller.rb:24:in `set_user'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:150:in `block (2 levels) in halting_and_conditional'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:454:in `block in call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:454:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.4) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.4) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.4) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/81ad5476ed417376/variables" for 127.0.0.1 at 2017-07-27 17:44:33 +0000
+Started GET "/groups" for 127.0.0.1 at 2017-07-27 17:49:46 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (0.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (3.3ms)
+Completed 200 OK in 34ms (Views: 22.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2017-07-27 18:32:02 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (13.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (36.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (4.3ms)
+Completed 200 OK in 210ms (Views: 84.5ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2017-07-27 18:32:07 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (0.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (3.6ms)
+Completed 200 OK in 33ms (Views: 22.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2017-07-27 18:32:09 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (1.1ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (0.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.2ms)
+Completed 200 OK in 46ms (Views: 27.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2017-07-27 18:32:38 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (3.0ms)
+Completed 200 OK in 32ms (Views: 21.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2017-07-27 18:38:24 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (4.1ms)
+Completed 200 OK in 31ms (Views: 20.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2017-07-27 18:38:25 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (0.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.0ms)
+Completed 200 OK in 32ms (Views: 22.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2017-07-27 18:38:26 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (0.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (3.6ms)
+Completed 200 OK in 32ms (Views: 21.5ms | ActiveRecord: 1.1ms)
+
+

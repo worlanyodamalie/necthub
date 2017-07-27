@@ -1,9 +1,9 @@
 class EventsController < ApplicationController
   before_action :authenticate_organisation!
 
-  layout "organisations"
-
   layout "users", :only => [:eventsearch]
+
+  layout "organisations"
 
   def index
     #byebug
