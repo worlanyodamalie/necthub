@@ -9,6 +9,7 @@ devise :database_authenticatable, :registerable,
  has_many :groups
  has_many :organisations, through: :groups
 
+mount_uploader :user_pic,  UserPicUploader
 
 
   scope :sorted, ->{ order(skills: :asc) }
