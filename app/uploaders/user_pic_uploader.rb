@@ -1,4 +1,4 @@
-class EventPicUploader < CarrierWave::Uploader::Base
+class UserPicUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
@@ -30,8 +30,8 @@ class EventPicUploader < CarrierWave::Uploader::Base
   # end
 
   # Create different versions of your uploaded files:
-   version :nthumb do
-     process resize_to_fit: [350, 150]
+  version :uthumb do
+     process resize_to_fit: [100, 100]
    end
 
   # Add a white list of extensions which are allowed to be uploaded.

@@ -39,7 +39,7 @@
                 <i class="fa fa-user"></i> <span class="nav-label" data-i18n="nav.tables">Members </span>
                 <% end %>
             </li>
-            <li class="<%= is_active_controller('tables') %>">
+            <li class="<%= is_active_controller('sms') %>">
                 <%= link_to sms_organisations_path do %>
                 <i class="fa fa-envelope"></i> <span class="nav-label" data-i18n="nav.tables">Text Message</span>
                 <% end %>
@@ -62,6 +62,13 @@
                 <i class="fa fa-briefcase"></i> <span class="nav-label" data-i18n="nav.animations"> Jobs </span>
                 <% end %>
             </li>
+
+             <li class="<%= is_active_controller('announcements') %>">
+                <%= link_to announcements_path do %>
+                <i class="fa fa-briefcase"></i> <span class="nav-label" data-i18n="nav.animations"> Announcements </span>
+                <% end %>
+            </li>
+
 
              <li class="<%= is_active_controller('groups') %>">
                 <%= link_to new_group_path do %>

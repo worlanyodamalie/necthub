@@ -5,7 +5,7 @@ class GroupsController < ApplicationController
 
 
   def index
-
+     @group_announcements = current_organisation.announcements.all
   end
 
   def new
@@ -18,6 +18,10 @@ class GroupsController < ApplicationController
 
   def jobs
     @group_jobs = current_organisation.jobs.all
+  end
+
+  def skills
+    @group_skills = current_organisation.users.all
   end
 
 

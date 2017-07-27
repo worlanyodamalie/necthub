@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170726212038) do
+ActiveRecord::Schema.define(version: 20170727202948) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "announcements", force: :cascade do |t|
+    t.string   "title"
+    t.string   "description"
+    t.integer  "organisation_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["organisation_id"], name: "index_announcements_on_organisation_id", using: :btree
+  end
 
   create_table "events", force: :cascade do |t|
     t.string   "event_name"
@@ -91,15 +100,6 @@ ActiveRecord::Schema.define(version: 20170726212038) do
     t.index ["reset_password_token"], name: "index_organisations_on_reset_password_token", unique: true, using: :btree
   end
 
-  create_table "sessions", force: :cascade do |t|
-    t.string   "session_id", null: false
-    t.text     "data"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.index ["session_id"], name: "index_sessions_on_session_id", unique: true, using: :btree
-    t.index ["updated_at"], name: "index_sessions_on_updated_at", using: :btree
-  end
-
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -114,20 +114,19 @@ ActiveRecord::Schema.define(version: 20170726212038) do
     t.string   "first_name"
     t.string   "Last_name"
     t.string   "organisation_name"
-    t.integer  "organisation_id"
-    t.integer  "group_id"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.string   "phone_number"
     t.string   "profession"
     t.string   "education"
     t.string   "skills"
+    t.string   "user_pic"
+    t.string   "YearGroup"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
-    t.index ["group_id"], name: "index_users_on_group_id", using: :btree
-    t.index ["organisation_id"], name: "index_users_on_organisation_id", using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "announcements", "organisations"
   add_foreign_key "events", "organisations"
   add_foreign_key "fundraisings", "organisations"
   add_foreign_key "groups", "organisations"

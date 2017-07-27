@@ -4,10 +4,22 @@ class UsersController < ApplicationController
 
   layout "users"
 
+  #layout "users", :only => [:skillsearch]
+
+
+
   def index
   end
 
   def edit
+  end
+
+  def skillsearch
+     if params[:search].present?
+      @skillsearchs = User.perform_search(params[:search])
+    else
+      redirect_to skillsearch_users_path,  notice: "No Search results available at the moment"
+    end
   end
 
   def update
@@ -25,6 +37,6 @@ class UsersController < ApplicationController
    end
 
    def user_params
-      params.require(:user).permit(:first_name,:Last_name,:organisation_name,:email,:phone_number,:profession,:education,:skills)
+      params.require(:user).permit(:first_name,:Last_name,:organisation_name,:email,:phone_number,:profession,:education,:skills,:user_pic,:YearGroup)
    end
 end

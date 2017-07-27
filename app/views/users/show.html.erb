@@ -15,7 +15,7 @@
 
     <div class="row">
         <div class="col-lg-3">
-            
+
         </div>
         <div class="col-lg-6">
             <div class="ibox float-e-margins">
@@ -34,7 +34,8 @@
                             <div class="col-lg-4">
                                 <div class="ibox-content border-bottom text-center p-md" style="background-color: #1ab394; color: #ffffff;">
                                     <br />
-                                    <img src="http://res.cloudinary.com/necthub/image/upload/v1500854799/profile_hq1hjc.jpg" class="img-circle" style="border: 5px solid #ffffff" />
+                                    <%= image_tag @user.user_pic.uthumb.url if @user.user_pic? %>
+                           <!--   <img src="http://res.cloudinary.com/necthub/image/upload/v1500854799/profile_hq1hjc.jpg" class="img-circle" style="border: 5px solid #ffffff" /> -->
                                     <br />
                                 </div>
                             </div>
@@ -75,7 +76,13 @@
                                     <h3><b>Skills</b></h3>
                                     <p><%= @user.skills  %>  </p>
                                 </div>
+
                                 <hr />
+                                 <div class="">
+                                    <h3><b>Year Group</b></h3>
+                                    <p><%= @user.YearGroup  %>  </p>
+                                </div>
+
                                 <br />
                                 <br />
                                 <br />
