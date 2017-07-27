@@ -2727,3 +2727,102 @@ FOREIGN KEY ("organisation_id")
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2310131145680354640)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/groups/" for 127.0.0.1 at 2017-07-27 21:34:46 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  [1m[36mAnnouncement Load (0.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/index.html.erb within layouts/users (5.7ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (25.8ms)
+Completed 200 OK in 4060ms (Views: 3891.0ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/groups/" for 127.0.0.1 at 2017-07-27 21:35:36 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (1.2ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  [1m[36mAnnouncement Load (0.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/index.html.erb within layouts/users (2.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (5.4ms)
+Completed 200 OK in 60ms (Views: 32.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/groups/" for 127.0.0.1 at 2017-07-27 21:35:39 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  [1m[36mAnnouncement Load (0.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/index.html.erb within layouts/users (3.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (4.2ms)
+Completed 200 OK in 46ms (Views: 28.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 21:35:40 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/jobs.html.erb within layouts/users (3.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (3.2ms)
+Completed 200 OK in 52ms (Views: 24.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 21:35:41 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (34.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (6.2ms)
+Completed 200 OK in 155ms (Views: 61.3ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 21:35:43 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (5.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (3.5ms)
+Completed 200 OK in 44ms (Views: 29.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 21:35:53 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (4.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (3.1ms)
+Completed 200 OK in 38ms (Views: 24.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 21:37:58 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (7.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (3.4ms)
+Completed 200 OK in 45ms (Views: 30.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 21:38:04 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (9.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (4.7ms)
+Completed 200 OK in 58ms (Views: 39.2ms | ActiveRecord: 2.0ms)
+
+
