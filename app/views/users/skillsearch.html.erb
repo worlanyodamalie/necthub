@@ -6,14 +6,16 @@
                     <div class="row">
                         <div class="col-lg-3">
                         </div>
+                         <%= form_tag(skillsearch_users_path, method: "get" )  %>
                         <div class="col-lg-5">
                             <div class="form-group">
-                                <input type="text" class="form-control input-lg m-b" placeholder="Search for a skill, profession, work experience or education eg. MEST" />
+                            <%= text_field_tag :search, nil, placeholder: "Search for a skill, profession, work experience or education eg. MEST", class: "form-control" , required: true %>
+
                             </div>
                         </div>
                         <div class="col-lg-1">
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary" style="margin-top: 0.4em;">Search</button>
+                                <%= submit_tag("Search", :class => "btn btn-primary" , :style => "margin-top: 0.4em;")    %>
                             </div>
                         </div>
                         <div class="col-lg-3">
@@ -34,6 +36,7 @@
             <div class="ibox float-e-margins">
                 <div class="ibox-content border-bottom text-center p-md">
                     <div class="row">
+                    <% @skillsearchs.each do |skillsearch|%>
                         <div class="col-lg-3">
                             <div class="ibox float-e-margins">
                                 <div class="ibox-content border-bottom text-center p-md" style="background-color: #1ab394; color: #ffffff; border: 1px solid #f1e4e4; box-shadow: #f4f4f4 0px 2px 2px 2px;">
@@ -42,62 +45,17 @@
                                     <br />
                                 </div>
                                 <div class="ibox-content border-bottom text-center p-md" style="border: 1px solid #f1e4e4;  box-shadow: #f4f4f4 0px 2px 2px 2px;">
-                                    Chris Bimpong
+                                    <%= skillsearch.first_name %> <br> <%= skillsearch.Last_name %>
                                 <hr />
-                                    Entrepreneur
+                                    <%= skillsearch.skills %>
                                 <hr />
-                                    MEST
+                                    <%= skillsearch.education %>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-content border-bottom text-center p-md" style="background-color: #1ab394; color: #ffffff; border: 1px solid #f1e4e4; box-shadow: #f4f4f4 0px 2px 2px 2px;">
-                                    <br />
-                                    <img src="http://res.cloudinary.com/necthub/image/upload/v1500854799/profile_hq1hjc.jpg" class="img-circle" style="border: 5px solid #ffffff" />
-                                    <br />
-                                </div>
-                                <div class="ibox-content border-bottom text-center p-md" style="border: 1px solid #f1e4e4;  box-shadow: #f4f4f4 0px 2px 2px 2px;">
-                                    Chris Bimpong
-                                <hr />
-                                    Entrepreneur
-                                <hr />
-                                    MEST
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-content border-bottom text-center p-md" style="background-color: #1ab394; color: #ffffff; border: 1px solid #f1e4e4; box-shadow: #f4f4f4 0px 2px 2px 2px;">
-                                    <br />
-                                    <img src="http://res.cloudinary.com/necthub/image/upload/v1500854799/profile_hq1hjc.jpg" class="img-circle" style="border: 5px solid #ffffff" />
-                                    <br />
-                                </div>
-                                <div class="ibox-content border-bottom text-center p-md" style="border: 1px solid #f1e4e4;  box-shadow: #f4f4f4 0px 2px 2px 2px;">
-                                    Chris Bimpong
-                                <hr />
-                                    Entrepreneur
-                                <hr />
-                                    MEST
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-content border-bottom text-center p-md" style="background-color: #1ab394; color: #ffffff; border: 1px solid #f1e4e4; box-shadow: #f4f4f4 0px 2px 2px 2px;">
-                                    <br />
-                                    <img src="http://res.cloudinary.com/necthub/image/upload/v1500854799/profile_hq1hjc.jpg" class="img-circle" style="border: 5px solid #ffffff" />
-                                    <br />
-                                </div>
-                                <div class="ibox-content border-bottom text-center p-md" style="border: 1px solid #f1e4e4;  box-shadow: #f4f4f4 0px 2px 2px 2px;">
-                                    Chris Bimpong
-                                <hr />
-                                    Entrepreneur
-                                <hr />
-                                    MEST
-                                </div>
-                            </div>
-                        </div>
+                        <% end %>
+
+
                     </div>
                 </div>
             </div>
