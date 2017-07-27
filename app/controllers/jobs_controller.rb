@@ -12,15 +12,15 @@ class JobsController < ApplicationController
     @job = Job.new
   end
 
-   def create
+  def create
 
     @job = current_organisation.jobs.build(job_params)
     if @job.save
       #flash[:notice] = "Added event successfully"
-      render 'index'
+      redirect_to jobs_path
     else
       #flash[:alert] = "Event not added"
-      render 'new'
+      redirect_to new_job_path
       end
   end
 

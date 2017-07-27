@@ -29,6 +29,11 @@
     <%= f.email_field :email, autofocus: true %>
   </div>
 
+   <div class="field">
+    <p>Phone Number </p>
+    <%= f.text_field :phone_number  %>
+  </div>
+
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
