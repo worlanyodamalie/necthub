@@ -1,0 +1,312 @@
+Started GET "/groups" for 127.0.0.1 at 2017-07-27 10:26:26 +0000
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (1.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  Rendered groups/index.html.erb within layouts/users (5.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (22.6ms)
+Completed 200 OK in 3118ms (Views: 2763.5ms | ActiveRecord: 62.6ms)
+
+
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 10:26:43 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 14.5ms)
+
+
+
+PG::UndefinedTable - ERROR:  relation "jobs" does not exist
+LINE 8:                WHERE a.attrelid = '"jobs"'::regclass
+                                          ^
+:
+  activerecord (5.0.4) lib/active_record/connection_adapters/postgresql/database_statements.rb:88:in `block in query'
+  activerecord (5.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:590:in `block in log'
+  activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activerecord (5.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:583:in `log'
+  activerecord (5.0.4) lib/active_record/connection_adapters/postgresql/database_statements.rb:87:in `query'
+  activerecord (5.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:739:in `column_definitions'
+  activerecord (5.0.4) lib/active_record/connection_adapters/postgresql/schema_statements.rb:227:in `columns'
+  activerecord (5.0.4) lib/active_record/connection_adapters/schema_cache.rb:56:in `columns'
+  activerecord (5.0.4) lib/active_record/connection_adapters/schema_cache.rb:62:in `columns_hash'
+  activerecord (5.0.4) lib/active_record/model_schema.rb:462:in `load_schema!'
+  activerecord (5.0.4) lib/active_record/attributes.rb:233:in `load_schema!'
+  activerecord (5.0.4) lib/active_record/attribute_decorators.rb:28:in `load_schema!'
+  activerecord (5.0.4) lib/active_record/model_schema.rb:455:in `block in load_schema'
+  /home/kwame/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (5.0.4) lib/active_record/model_schema.rb:452:in `load_schema'
+  activerecord (5.0.4) lib/active_record/model_schema.rb:353:in `attribute_types'
+  activerecord (5.0.4) lib/active_record/model_schema.rb:372:in `type_for_attribute'
+  activerecord (5.0.4) lib/active_record/table_metadata.rb:34:in `type'
+  activerecord (5.0.4) lib/active_record/relation/predicate_builder.rb:165:in `build_bind_param'
+  activerecord (5.0.4) lib/active_record/relation/predicate_builder.rb:124:in `block in create_binds_for_hash'
+  activerecord (5.0.4) lib/active_record/relation/predicate_builder.rb:100:in `create_binds_for_hash'
+  activerecord (5.0.4) lib/active_record/relation/predicate_builder.rb:103:in `block in create_binds_for_hash'
+  activerecord (5.0.4) lib/active_record/relation/predicate_builder.rb:100:in `create_binds_for_hash'
+  activerecord (5.0.4) lib/active_record/relation/predicate_builder.rb:36:in `create_binds'
+  activerecord (5.0.4) lib/active_record/relation/where_clause_factory.rb:20:in `build'
+  activerecord (5.0.4) lib/active_record/relation/query_methods.rb:632:in `where!'
+  activerecord (5.0.4) lib/active_record/relation/query_methods.rb:625:in `where'
+  activerecord (5.0.4) lib/active_record/associations/association_scope.rb:67:in `last_chain_scope'
+  activerecord (5.0.4) lib/active_record/associations/association_scope.rb:124:in `add_constraints'
+  activerecord (5.0.4) lib/active_record/associations/association_scope.rb:28:in `scope'
+  activerecord (5.0.4) lib/active_record/associations/association_scope.rb:5:in `scope'
+  activerecord (5.0.4) lib/active_record/associations/association.rb:97:in `association_scope'
+  activerecord (5.0.4) lib/active_record/associations/association.rb:86:in `scope'
+  activerecord (5.0.4) lib/active_record/associations/collection_association.rb:426:in `scope'
+  activerecord (5.0.4) lib/active_record/associations/collection_proxy.rb:907:in `scope'
+  activerecord (5.0.4) lib/active_record/associations/collection_proxy.rb:1078:in `scoping'
+  activerecord (5.0.4) lib/active_record/relation/delegation.rb:89:in `method_missing'
+  app/controllers/groups_controller.rb:20:in `jobs'
+  actionpack (5.0.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.4) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.4) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.4) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/d9fa112c0af9fd23/variables" for 127.0.0.1 at 2017-07-27 10:26:43 +0000
+Started GET "/groups/events" for 127.0.0.1 at 2017-07-27 10:27:06 +0000
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/events.html.erb within layouts/users (39.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (3.9ms)
+Completed 200 OK in 141ms (Views: 65.5ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 10:27:07 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 4.4ms)
+
+
+
+PG::UndefinedTable - ERROR:  relation "jobs" does not exist
+LINE 8:                WHERE a.attrelid = '"jobs"'::regclass
+                                          ^
+:
+  activerecord (5.0.4) lib/active_record/connection_adapters/postgresql/database_statements.rb:88:in `block in query'
+  activerecord (5.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:590:in `block in log'
+  activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activerecord (5.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:583:in `log'
+  activerecord (5.0.4) lib/active_record/connection_adapters/postgresql/database_statements.rb:87:in `query'
+  activerecord (5.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:739:in `column_definitions'
+  activerecord (5.0.4) lib/active_record/connection_adapters/postgresql/schema_statements.rb:227:in `columns'
+  activerecord (5.0.4) lib/active_record/connection_adapters/schema_cache.rb:56:in `columns'
+  activerecord (5.0.4) lib/active_record/connection_adapters/schema_cache.rb:62:in `columns_hash'
+  activerecord (5.0.4) lib/active_record/model_schema.rb:462:in `load_schema!'
+  activerecord (5.0.4) lib/active_record/attributes.rb:233:in `load_schema!'
+  activerecord (5.0.4) lib/active_record/attribute_decorators.rb:28:in `load_schema!'
+  activerecord (5.0.4) lib/active_record/model_schema.rb:455:in `block in load_schema'
+  /home/kwame/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (5.0.4) lib/active_record/model_schema.rb:452:in `load_schema'
+  activerecord (5.0.4) lib/active_record/model_schema.rb:353:in `attribute_types'
+  activerecord (5.0.4) lib/active_record/model_schema.rb:372:in `type_for_attribute'
+  activerecord (5.0.4) lib/active_record/table_metadata.rb:34:in `type'
+  activerecord (5.0.4) lib/active_record/relation/predicate_builder.rb:165:in `build_bind_param'
+  activerecord (5.0.4) lib/active_record/relation/predicate_builder.rb:124:in `block in create_binds_for_hash'
+  activerecord (5.0.4) lib/active_record/relation/predicate_builder.rb:100:in `create_binds_for_hash'
+  activerecord (5.0.4) lib/active_record/relation/predicate_builder.rb:103:in `block in create_binds_for_hash'
+  activerecord (5.0.4) lib/active_record/relation/predicate_builder.rb:100:in `create_binds_for_hash'
+  activerecord (5.0.4) lib/active_record/relation/predicate_builder.rb:36:in `create_binds'
+  activerecord (5.0.4) lib/active_record/relation/where_clause_factory.rb:20:in `build'
+  activerecord (5.0.4) lib/active_record/relation/query_methods.rb:632:in `where!'
+  activerecord (5.0.4) lib/active_record/relation/query_methods.rb:625:in `where'
+  activerecord (5.0.4) lib/active_record/associations/association_scope.rb:67:in `last_chain_scope'
+  activerecord (5.0.4) lib/active_record/associations/association_scope.rb:124:in `add_constraints'
+  activerecord (5.0.4) lib/active_record/associations/association_scope.rb:28:in `scope'
+  activerecord (5.0.4) lib/active_record/associations/association_scope.rb:5:in `scope'
+  activerecord (5.0.4) lib/active_record/associations/association.rb:97:in `association_scope'
+  activerecord (5.0.4) lib/active_record/associations/association.rb:86:in `scope'
+  activerecord (5.0.4) lib/active_record/associations/collection_association.rb:426:in `scope'
+  activerecord (5.0.4) lib/active_record/associations/collection_proxy.rb:907:in `scope'
+  activerecord (5.0.4) lib/active_record/associations/collection_proxy.rb:1078:in `scoping'
+  activerecord (5.0.4) lib/active_record/relation/delegation.rb:65:in `all'
+  app/controllers/groups_controller.rb:20:in `jobs'
+  actionpack (5.0.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.4) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.4) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.4) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/2aad30a7e549b5b7/variables" for 127.0.0.1 at 2017-07-27 10:27:08 +0000
+  [1m[35m (9.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2310131145680354640);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (46.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddIdsToGroups (20170726133613)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (122.7ms)[0m  [1m[35mALTER TABLE "groups" ADD "user_id" integer[0m
+  [1m[35m (135.1ms)[0m  [1m[35mCREATE  INDEX  "index_groups_on_user_id" ON "groups"  ("user_id")[0m
+  [1m[35m (187.3ms)[0m  [1m[35mALTER TABLE "groups" ADD CONSTRAINT "fk_rails_5e78cd340a"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "groups" ADD "organisation_id" integer[0m
+  [1m[35m (49.8ms)[0m  [1m[35mCREATE  INDEX  "index_groups_on_organisation_id" ON "groups"  ("organisation_id")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "groups" ADD CONSTRAINT "fk_rails_32205fdfff"
+FOREIGN KEY ("organisation_id")
+  REFERENCES "organisations" ("id")
+[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170726133613"]]
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJobs (20170726162615)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (215.0ms)[0m  [1m[35mCREATE TABLE "jobs" ("id" serial primary key, "company_name" character varying, "position" character varying, "job_description" character varying, "organisation_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c6374488d9"
+FOREIGN KEY ("organisation_id")
+  REFERENCES "organisations" ("id")
+)[0m
+  [1m[35m (40.9ms)[0m  [1m[35mCREATE  INDEX  "index_jobs_on_organisation_id" ON "jobs"  ("organisation_id")[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170726162615"]]
+  [1m[35m (11.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddFieldsToUsers (20170726212038)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (20.5ms)[0m  [1m[35mALTER TABLE "users" ADD "phone_number" character varying[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "profession" character varying[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "education" character varying[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "skills" character varying[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170726212038"]]
+  [1m[35m (15.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (25.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2310131145680354640)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/groups/jobs" for 127.0.0.1 at 2017-07-27 10:28:05 +0000
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered groups/jobs.html.erb within layouts/users (5.4ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (26.6ms)
+Completed 200 OK in 1616ms (Views: 1468.2ms | ActiveRecord: 17.0ms)
+
+
