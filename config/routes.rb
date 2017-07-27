@@ -1,11 +1,6 @@
 Rails.application.routes.draw do
 
 
-
-  # get 'jobs/new'
-
-  # get 'jobs/index'
-
   devise_for :organisations, path: 'organisations' , :controllers => { registrations: "registrations" }
 
   devise_for :users, path: 'users' , :controllers => { registration: "signups" }
@@ -26,7 +21,11 @@ Rails.application.routes.draw do
   end
 
 
-  resources :events
+  resources :events do
+    collection do
+      get :eventsearch
+    end
+  end
 
   # resources :users,
 
@@ -34,16 +33,21 @@ Rails.application.routes.draw do
   #  get '/user', to: 'users#show'
   # get '/users/:id', to: 'users#show'
 
-  resources :jobs
+  resources :jobs do
+    collection do
+      get :jobsearch
+    end
+  end
 
   resources :groups do
      collection do
       get :events
+
       get :jobs
-      get :profile
+
       get :skills
+
       get :fundraising
-      get :skillsearch
       end
   end
 

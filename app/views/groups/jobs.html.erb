@@ -4,56 +4,20 @@
             <div class="ibox float-e-margins">
                 <div class="ibox-content text-center p-md">
                     <div class="row">
-                        <div class="col-lg-1">
+                        <div class="col-lg-3">
                         </div>
+                        <%= form_tag(jobsearch_jobs_path, method: "get" )  %>
                         <div class="col-lg-5">
                             <div class="form-group">
-                                <input type="text" class="form-control input-lg m-b" placeholder="Type in a keyword eg. Company name, Job" />
+                                <%= text_field_tag :search, nil, placeholder: "Type in a keyword eg. Company name, Job Description", class: "form-control" , required: true %>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div class="form-group">
+                                <%= submit_tag("Search", :class => "btn btn-primary" , :style => "margin-top: 0.4em;")    %>
                             </div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="form-group">
-                                <select class="form-control input-lg m-b">
-                                    <option>Select a job type</option>
-                                    <option>Accounting / Audit / Tax</option>
-                                    <option>Administration & Office Support</option>
-                                    <option>Agriculture/Farming</option>
-                                    <option>Banking / Finance / Insurance</option>
-                                    <option>Building Design/Architecture</option>
-                                    <option>Construction</option>
-                                    <option>Consulting/Business Strategy & Planning</option>
-                                    <option>Creatives(Arts, Design, Fashion)</option>
-                                    <option>Customer Service</option>
-                                    <option>Education/Teaching/Training</option>
-                                    <option>Engineering</option>
-                                    <option>Executive / Top Management</option>
-                                    <option>Healthcare / Pharmaceutical</option>
-                                    <option>Hospitality / Leisure / Travels</option>
-                                    <option>Human Resources</option>
-                                    <option>Information Technology</option>
-                                    <option>Legal</option>
-                                    <option>Logistics / Transportation</option>
-                                    <option>Manufacturing / Production</option>
-                                    <option>Marketing / Advertising / Communications</option>
-                                    <option>NGO/Community Services & Dev</option>
-                                    <option>Oil&Gas / Mining / Energy</option>
-                                    <option>Project / Programme Management</option>
-                                    <option>QA&QC / HSE</option>
-                                    <option>Real Estate / Property</option>
-                                    <option>Research</option>
-                                    <option>Sales/Business Development</option>
-                                    <option>Supply Chain / Procurement</option>
-                                    <option>Telecommunications</option>
-                                    <option>Vocational Trade and Services</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-1">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary" style="margin-top: 0.4em;">Search</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
                         </div>
                     </div>
                 </div>

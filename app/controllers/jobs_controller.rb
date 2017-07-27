@@ -3,10 +3,19 @@ class JobsController < ApplicationController
 
   layout "organisations"
 
+  layout "users", :only => [:jobsearch]
+
   def index
     @jobs = current_organisation.jobs.all
   end
 
+   def jobsearch
+    if params[:search].present?
+      @jobsearchs = Job.perform_search(params[:search])
+    else
+      redirect_to jobsearch_jobs_path,  notice: "No Search results available at the moment"
+    end
+  end
 
   def new
     @job = Job.new
