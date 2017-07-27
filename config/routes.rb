@@ -2,9 +2,9 @@ Rails.application.routes.draw do
 
 
 
-  get 'jobs/new'
+  # get 'jobs/new'
 
-  get 'jobs/index'
+  # get 'jobs/index'
 
   devise_for :organisations, path: 'organisations' , :controllers => { registrations: "registrations" }
 
@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
   get '/home', to: 'static_pages#home'
-  get '/user', to: 'static_pages#user'
+
 
   resources :membershipdata do
     collection do
@@ -28,7 +28,11 @@ Rails.application.routes.draw do
 
   resources :events
 
-  resources :users
+  # resources :users,
+
+  resources :users, :path_names => { :show => 'user'} ,  only: [:show, :edit, :update]
+  #  get '/user', to: 'users#show'
+  # get '/users/:id', to: 'users#show'
 
   resources :jobs
 
@@ -65,7 +69,6 @@ Rails.application.routes.draw do
 
 
     resources :groups
-    resources :users
 
 
   end
