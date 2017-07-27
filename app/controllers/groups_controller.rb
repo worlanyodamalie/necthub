@@ -20,6 +20,10 @@ class GroupsController < ApplicationController
     @group_jobs = current_organisation.jobs.all
   end
 
+  def skills
+    @group_skills = current_organisation.users.all
+  end
+
 
   def create
     @group = current_organisation.groups.build(group_params)

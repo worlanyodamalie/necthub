@@ -16,9 +16,9 @@ mount_uploader :user_pic,  UserPicUploader
 
   pg_search_scope :search,
                   against: [
-                    :profession,
+                    :education,
                     :skills,
-                    :education
+
                   ],
                   using: {
                     tsearch: {

@@ -36,70 +36,28 @@
             <div class="ibox float-e-margins">
                 <div class="ibox-content border-bottom text-center p-md">
                     <div class="row">
+                    <%   for group_skill in   @group_skills do  %>
                         <div class="col-lg-3">
                             <div class="ibox float-e-margins">
                                 <div class="ibox-content border-bottom text-center p-md" style="background-color: #1ab394; color: #ffffff; border: 1px solid #f1e4e4; box-shadow: #f4f4f4 0px 2px 2px 2px;">
                                     <br />
-                                    <img src="http://res.cloudinary.com/necthub/image/upload/v1500854799/profile_hq1hjc.jpg" class="img-circle" style="border: 5px solid #ffffff" />
+                                    <%= image_tag group_skill.user_pic.uthumb.url if group_skill.user_pic? %>
+                                   <!-- <img src="http://res.cloudinary.com/necthub/image/upload/v1500854799/profile_hq1hjc.jpg" class="img-circle" style="border: 5px solid #ffffff" /> -->
                                     <br />
                                 </div>
                                 <div class="ibox-content border-bottom text-center p-md" style="border: 1px solid #f1e4e4;  box-shadow: #f4f4f4 0px 2px 2px 2px;">
-                                    Chris Bimpong
+                                    <%= group_skill.try(:first_name)%> <%= group_skill.try(:Last_name)%>
+
                                 <hr />
-                                    Entrepreneur
+                                     <%= group_skill.try(:skills) %>
                                 <hr />
-                                    MEST
+                                   <%= group_skill.try(:education) %>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-content border-bottom text-center p-md" style="background-color: #1ab394; color: #ffffff; border: 1px solid #f1e4e4; box-shadow: #f4f4f4 0px 2px 2px 2px;">
-                                    <br />
-                                    <img src="http://res.cloudinary.com/necthub/image/upload/v1500854799/profile_hq1hjc.jpg" class="img-circle" style="border: 5px solid #ffffff" />
-                                    <br />
-                                </div>
-                                <div class="ibox-content border-bottom text-center p-md" style="border: 1px solid #f1e4e4;  box-shadow: #f4f4f4 0px 2px 2px 2px;">
-                                    Chris Bimpong
-                                <hr />
-                                    Entrepreneur
-                                <hr />
-                                    MEST
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-content border-bottom text-center p-md" style="background-color: #1ab394; color: #ffffff; border: 1px solid #f1e4e4; box-shadow: #f4f4f4 0px 2px 2px 2px;">
-                                    <br />
-                                    <img src="http://res.cloudinary.com/necthub/image/upload/v1500854799/profile_hq1hjc.jpg" class="img-circle" style="border: 5px solid #ffffff" />
-                                    <br />
-                                </div>
-                                <div class="ibox-content border-bottom text-center p-md" style="border: 1px solid #f1e4e4;  box-shadow: #f4f4f4 0px 2px 2px 2px;">
-                                    Chris Bimpong
-                                <hr />
-                                    Entrepreneur
-                                <hr />
-                                    MEST
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-content border-bottom text-center p-md" style="background-color: #1ab394; color: #ffffff; border: 1px solid #f1e4e4; box-shadow: #f4f4f4 0px 2px 2px 2px;">
-                                    <br />
-                                    <img src="http://res.cloudinary.com/necthub/image/upload/v1500854799/profile_hq1hjc.jpg" class="img-circle" style="border: 5px solid #ffffff" />
-                                    <br />
-                                </div>
-                                <div class="ibox-content border-bottom text-center p-md" style="border: 1px solid #f1e4e4;  box-shadow: #f4f4f4 0px 2px 2px 2px;">
-                                    Chris Bimpong
-                                <hr />
-                                    Entrepreneur
-                                <hr />
-                                    MEST
-                                </div>
-                            </div>
-                        </div>
+
+                          <% end %>
+
                     </div>
                 </div>
             </div>
