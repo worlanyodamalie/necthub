@@ -1,48 +1,55 @@
-<div class="row border-bottom">
-    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0; background-color: #1ab394; box-shadow: #bfbfbf 0em 0em 1em 0em;">
-        <div class="navbar-header">
-            <a class="navbar-minimalize minimalize-styl-2" href=""><img alt="NectHub" src="<%= image_url 'logo12342.png' %>" style="margin-left: 7em;" width="100px" height="35px" /></a>
-            <a href="" class="btn btn-primary" id="donate_button">Donate <i class="fa fa-heart"></i></a>
-            <a href="" class="btn btn-primary links_margin_top" id="home_link"><i class="fa fa-home"></i> Home</a>
-            <!--<a href="" class="btn btn-primary links_margin_top"><i class="fa fa-cogs"></i> Skills</a> -->
-            <%= link_to jobs_groups_path  , :class => "btn btn-primary links_margin_top" do %>
-                <i class="fa fa-briefcase"></i> Jobs
-                <% end %>
-            <%= link_to events_groups_path , :class => "btn btn-primary links_margin_top" do %>
-                <i class="fa fa-magic"></i> Events
-                <% end %>
+<div class="row border-bottom nav-background">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed mobile-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="" id="logo-margin"><img alt="NectHub" src="<%= image_url 'logo12342.png' %>" width="100px" height="35px" /></a>
+    </div>
 
-            <%= link_to skills_groups_path , :class => "btn btn-primary links_margin_top" do %>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse mobile-links" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a href="" class="links_margin_top" id="color-for-links"><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li>
+            <%= link_to skills_groups_path  , :class => "links_margin_top", :id => "color-for-links" do %>
                 <i class="fa fa-cogs"></i> Skills
-                <% end %>
-            <!-- Convert to erb code -->
-            <%#<a href="" class="btn btn-primary links_margin_top"><i class="fa fa-cogs"></i> Skills</a>%>
-
-
-
-        </div>
-        <ul class="nav navbar-top-links navbar-right" style="margin-right: 6.5em;">
-
+            <% end %>
+        </li>
+        <li>
+            <%= link_to jobs_groups_path  , :class => "links_margin_top", :id => "color-for-links" do %>
+                <i class="fa fa-briefcase"></i> Jobs
+            <% end %>
+        </li>
+        <li>
+            <%= link_to events_groups_path , :class => "links_margin_top", :id => "color-for-links" do %>
+                <i class="fa fa-magic"></i> Events
+            <% end %>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle links_margin_top" id="color-for-links" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Me <span class="caret"></span></a>
+          <% if user_signed_in? %>
+          <ul class="dropdown-menu animated fadeIn m-t-xs" id="dropdown-links">
             <li>
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <span class="clear">
-                            <span class="text-muted text-xs block" style="color: white;">Me <b class="caret"></b></span>
-                        </span>
-                    </a>
-                    <% if user_signed_in? %>
-                    <ul class="dropdown-menu animated fadeIn m-t-xs">
-                        <li>
-                        <%#<%= link_to "Profile" , edit_user_registration_path %>
-                            <%= link_to "Profile", user_path(current_user.id) %>
-                        </li>
-                        <li class="divider"></li>
-                        <li><%= link_to 'Log Out' , destroy_user_session_path %></a>
-                        </li>
-                    </ul>
-                    <% end %>
-
+                <%= link_to "Profile", user_path(current_user.id) %>
             </li>
-
-        </ul>
-    </nav>
+            <li role="separator" class="divider"></li>
+            <li>
+                <%= link_to 'Log Out' , destroy_user_session_path %></a>
+            </li>
+          </ul>
+          <% end %>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 </div>

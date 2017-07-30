@@ -9,7 +9,7 @@
 
     <!-- Main css styles -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    
+
     <%= stylesheet_link_tag    'static_pages', media: 'all', 'data-turbolinks-track' => true %>
 
     <!-- Main javascript files -->
@@ -26,68 +26,67 @@
             }
         }
     </style>
-        
+
     <style>
+
         .pic-width img {
             width: 200px;
         }
 
+        .nav-background {
+            background-color: #1ab394;
+        }
+
+        #color-for-links {
+            color: #ffffff;
+        }
+
+        #color-for-links:hover {
+            background-color: #1aa588;
+            color: #ffffff;
+        }
+
+        #color-for-links:active {
+            background-color: #1aa588;
+            color: #ffffff;
+        }
+
         /* Portrait and Landscape */
-        @media only screen 
-        and (min-device-width: 375px) 
-        and (max-device-width: 667px) 
-        and (-webkit-min-device-pixel-ratio: 2) { 
-            .logo-margin img {
-                margin-left: 0em;
+        @media only screen
+        and (min-device-width: 375px)
+        and (max-device-width: 667px)
+        and (-webkit-min-device-pixel-ratio: 2) {
+            #logo-margin {
+                margin-left: 0.5em;
             }
 
-            .links_margin_top {
-                margin-top: 1.0em;
-                font-size: 1.2em;
-                background-color: rgba(255, 255, 255, 0);
-                border: rgba(255, 255, 255, 0);
-                color: #ffffff;
-            }
-
-            #donate_button {
-                margin-top: 1.0em;
-                margin-left: 30em;
-                font-size: 1.2em;
+            .mobile-button {
+                margin-top: 1.5em;
+                margin-left: 12em;
                 background-color: #ffffff;
-                border: rgba(255, 255, 255, 0);
-                color: #676a6c;
+                color: #1ab394;
+            }
+
+            .mobile-links {
+                margin-top: 5em;
+                margin-left: 2em;
+            }
+
+            #dropdown-links a {
+                color: white;
             }
         }
 
-        @media screen and (min-width: 768px){   
+        @media screen and (min-width: 768px){
+            #logo-margin {
+                margin-left: 1em;
+                margin-top: 0.5em;
+            }
+
             .links_margin_top {
                 margin-top: 1.0em;
                 font-size: 1.2em;
-                background-color: rgba(255, 255, 255, 0);
-                border: rgba(255, 255, 255, 0);
-                color: #ffffff;
             }
-            #donate_button {
-                margin-top: 1.0em;
-                margin-left: 30em;
-                font-size: 1.2em;
-                background-color: #ffffff;
-                border: rgba(255, 255, 255, 0);
-                color: #676a6c;
-            }
-            #home_link {
-                margin-left: 10em;
-            }
-            #jobs_link {
-                margin-left: 0.5em;
-            }
-            #events_link {
-                margin-left: 0.5em;
-            }
-            #skills_link {
-                margin-left: 0.5em;
-            }
-            
         }
     </style>
 
