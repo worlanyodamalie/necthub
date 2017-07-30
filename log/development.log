@@ -2081,3 +2081,930 @@ Processing by GroupsController#index as HTML
 Completed 200 OK in 161ms (Views: 108.2ms | ActiveRecord: 3.0ms)
 
 
+Started GET "/announcements" for 10.0.2.2 at 2017-07-28 09:48:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AnnouncementsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering announcements/index.html.erb within layouts/organisations
+  [1m[36mAnnouncement Load (0.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered announcements/index.html.erb within layouts/organisations (4.6ms)
+  Rendered layouts/_navigation.html.erb (3.8ms)
+  Rendered layouts/_topnavbar.html.erb (1.6ms)
+Completed 200 OK in 657ms (Views: 494.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-07-28 09:48:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.3ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (63.6ms)
+  Rendered layouts/_navigation.html.erb (4.0ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 363ms (Views: 193.9ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/green.png" for 10.0.2.2 at 2017-07-28 09:48:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-07-28 09:48:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.4ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (6.6ms)
+  Rendered layouts/_navigation.html.erb (8.9ms)
+  Rendered layouts/_topnavbar.html.erb (1.6ms)
+Completed 200 OK in 209ms (Views: 156.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/green.png" for 10.0.2.2 at 2017-07-28 09:48:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-07-28 09:58:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (1.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.4ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (8.2ms)
+  Rendered layouts/_navigation.html.erb (5.1ms)
+  Rendered layouts/_topnavbar.html.erb (1.7ms)
+Completed 200 OK in 238ms (Views: 142.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-28 09:58:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-07-28 09:58:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (1.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.8ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (13.5ms)
+  Rendered layouts/_navigation.html.erb (5.0ms)
+  Rendered layouts/_topnavbar.html.erb (2.4ms)
+Completed 200 OK in 216ms (Views: 163.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-28 09:58:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-07-28 09:59:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.8ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (10.2ms)
+  Rendered layouts/_navigation.html.erb (5.6ms)
+  Rendered layouts/_topnavbar.html.erb (2.3ms)
+Completed 200 OK in 214ms (Views: 157.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-28 09:59:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/green.png" for 10.0.2.2 at 2017-07-28 09:59:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-07-28 10:01:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (1.2ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.4ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (7.7ms)
+  Rendered layouts/_navigation.html.erb (5.6ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 199ms (Views: 139.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-28 10:01:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-07-28 10:01:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (1.1ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.6ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (11.0ms)
+  Rendered layouts/_navigation.html.erb (4.8ms)
+  Rendered layouts/_topnavbar.html.erb (2.1ms)
+Completed 200 OK in 208ms (Views: 150.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-28 10:01:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/green.png" for 10.0.2.2 at 2017-07-28 10:01:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-07-28 10:06:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (1.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.3ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (123.8ms)
+  Rendered layouts/_navigation.html.erb (7.1ms)
+  Rendered layouts/_topnavbar.html.erb (2.0ms)
+Completed 200 OK in 15109ms (Views: 14725.1ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-28 10:06:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-07-28 10:06:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (1.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.6ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (7.1ms)
+  Rendered layouts/_navigation.html.erb (4.4ms)
+  Rendered layouts/_topnavbar.html.erb (1.7ms)
+Completed 200 OK in 166ms (Views: 115.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-28 10:06:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/green.png" for 10.0.2.2 at 2017-07-28 10:06:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-07-28 10:07:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.1ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (7.0ms)
+  Rendered layouts/_navigation.html.erb (4.8ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 170ms (Views: 125.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-28 10:07:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-07-28 10:39:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (1.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.3ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (7.7ms)
+  Rendered layouts/_navigation.html.erb (5.5ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 388ms (Views: 225.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-28 10:39:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-07-28 10:40:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.5ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (8.6ms)
+  Rendered layouts/_navigation.html.erb (5.3ms)
+  Rendered layouts/_topnavbar.html.erb (1.3ms)
+Completed 200 OK in 193ms (Views: 145.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-28 10:40:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/green.png" for 10.0.2.2 at 2017-07-28 10:40:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-07-29 12:13:12 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:13:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (1.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.3ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (110.8ms)
+  Rendered layouts/_navigation.html.erb (6.9ms)
+  Rendered layouts/_topnavbar.html.erb (2.7ms)
+Completed 200 OK in 15926ms (Views: 15182.7ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:13:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-29 12:13:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:14:47 +0000
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-07-29 12:14:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.4ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/sms.html.erb within layouts/organisations (5.9ms)
+  Rendered layouts/_navigation.html.erb (3.6ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 163ms (Views: 119.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:14:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-29 12:14:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/send_message" for 10.0.2.2 at 2017-07-29 12:14:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#send_message as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:14:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering organisations/send_message.html.erb within layouts/organisations
+  Rendered organisations/send_message.html.erb within layouts/organisations (2.0ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_topnavbar.html.erb (1.6ms)
+Completed 200 OK in 222ms (Views: 152.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:14:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-29 12:14:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:15:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/organisations/send_sms" for 10.0.2.2 at 2017-07-29 12:15:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#send_sms as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"Pojoss", "to"=>"233242206604", "msg"=>"A message", "commit"=>"Send"}
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.7ms)
+
+
+
+NameError - uninitialized constant OrganisationsController::SmsghSms:
+  activesupport (5.0.4) lib/active_support/dependencies.rb:550:in `load_missing_constant'
+  activesupport (5.0.4) lib/active_support/dependencies.rb:203:in `const_missing'
+  app/controllers/organisations_controller.rb:44:in `send_sms'
+  actionpack (5.0.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.4) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.4) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.4) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:15:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/5ebeacd79ddb969f/variables" for 10.0.2.2 at 2017-07-29 12:15:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:27:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:27:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-29 12:27:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/send_message" for 10.0.2.2 at 2017-07-29 12:27:25 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:27:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#send_message as HTML
+  [1m[36mOrganisation Load (1.2ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/send_message.html.erb within layouts/organisations
+  Rendered organisations/send_message.html.erb within layouts/organisations (26.7ms)
+  Rendered layouts/_navigation.html.erb (6.7ms)
+  Rendered layouts/_topnavbar.html.erb (2.8ms)
+Completed 200 OK in 7776ms (Views: 7401.0ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:27:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-29 12:27:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:27:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/organisations/send_sms" for 10.0.2.2 at 2017-07-29 12:27:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#send_sms as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"POJOSS", "to"=>"233242206604", "msg"=>"This is a test ", "commit"=>"Send"}
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1315ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for 10.0.2.2 at 2017-07-29 12:28:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (1.2ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  Rendered organisations/index.html.erb within layouts/organisations (528.5ms)
+  Rendered layouts/_navigation.html.erb (3.5ms)
+  Rendered layouts/_topnavbar.html.erb (1.1ms)
+Completed 200 OK in 944ms (Views: 643.4ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:28:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/toastr.js.map" for 10.0.2.2 at 2017-07-29 12:28:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/userfeed" for 10.0.2.2 at 2017-07-29 12:34:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  [1m[36mAnnouncement Load (0.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 1]]
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:34:48 +0000
+  Rendered groups/index.html.erb within layouts/users (51.4ms)
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (44.5ms)
+Completed 200 OK in 383ms (Views: 253.8ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:34:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:35:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/groups/new" for 10.0.2.2 at 2017-07-29 12:35:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#new as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/new.html.erb within layouts/users
+  Rendered groups/new.html.erb within layouts/users (20.1ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (6.5ms)
+Completed 200 OK in 223ms (Views: 101.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:35:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2310131145680354640);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddSubdomainToOrganisations (20170729123934)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "organisations" ADD "subdomain" character varying[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170729123934"]]
+  [1m[35m (32.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2310131145680354640)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2310131145680354640);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2310131145680354640)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:50:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:50:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sign_out" for 10.0.2.2 at 2017-07-29 12:50:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:50:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mOrganisation Load (6.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 221ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-07-29 12:50:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 159ms (Views: 109.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:50:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:50:22 +0000
+Started GET "/organisations/sign_up" for 10.0.2.2 at 2017-07-29 12:50:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  Rendering organisations/registrations/new.html.erb within layouts/application
+  Rendered organisations/shared/_links.html.erb (2.2ms)
+  Rendered organisations/registrations/new.html.erb within layouts/application (238.1ms)
+Completed 200 OK in 482ms (Views: 455.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:50:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/organisations" for 10.0.2.2 at 2017-07-29 12:51:14 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:51:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "organisation"=>{"organisation_name"=>"Aggiss", "email"=>"aggis@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: password_confirmation
+Completed 500 Internal Server Error in 564ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'subdomain' for Organisation.:
+  activemodel (5.0.4) lib/active_model/attribute_assignment.rb:48:in `_assign_attribute'
+  activemodel (5.0.4) lib/active_model/attribute_assignment.rb:40:in `block in _assign_attributes'
+  activemodel (5.0.4) lib/active_model/attribute_assignment.rb:39:in `_assign_attributes'
+  activerecord (5.0.4) lib/active_record/attribute_assignment.rb:26:in `_assign_attributes'
+  activemodel (5.0.4) lib/active_model/attribute_assignment.rb:33:in `assign_attributes'
+  activerecord (5.0.4) lib/active_record/core.rb:319:in `initialize'
+  activerecord (5.0.4) lib/active_record/inheritance.rb:65:in `new'
+  devise (4.3.0) lib/devise/models/registerable.rb:20:in `new_with_session'
+  devise (4.3.0) app/controllers/devise/registrations_controller.rb:101:in `build_resource'
+  devise (4.3.0) app/controllers/devise/registrations_controller.rb:15:in `create'
+  actionpack (5.0.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.4) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.4) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+  actionpack (5.0.4) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.4) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:51:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/c35d2d8c06f0874b/variables" for 10.0.2.2 at 2017-07-29 12:51:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:52:06 +0000
+Started GET "/organisations/sign_up" for 10.0.2.2 at 2017-07-29 12:52:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  Rendering organisations/registrations/new.html.erb within layouts/application
+  Rendered organisations/shared/_links.html.erb (2.1ms)
+  Rendered organisations/registrations/new.html.erb within layouts/application (137.4ms)
+Completed 200 OK in 7618ms (Views: 7506.5ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:52:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:52:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/organisations" for 10.0.2.2 at 2017-07-29 12:52:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "organisation"=>{"organisation_name"=>"Aggiss", "email"=>"aggis@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrganisation Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "organisations" WHERE "organisations"."email" = $1 LIMIT $2[0m  [["email", "aggis@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (43.1ms)[0m  [1m[32mINSERT INTO "organisations" ("email", "encrypted_password", "created_at", "updated_at", "organisation_name", "subdomain") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "aggis@gmail.com"], ["encrypted_password", "$2a$11$FsUgtmHa4seooURqGkNmmuQ74twTZ9OLEO268d2gozJS3a76RICXW"], ["created_at", "2017-07-29 12:52:36.819390"], ["updated_at", "2017-07-29 12:52:36.819390"], ["organisation_name", "Aggiss"], ["subdomain", "aggiss"]]
+  [1m[35m (23.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (43.4ms)[0m  [1m[33mUPDATE "organisations" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "organisations"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-07-29 12:52:36.903015"], ["last_sign_in_at", "2017-07-29 12:52:36.903015"], ["current_sign_in_ip", "10.0.2.2/32"], ["last_sign_in_ip", "10.0.2.2/32"], ["updated_at", "2017-07-29 12:52:36.906243"], ["id", 2]]
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 937ms (ActiveRecord: 122.3ms)
+
+
+Started GET "/dashboard" for 10.0.2.2 at 2017-07-29 12:52:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 2]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 2]]
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 2]]
+  Rendered organisations/index.html.erb within layouts/organisations (267.6ms)
+  Rendered layouts/_navigation.html.erb (6.7ms)
+  Rendered layouts/_topnavbar.html.erb (2.1ms)
+Completed 200 OK in 456ms (Views: 388.1ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 12:52:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "organisations"[0m
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+Started GET "/invite" for 10.0.2.2 at 2017-07-29 13:09:00 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:09:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:09:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/invite" for 10.0.2.2 at 2017-07-29 13:09:13 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:09:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:09:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/invite" for 10.0.2.2 at 2017-07-29 13:10:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:10:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:10:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:11:17 +0000
+Started GET "/invite" for 10.0.2.2 at 2017-07-29 13:11:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#invite as HTML
+  Parameters: {"constraint"=>#<Proc:0xb9d88a60@/vagrant/config/routes.rb:3 (lambda)>}
+Completed 401 Unauthorized in 78ms
+
+
+Started GET "/organisations/sign_in" for 10.0.2.2 at 2017-07-29 13:11:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering organisations/sessions/new.html.erb within layouts/application
+  Rendered organisations/shared/_links.html.erb (2.4ms)
+  Rendered organisations/sessions/new.html.erb within layouts/application (138.8ms)
+Completed 200 OK in 7463ms (Views: 7348.9ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/assets/application-6a0a4c1948e26fc01c3115def2a48c29fe70e51216546f2fe25cd86aa8dc4b47.js" for 10.0.2.2 at 2017-07-29 13:11:25 +0000
+Started GET "/assets/static_pages-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 10.0.2.2 at 2017-07-29 13:11:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/application-7c7183a6779921ededafbe336c0b58f680952f04c7690cbf82bd356cce271dbb.css" for 10.0.2.2 at 2017-07-29 13:11:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:11:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:11:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/organisations/sign_in" for 10.0.2.2 at 2017-07-29 13:11:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "organisation"=>{"email"=>"aggis@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mOrganisation Load (1.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."email" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["email", "aggis@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "organisations" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "organisations"."id" = $4[0m  [["current_sign_in_at", "2017-07-29 13:11:44.410102"], ["sign_in_count", 2], ["updated_at", "2017-07-29 13:11:44.414615"], ["id", 2]]
+  [1m[35m (36.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://aggiss.lvh.me:3000/invite
+Completed 302 Found in 567ms (ActiveRecord: 39.5ms)
+
+
+Started GET "/invite" for 10.0.2.2 at 2017-07-29 13:11:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#invite as HTML
+  Parameters: {"constraint"=>#<Proc:0xb9d88a60@/vagrant/config/routes.rb:3 (lambda)>}
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://aggiss.lvh.me:3000/dashboard
+Completed 302 Found in 9ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for 10.0.2.2 at 2017-07-29 13:11:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 2]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 2]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 2]]
+  Rendered organisations/index.html.erb within layouts/organisations (255.3ms)
+  Rendered layouts/_navigation.html.erb (5.3ms)
+  Rendered layouts/_topnavbar.html.erb (2.4ms)
+Completed 200 OK in 406ms (Views: 360.9ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/organisations-516f8a27e286895bb4fd8d861fa2f1ffe45f9c37e6a28b364ff7d45a6d3a3224.css" for 10.0.2.2 at 2017-07-29 13:11:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/organisations-6d7bd13314a62810ab7f6450ba7f0aaceed9c9c73265659b2769823907066d61.js" for 10.0.2.2 at 2017-07-29 13:11:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:11:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/logo12342-b895bde8ff87f8910d8aa3d745699b234ede6b4f61de81fcf1aedc45f3ce2a5c.png" for 10.0.2.2 at 2017-07-29 13:11:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/logo-mob1-04c43c83c390e597934d09e8c2d950b4074ec854b7bc1a613fc5748e2bca3a1a.png" for 10.0.2.2 at 2017-07-29 13:11:45 +0000
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for 10.0.2.2 at 2017-07-29 13:11:45 +0000
+Started GET "/assets/ppic1-3796a7f75d1e90ffd857cdcb6d286d38bd3471b3d7f60e2a68ce11b7868139d7.png" for 10.0.2.2 at 2017-07-29 13:11:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/patterns/header-profile-c05909898218a521d3bd19ba09a9a43338de6de5fdf1d3fc771b0ec28ae416c5.png" for 10.0.2.2 at 2017-07-29 13:11:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:11:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sign_in" for 10.0.2.2 at 2017-07-29 13:16:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:16:47 +0000
+Processing by Devise::SessionsController#new as HTML
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mOrganisation Load (9.1ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://aggiss.lvh.me:3000/dashboard
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 23ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:16:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/invite" for 10.0.2.2 at 2017-07-29 13:16:58 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:16:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#invite as HTML
+  Parameters: {"constraint"=>#<Proc:0xb9d88a60@/vagrant/config/routes.rb:3 (lambda)>}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/organisations/sign_in" for 10.0.2.2 at 2017-07-29 13:16:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering organisations/sessions/new.html.erb within layouts/application
+  Rendered organisations/shared/_links.html.erb (2.0ms)
+  Rendered organisations/sessions/new.html.erb within layouts/application (54.8ms)
+Completed 200 OK in 200ms (Views: 195.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 10.0.2.2 at 2017-07-29 13:16:59 +0000
+Started GET "/assets/application-6a0a4c1948e26fc01c3115def2a48c29fe70e51216546f2fe25cd86aa8dc4b47.js" for 10.0.2.2 at 2017-07-29 13:16:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/application-7c7183a6779921ededafbe336c0b58f680952f04c7690cbf82bd356cce271dbb.css" for 10.0.2.2 at 2017-07-29 13:16:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:16:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:17:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:17:16 +0000
+Started POST "/organisations/sign_in" for 10.0.2.2 at 2017-07-29 13:17:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "organisation"=>{"email"=>"aggis@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."email" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["email", "aggis@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "organisations" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "organisations"."id" = $5[0m  [["current_sign_in_at", "2017-07-29 13:17:17.106831"], ["last_sign_in_at", "2017-07-29 13:11:44.410102"], ["sign_in_count", 3], ["updated_at", "2017-07-29 13:17:17.110521"], ["id", 2]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://aggis.lvh.me:3000/invite
+Completed 302 Found in 368ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/invite" for 10.0.2.2 at 2017-07-29 13:17:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#invite as HTML
+  Parameters: {"constraint"=>#<Proc:0xb9d88a60@/vagrant/config/routes.rb:3 (lambda)>}
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://aggis.lvh.me:3000/dashboard
+Completed 302 Found in 9ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for 10.0.2.2 at 2017-07-29 13:17:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 2]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 2]]
+  Rendered organisations/index.html.erb within layouts/organisations (17.3ms)
+  Rendered layouts/_navigation.html.erb (6.5ms)
+  Rendered layouts/_topnavbar.html.erb (1.7ms)
+Completed 200 OK in 175ms (Views: 130.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/organisations-516f8a27e286895bb4fd8d861fa2f1ffe45f9c37e6a28b364ff7d45a6d3a3224.css" for 10.0.2.2 at 2017-07-29 13:17:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/organisations-6d7bd13314a62810ab7f6450ba7f0aaceed9c9c73265659b2769823907066d61.js" for 10.0.2.2 at 2017-07-29 13:17:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:17:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/logo12342-b895bde8ff87f8910d8aa3d745699b234ede6b4f61de81fcf1aedc45f3ce2a5c.png" for 10.0.2.2 at 2017-07-29 13:17:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/logo-mob1-04c43c83c390e597934d09e8c2d950b4074ec854b7bc1a613fc5748e2bca3a1a.png" for 10.0.2.2 at 2017-07-29 13:17:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/ppic1-3796a7f75d1e90ffd857cdcb6d286d38bd3471b3d7f60e2a68ce11b7868139d7.png" for 10.0.2.2 at 2017-07-29 13:17:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for 10.0.2.2 at 2017-07-29 13:17:18 +0000
+Started GET "/assets/patterns/header-profile-c05909898218a521d3bd19ba09a9a43338de6de5fdf1d3fc771b0ec28ae416c5.png" for 10.0.2.2 at 2017-07-29 13:17:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:17:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sign_in" for 10.0.2.2 at 2017-07-29 13:17:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://aggis.lvh.me:3000/dashboard
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 17ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:40:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:40:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:40:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/groups/new" for 10.0.2.2 at 2017-07-29 13:40:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#new as HTML
+  [1m[36mOrganisation Load (1.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering groups/new.html.erb within layouts/users
+  Rendered groups/new.html.erb within layouts/users (37.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (16.8ms)
+Completed 200 OK in 11115ms (Views: 10745.7ms | ActiveRecord: 17.7ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:41:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:44:17 +0000
+Started GET "/groups/new" for 10.0.2.2 at 2017-07-29 13:44:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#new as HTML
+  [1m[36mOrganisation Load (1.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering groups/new.html.erb within layouts/organisations
+  Rendered groups/new.html.erb within layouts/organisations (37.1ms)
+  Rendered layouts/_navigation.html.erb (6.7ms)
+  Rendered layouts/_topnavbar.html.erb (3.8ms)
+Completed 200 OK in 7769ms (Views: 7455.8ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 13:44:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/sign_up" for 10.0.2.2 at 2017-07-29 14:09:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 14:09:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.0ms)
+  Rendered users/registrations/new.html.erb within layouts/application (290.4ms)
+Completed 200 OK in 629ms (Views: 568.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 14:09:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 14:09:48 +0000
+Started GET "/users/sign_in" for 10.0.2.2 at 2017-07-29 14:09:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.2ms)
+  Rendered users/sessions/new.html.erb within layouts/application (67.4ms)
+Completed 200 OK in 258ms (Views: 246.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 14:09:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 14:10:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/users/sign_in" for 10.0.2.2 at 2017-07-29 14:10:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"isaac.osoro@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "isaac.osoro@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-07-29 14:10:05.214409"], ["last_sign_in_at", "2017-07-27 19:00:10.693782"], ["sign_in_count", 4], ["updated_at", "2017-07-29 14:10:05.220218"], ["id", 1]]
+  [1m[35m (19.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/userfeed
+Completed 302 Found in 434ms (ActiveRecord: 22.1ms)
+
+
+Started GET "/userfeed" for 10.0.2.2 at 2017-07-29 14:10:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/organisations
+  [1m[36mAnnouncement Load (0.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 2]]
+  Rendered groups/index.html.erb within layouts/organisations (5.4ms)
+  Rendered layouts/_navigation.html.erb (4.0ms)
+  Rendered layouts/_topnavbar.html.erb (1.3ms)
+Completed 200 OK in 303ms (Views: 126.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 14:10:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 15:19:47 +0000
+Started GET "/userfeed" for 10.0.2.2 at 2017-07-29 15:19:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (1.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  [1m[36mAnnouncement Load (2.0ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 2]]
+  Rendered groups/index.html.erb within layouts/users (22.3ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (42.3ms)
+Completed 200 OK in 11406ms (Views: 10895.8ms | ActiveRecord: 29.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-07-29 15:20:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255

@@ -1,9 +1,11 @@
 class RegistrationsController < Devise::RegistrationsController
     include Accessible
 
+
+
    private
     def sign_up_params
-      params.require(:organisation).permit(:organisation_name,:email,:password,:password_confirmation)
+      params.require(:organisation).permit(:organisation_name,:email,:password,:password_confirmation).merge(subdomain: params[:organisation][:organisation_name].parameterize)
     end
 
     def account_update_params

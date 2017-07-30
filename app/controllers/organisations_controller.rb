@@ -57,27 +57,8 @@ class OrganisationsController < ApplicationController
 
      SmsghSms.push(message_params)
 
-
      redirect_to dashboard_url
   end
-
-
-  #SmsghSms.push(:to => 'PHONE-NUMBER', :msg => "Your SMS Message goes here", :from => "SENDERID")
-  # def send_email
-  #  #@receipients = cookies[:email_token ]
-
-  #  #render json: @receipients
-  #   to = params[:to]
-
-  #   subject = params[:subject]
-
-  #   body = params[:body]
-
-  #  SendMailer.send_email(to,subject,body,@organisation).deliver
-
-  # end
-
-
 
 
   def members

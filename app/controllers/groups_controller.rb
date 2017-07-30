@@ -1,7 +1,12 @@
 class GroupsController < ApplicationController
   before_action :authenticate_organisation!
 
-  layout "users"
+
+
+  layout "organisations"
+
+  layout "users", :only => [:events,:jobs,:skills,:index]
+
 
 
   def index
@@ -22,6 +27,10 @@ class GroupsController < ApplicationController
 
   def skills
     @group_skills = current_organisation.users.all
+  end
+
+  def invite
+    redirect_to jobs_groups_url
   end
 
 

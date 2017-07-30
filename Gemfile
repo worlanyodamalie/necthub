@@ -26,6 +26,8 @@ gem 'coffee-rails', '~> 4.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+gem 'smsgh_sms'
+
 
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
