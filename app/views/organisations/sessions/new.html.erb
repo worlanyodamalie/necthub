@@ -1,26 +1,52 @@
-<h2>Org Log in</h2>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+<div class="row">
+  <div class="col-lg-4 col-md-4 hidden-xs hidden-sm" style="padding:420px 0px 420px 0px; background-image: url(http://res.cloudinary.com/necthub/image/upload/v1501376777/signup_tybife.jpg)">
   </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="background-color: white;" align="center">
+    <br /><br />
+    <img alt="image" src="<%= image_url 'logo12341.png' %>" width="150px" height="50px" />
+    <h2>Sign in</h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <hr />
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      </div>
     </div>
-  <% end -%>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
+    
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" align="center">
+        <h3>Fill out the form below to get started</h3>
+        <br /><br />
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        
+        <div class="form-group">
+          <%= f.email_field :email,:placeholder => "Email", :class => "form-control input-lg m-b", autofocus: true %>
+        </div>
+        <div class="form-group">
+          <%= f.password_field :password, :placeholder => "Password", :class => "form-control input-lg m-b", autocomplete: "off" %>
+        </div>
+        <% if devise_mapping.rememberable? -%>
+        <div class="form-group">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </div>
+        <% end -%>
+        <div class="actions">
+          <%= f.submit "Log in", :class => "btn btn-primary", :style => "width: 300px;" %>
+        </div>
+        <% end %>
+        <br /><br />
+        <p>Don't have a NectHub account? <%= render "organisations/shared/links" %></p>
+        <div style="padding: 50px 0px 50px 0px;">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      </div>
+    </div>
+    
   </div>
-<% end %>
-
-<%= render "organisations/shared/links" %>
+</div>
