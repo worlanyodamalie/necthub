@@ -77,6 +77,10 @@ GEM
     country_select (3.1.0)
       countries (~> 2.0)
       sort_alphabetical (~> 1.0)
+    curb (0.9.3)
+    curb-fu (0.6.2)
+      curb (>= 0.5.4.0)
+      rack-test (>= 0.2.0)
     debug_inspector (0.0.3)
     devise (4.3.0)
       bcrypt (~> 3.0)
@@ -188,6 +192,9 @@ GEM
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
     sixarm_ruby_unaccent (1.1.2)
+    smsgh_sms (1.0.6)
+      curb-fu (~> 0)
+      nokogiri
     sort_alphabetical (1.1.0)
       unicode_utils (>= 1.2.2)
     spreadsheet (1.1.4)
@@ -257,6 +264,7 @@ DEPENDENCIES
   roo
   roo-xls
   sass-rails (~> 5.0)
+  smsgh_sms
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)

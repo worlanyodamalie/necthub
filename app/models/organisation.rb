@@ -12,4 +12,9 @@ class Organisation < ApplicationRecord
   has_many :announcements
   has_many :users, through: :groups
 
+
+  def self.subdomains
+    Organisation.pluck(:subdomain)
+  end
+
 end
