@@ -31,3 +31,4 @@ config/database.yml
 size.sh
 purge.sh
 find_fattest.sh
+/log/development.log

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-get '/invite', to: 'groups#invite', constraint: lambda {|request|Organisation.subdomains.include?(request.subdomains.first)}
+  get '/invite', to: 'groups#invite', constraint: lambda {|request|Organisation.subdomains.include?(request.subdomains.first)}
+
   get 'annoucements/index'
 
   get 'annoucements/new'

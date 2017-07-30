@@ -18,7 +18,7 @@ class UsersController < ApplicationController
      if params[:search].present?
       @skillsearchs = User.perform_search(params[:search])
     else
-      redirect_to skillsearch_users_path,  notice: "No Search results available at the moment"
+      redirect_to skillsearch_users_path,  flash[:notice] = "No Search results available at the moment"
     end
   end
 
