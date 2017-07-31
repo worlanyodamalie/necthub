@@ -5,7 +5,7 @@ class RegistrationsController < Devise::RegistrationsController
 
    private
     def sign_up_params
-      params.require(:organisation).permit(:organisation_name,:email,:password,:password_confirmation).merge(subdomain: params[:organisation][:organisation_name].parameterize)
+      params.require(:organisation).permit(:organisation_name,:email,:password,:password_confirmation)
     end
 
     def account_update_params
