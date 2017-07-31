@@ -16,8 +16,11 @@
     <div class="collapse navbar-collapse mobile-links" id="bs-example-navbar-collapse-1">
       
       <ul class="nav navbar-nav navbar-right">
-        <li>
-            <a href="" class="links_margin_top" id="color-for-links"><i class="fa fa-home"></i> Home</a>
+        <li> 
+            <%= link_to userfeed_path  , :class => "links_margin_top", :id => "color-for-links" do %>
+                <i class="fa fa-home"></i> Home
+            <% end %>
+       
         </li>
         <li>
             <%= link_to skills_groups_path  , :class => "links_margin_top", :id => "color-for-links" do %>
