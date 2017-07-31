@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
   before_action :authenticate_organisation!
-
+  before_action :authenticate_user!
 
 
   layout "organisations"
