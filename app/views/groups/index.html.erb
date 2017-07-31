@@ -43,11 +43,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-5 col-md-5">
-
+        <div class="col-lg-7 col-md-7">
+                <% for group_announcement in @group_announcements do%>
                 <div class="ibox-content border-bottom text-center p-md">
                     <div class="row">
-                      <% for group_announcement in @group_announcements do%>
                         <div class="col-lg-12" align="left">
                             <h3><%= group_announcement.try(:title)%></h3>
                             <hr />
@@ -55,40 +54,17 @@
                                <%= group_announcement.try(:description)%>
                             </p>
                             <hr />
-                            <div class="row">
-                                <div class="col-lg-2" align="left">
-                                    <i class="fa fa-thumbs-o-up"></i> Like
-                                </div>
-                                <div class="col-lg-3" align="left">
-                                    <i class="fa fa-comment"></i> Comment
-                                </div>
-                                <div class="col-lg-2" align="left">
-                                    <i class="fa fa-share-alt"></i> Share
-                                </div>
-                                <div class="col-lg-5" align="left">
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <%end%>
                 </div>
-
+                <br />
+                <%end%>
                 <br />
 
             </div>
 
-        </div><!--
-        <div class="col-lg-3 col-md-3">
-            <div class="ibox float-e-margins">
-                <div class="ibox-content text-center p-md">
-                    Upcoming events
-                    <hr />
-                    <p align="left">Meet and greet for 2004 year group</p>
-                    <p align="left">Eating competition for MEST Alumni</p>
-                </div>
-            </div>
-        </div>-->
-        <div class="col-lg-1 col-md-1">
+        </div>
+        <div class="col-lg-2 col-md-1">
         </div>
     </div>
 </div>

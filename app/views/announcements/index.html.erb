@@ -25,37 +25,33 @@
 
                 </div>
 
-            <div class="ibox-content text-center css-animation-box"><!-- Copy -->
+            <div class="ibox-content text-center css-animation-box">
                 <br /><br />
                 <h1 class="text-navy">Your Announcements</h1>
                 <br /><br />
 
 
-
+            <% for announcement in @announcements do %>
                 <div class="row">
+                    <div class="col-lg-6">
+                        <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px;">
+                            <div class="ibox-title">
+                                <h5><%= announcement.try(:title)%></h5>
+                            </div>
+                            <div class="ibox-content">
 
-       <% for announcement in @announcements do %>
-        <div class="col-lg-4">
-            <div class="ibox" style="border: 1px solid #f1e4e4; padding: 0px;">
-                <div class="ibox-title">
-                    <h5><%= announcement.try(:title)%></h5>
+                                <br />
+                                <h4>Info</h4>
+                                <p>
+                                    <%= announcement.try(:description)%>
+                                </p>
+                                <br />
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="ibox-content">
-
-                    <br />
-                    <h4>Info</h4>
-                    <p>
-                        <%= announcement.try(:description)%>
-                    </p>
-                    <br />
-
-                </div>
-            </div>
-        </div>
-         <% end %>
-
-    </div>
-
+            <% end %>
             </div>
             </div>
         </div>
