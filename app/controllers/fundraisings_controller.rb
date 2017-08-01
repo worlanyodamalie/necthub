@@ -18,11 +18,11 @@ class FundraisingsController < ApplicationController
        if @fundraising.save
          #flash[:notice] = "Fundraising campaign created successfully"
 
-         render 'index'
+        redirect_to fundraisings_path
         else
           # flash[:alert] = "Something went wrong"
 
-           render 'new'
+           redirect_to new_fundraising_path
         end
 
   end

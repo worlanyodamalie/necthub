@@ -26,7 +26,7 @@ gem 'coffee-rails', '~> 4.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-gem 'smsgh_sms'
+# gem 'smsgh_sms'
 
 
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
