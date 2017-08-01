@@ -5,25 +5,7 @@
                 <div class="dropdown profile-element" style="height: 90px;">
                     <span>
                         <img alt="image" src="<%= image_url 'logo12342.png' %>"/>
-                    </span><!--
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <span class="clear">
-                            <span class="block m-t-xs">
-                                <strong class="font-bold">David Williams</strong>
-                            </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span>
-                        </span>
-                    </a>
-                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                        <li><a href="">Profile</a>
-                        </li>
-                        <li><a href="">Contacts</a>
-                        </li>
-                        <li><a href="">Mailbox</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="">Logout</a>
-                        </li>
-                    </ul>-->
+                    </span>
                 </div>
                 <div class="logo-element">
                     <img alt="image" src="<%= image_url 'logo-mob1.png' %>"/>
@@ -51,29 +33,14 @@
                 <i class="fa fa-money"></i> <span class="nav-label" data-i18n="nav.animations">Fundraising </span>
                 <% end %>
             </li>
-            <li class="<%= is_active_controller('events') %>">
-                <%= link_to events_path do %>
-                <i class="fa fa-magic"></i> <span class="nav-label" data-i18n="nav.animations">Events </span>
-                <% end %>
-            </li>
 
-            <li class="<%= is_active_controller('jobs') %>">
-                <%= link_to jobs_path do %>
-                <i class="fa fa-briefcase"></i> <span class="nav-label" data-i18n="nav.animations"> Jobs </span>
-                <% end %>
-            </li>
-
-             <li class="<%= is_active_controller('announcements') %>">
-                <%= link_to announcements_path do %>
-                <i class="fa fa-newspaper-o"></i> <span class="nav-label" data-i18n="nav.animations"> Announcements </span>
-                <% end %>
-            </li>
-
-
-             <li class="<%= is_active_controller('groups') %>">
-                <%= link_to new_group_path do %>
-                <i class="fa fa-group"></i> <span class="nav-label" data-i18n="nav.animations">Create Group </span>
-                <% end %>
+            <li class="<%= is_active_controller('groups') %>">
+                <a href="#"><i class="fa fa-group"></i> <span class="nav-label" data-i18n="nav.tables">Manage Network</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse <%= is_active_controller('tables') %>">
+                    <li class="<%= is_active_action('announcements') %>"><%= link_to "Post Announcements", announcements_path %> </li>
+                    <li class="<%= is_active_action('jobs') %>"><%= link_to "Post Jobs", jobs_path %></li>
+                    <li class="<%= is_active_action('events') %>"><%= link_to "Post Events", events_path %></li>
+                </ul>
             </li>
         </ul>
 
