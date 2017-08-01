@@ -1,18 +1,18 @@
 Rails.application.routes.draw do
 
+
+
+
+
+
   get '/invite', to: 'groups#invite', constraint: lambda {|request|Organisation.subdomains.include?(request.subdomains.first)}
 
-  get 'annoucements/index'
-
-  get 'annoucements/new'
 
   devise_for :organisations, path: 'organisations' , :controllers => { registrations: "registrations" }
 
   devise_for :users, path: 'users' , :controllers => { registration: "signups" }
 
 
-
-  # # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'static_pages#home'
 
   get '/home', to: 'static_pages#home'
@@ -34,13 +34,13 @@ Rails.application.routes.draw do
 
   resources :announcements
 
+  resources :memberships
+
   resources :users, :path_names => { :show => 'user'} ,  only: [:show, :edit, :update] do
      collection do
         get :skillsearch
        end
   end
-  #  get '/user', to: 'users#show'
-  # get '/users/:id', to: 'users#show'
 
   resources :jobs do
     collection do
@@ -57,8 +57,12 @@ Rails.application.routes.draw do
       get :skills
 
       get :fundraising
+
+      get :network
       end
   end
+
+  resources :networks
 
   resources :fundraisings do
     collection do
@@ -79,10 +83,6 @@ Rails.application.routes.draw do
      resources :events
 
      resources :fundraisings
-
-
-    #resources :groups
-
 
   end
 

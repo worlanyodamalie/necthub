@@ -1,11 +1,13 @@
 class GroupsController < ApplicationController
   before_action :authenticate_organisation!
 
+  #before_action :authenticate_user!
 
 
-  layout "organisations"
 
   layout "users", :only => [:events,:jobs,:skills,:index]
+
+  layout "organisations"
 
 
 
@@ -13,9 +15,9 @@ class GroupsController < ApplicationController
      @group_announcements = current_organisation.announcements.all
   end
 
-  def new
-    @group = Group.new
-  end
+  # def new
+  #   @group = Group.new
+  # end
 
   def events
      @group_events = current_organisation.events.all
@@ -33,18 +35,17 @@ class GroupsController < ApplicationController
     redirect_to jobs_groups_url
   end
 
+ def network
+ end
 
-  def create
-    @group = current_organisation.groups.build(group_params)
-    if @group.save
-      #flash[:notice] = "Group created successfully"
-      # redirect_to  organisation_groups_path(current_organisation.id)
-      redirect_to  organisation_group_url(current_organisation.id,@group.id)
-    else
-      #flash[:alert] = "Group not created successfully"
-      render 'new'
-      end
-  end
+  # def create
+  #   @group = current_organisation.groups.build(group_params)
+  #   if @group.save
+  #     redirect_to  organisation_group_url(current_organisation.id,@group.id)
+  #   else
+  #     render 'new'
+  #     end
+  # end
 
 
    def show

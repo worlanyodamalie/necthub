@@ -43,10 +43,10 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'roo'
 gem 'roo-xls'
 gem 'devise'
+
 # Use Omniauth Facebook plugin
 #gem 'omniauth-facebook', '~> 4.0'
-# Use ActiveRecord Sessions
-#gem 'activerecord-session_store', '~> 1.0'
+
 #End here
 gem 'awesome_print', require:"ap"
 # Use Capistrano for deployment

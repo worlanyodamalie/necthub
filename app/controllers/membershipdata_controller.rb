@@ -24,13 +24,13 @@ class MembershipdataController < ApplicationController
 
 
   def new
-    @membershipdatum = Membershipdatum.new(membershipdata_params)
+    @membership = Membershipdatum.new
   end
 
   def create
    # byebug
-     @membershipdatum = current_organisation.membershipdata.build(membershipdata_params)
-     if @membershipdatum.save
+     @membership = current_organisation.membershipdata.build(membershipdata_params)
+     if @membership.save
        redirect_to membershipdata_path
       else
         redirect_to new_membershipdatum_path
@@ -43,13 +43,10 @@ class MembershipdataController < ApplicationController
 
 private
 
-  # def membershipdata_params
-  #   params.require(:membershipdatum).permit(:FirstName,:LastName,:YearCompleted,:Email,:Organisation,:WorkPlace,:PhoneNumber)
-  #   #params.require(:event).permit(:event_name,:event_type,:event_date,:event_pic)
-  # end
+
 
    def membershipdata_params
-    params.require(:Membershipdatum).permit(:FirstName,:LastName,:YearCompleted,:Email,:Organisation,:WorkPlace,:PhoneNumber)
+    params.require(:membershipdatum).permit(:FirstName,:LastName,:YearCompleted,:Email,:Organisation,:WorkPlace,:PhoneNumber)
    end
 
 end

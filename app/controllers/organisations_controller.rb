@@ -22,22 +22,6 @@ class OrganisationsController < ApplicationController
   end
 
   def send_message
-    # SmsghSms.api_client_id = ENV['SmsghSms.api_client_id']
-    # SmsghSms.api_client_secret = ENV['SmsghSms.api_client_secret']
-
-    # @message = params
-
-    # message_params = {
-    #       :from => @message[:from],
-    #       :to => @message[:to],
-    #       :msg => @message[:msg]
-    # }
-
-
-
-
-    # SmsghSms.push(message_params)
-
   end
 
   def send_sms
