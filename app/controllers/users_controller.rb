@@ -22,6 +22,22 @@ class UsersController < ApplicationController
     end
   end
 
+   def memberprofilesearch
+     if params[:search].present?
+      @profilesearchs = User.perform_search(params[:search])
+    else
+      redirect_to memberprofilesearch_users_path,  flash[:notice] = "No Search results available at the moment"
+    end
+  end
+
+   def skills
+    @skills = User.all
+   end
+
+   def memberprofiles
+     @memberprofiles = User.all
+   end
+
   def update
     if @user.update_attributes(user_params)
       redirect_to @user

@@ -9,8 +9,8 @@ devise :database_authenticatable, :registerable,
  has_many :groups
  has_many :organisations, through: :groups
 
- has_many :memberships
- has_many :organisations, through: :memberships
+ #has_many :memberships
+ #has_many :organisations, through: :memberships
 
  mount_uploader :user_pic,  UserPicUploader
 
@@ -21,6 +21,10 @@ devise :database_authenticatable, :registerable,
                   against: [
                     :education,
                     :skills,
+                    :first_name,
+                    :Last_name,
+                    :phone_number,
+                    :profession
 
                   ],
                   using: {
@@ -37,5 +41,5 @@ devise :database_authenticatable, :registerable,
     end.sorted
   end
 
- 
+
 end

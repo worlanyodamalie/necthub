@@ -5,11 +5,9 @@ class GroupsController < ApplicationController
 
 
 
+  layout "organisations",  :only => [:network]
+
   layout "users", :only => [:events,:jobs,:skills,:index]
-
-  layout "organisations"
-
-
 
   def index
      @group_announcements = current_organisation.announcements.all
@@ -29,6 +27,10 @@ class GroupsController < ApplicationController
 
   def skills
     @group_skills = current_organisation.users.all
+  end
+
+  def directory
+    @group_directories = currrent_organisation.users.all
   end
 
   def invite

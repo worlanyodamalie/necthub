@@ -1,0 +1,68 @@
+<div class="row wrapper border-bottom page-heading">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content text-center p-md">
+                    <div class="row">
+                        <div class="col-lg-3">
+                        </div>
+                         <%= form_tag(memberprofilesearch_users_path, method: "get" )  %>
+                        <div class="col-lg-5">
+                            <div class="form-group">
+                            <%= text_field_tag :search, nil, placeholder: "Search for a skill, profession, work experience or education eg. MEST", class: "form-control input-lg m-b" , required: true %>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div class="form-group">
+                                <%= submit_tag("Search", :class => "btn btn-primary" , :style => "margin-top: 0.4em;")    %>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-10">
+            <div class="ibox-content border-bottom text-center p-md">
+                <h4>Member List</h4>
+            </div>
+            <div class="ibox float-e-margins">
+                <div class="ibox-content border-bottom text-center p-md">
+                    <div class="row">
+                    <%   for memberprofile in  @memberprofiles do  %>
+                        <div class="col-lg-3">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-content border-bottom text-center p-md" style="background-color: #1ab394; color: #ffffff; border: 1px solid #f1e4e4; box-shadow: #f4f4f4 0px 2px 2px 2px;">
+                                    <br />
+                                    <%= image_tag memberprofile.user_pic.uthumb.url if memberprofile.user_pic? %>
+                                   <!-- <img src="http://res.cloudinary.com/necthub/image/upload/v1500854799/profile_hq1hjc.jpg" class="img-circle" style="border: 5px solid #ffffff" /> -->
+                                    <br />
+                                </div>
+                                <div class="ibox-content border-bottom text-center p-md" style="border: 1px solid #f1e4e4;  box-shadow: #f4f4f4 0px 2px 2px 2px;">
+                                    <%= memberprofile.try(:first_name)%> <%= memberprofile.try(:Last_name)%>
+
+                                <hr />
+                                     <%= memberprofile.try(:profession) %>
+                                <hr />
+                                   <%=  memberprofile.try(:education) %>
+                                </div>
+                            </div>
+                        </div>
+
+                          <% end %>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,2301 @@
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:07:58 +0000
+Started GET "/organisations/sign_up" for 10.0.2.2 at 2017-08-01 10:07:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  [1m[36mOrganisation Load (1.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 242ms (ActiveRecord: 13.9ms)
+
+
+Started GET "/dashboard" for 10.0.2.2 at 2017-08-01 10:07:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 6]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 6]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 6]]
+  Rendered organisations/index.html.erb within layouts/organisations (274.9ms)
+  Rendered layouts/_navigation.html.erb (7.3ms)
+  Rendered layouts/_topnavbar.html.erb (3.6ms)
+Completed 200 OK in 8759ms (Views: 8706.9ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:08:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sign_out" for 10.0.2.2 at 2017-08-01 10:08:58 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:08:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-08-01 10:08:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 104ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:08:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:09:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sign_up" for 10.0.2.2 at 2017-08-01 10:09:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  Rendering organisations/registrations/new.html.erb within layouts/application
+  Rendered organisations/shared/_links.html.erb (2.0ms)
+  Rendered organisations/registrations/new.html.erb within layouts/application (131.5ms)
+Completed 200 OK in 326ms (Views: 302.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:09:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/organisations" for 10.0.2.2 at 2017-08-01 10:10:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "organisation"=>{"organisation_name"=>"Persco", "email"=>"persco@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrganisation Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "organisations" WHERE "organisations"."email" = $1 LIMIT $2[0m  [["email", "persco@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "organisations" ("email", "encrypted_password", "created_at", "updated_at", "organisation_name") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "persco@gmail.com"], ["encrypted_password", "$2a$11$QKdPFpn3I2rV1nvDO16M/OPW5Yi3GzuDZWCLFiZQnH9/Lbe.AIzuu"], ["created_at", "2017-08-01 10:10:24.237507"], ["updated_at", "2017-08-01 10:10:24.237507"], ["organisation_name", "Persco"]]
+  [1m[35m (23.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "organisations" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "organisations"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-08-01 10:10:24.269313"], ["last_sign_in_at", "2017-08-01 10:10:24.269313"], ["current_sign_in_ip", "10.0.2.2/32"], ["last_sign_in_ip", "10.0.2.2/32"], ["updated_at", "2017-08-01 10:10:24.273038"], ["id", 7]]
+  [1m[35m (16.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 529ms (ActiveRecord: 43.3ms)
+
+
+Started GET "/dashboard" for 10.0.2.2 at 2017-08-01 10:10:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered organisations/index.html.erb within layouts/organisations (17.3ms)
+  Rendered layouts/_navigation.html.erb (3.4ms)
+  Rendered layouts/_topnavbar.html.erb (1.9ms)
+Completed 200 OK in 172ms (Views: 128.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:34 +0000
+Started GET "/announcements" for 10.0.2.2 at 2017-08-01 10:10:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AnnouncementsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering announcements/index.html.erb within layouts/organisations
+  [1m[36mAnnouncement Load (1.3ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered announcements/index.html.erb within layouts/organisations (7.4ms)
+  Rendered layouts/_navigation.html.erb (3.6ms)
+  Rendered layouts/_topnavbar.html.erb (2.5ms)
+Completed 200 OK in 270ms (Views: 149.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:38 +0000
+Started GET "/jobs" for 10.0.2.2 at 2017-08-01 10:10:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by JobsController#index as HTML
+  [1m[36mOrganisation Load (1.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering jobs/index.html.erb within layouts/organisations
+  [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered jobs/index.html.erb within layouts/organisations (5.6ms)
+  Rendered layouts/_navigation.html.erb (3.4ms)
+  Rendered layouts/_topnavbar.html.erb (1.4ms)
+Completed 200 OK in 215ms (Views: 125.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/events" for 10.0.2.2 at 2017-08-01 10:10:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (1.1ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered events/index.html.erb within layouts/organisations (8.7ms)
+  Rendered layouts/_navigation.html.erb (4.2ms)
+  Rendered layouts/_topnavbar.html.erb (1.8ms)
+Completed 200 OK in 250ms (Views: 180.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/fundraisings" for 10.0.2.2 at 2017-08-01 10:10:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FundraisingsController#index as HTML
+  [1m[36mOrganisation Load (1.1ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.2ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (20.1ms)
+  Rendered layouts/_navigation.html.erb (3.4ms)
+  Rendered layouts/_topnavbar.html.erb (2.5ms)
+Completed 200 OK in 217ms (Views: 166.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sms" for 10.0.2.2 at 2017-08-01 10:10:48 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#sms as HTML
+  [1m[36mOrganisation Load (1.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering organisations/sms.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.6ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered organisations/sms.html.erb within layouts/organisations (28.9ms)
+  Rendered layouts/_navigation.html.erb (9.9ms)
+  Rendered layouts/_topnavbar.html.erb (5.2ms)
+Completed 200 OK in 646ms (Views: 416.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/green.png" for 10.0.2.2 at 2017-08-01 10:10:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/membershipdata" for 10.0.2.2 at 2017-08-01 10:10:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MembershipdataController#index as HTML
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mOrganisation Load (1.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering membershipdata/index.html.erb within layouts/organisations
+  [1m[36mMembershipdatum Load (0.4ms)[0m  [1m[34mSELECT "membershipdata".* FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered membershipdata/index.html.erb within layouts/organisations (8.4ms)
+  Rendered layouts/_navigation.html.erb (3.5ms)
+  Rendered layouts/_topnavbar.html.erb (1.8ms)
+Completed 200 OK in 269ms (Views: 176.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/events" for 10.0.2.2 at 2017-08-01 10:10:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered events/index.html.erb within layouts/organisations (5.2ms)
+  Rendered layouts/_navigation.html.erb (4.4ms)
+  Rendered layouts/_topnavbar.html.erb (1.9ms)
+Completed 200 OK in 195ms (Views: 121.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:10:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/sign_up" for 10.0.2.2 at 2017-08-01 10:11:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:11:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.4ms)
+  Rendered users/registrations/new.html.erb within layouts/application (69.5ms)
+Completed 200 OK in 491ms (Views: 380.6ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:11:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/users" for 10.0.2.2 at 2017-08-01 10:12:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:12:01 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"first_name"=>"Adwoa", "Last_name"=>"Serwaa", "email"=>"adwoa.serwaa@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Unpermitted parameters: first_name, Last_name
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "adwoa.serwaa@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "adwoa.serwaa@gmail.com"], ["encrypted_password", "$2a$11$ysGuXv0chILNEC1ITKjTiupGXfxDUhpfJVajUFPGhkeEoaKBLoq6K"], ["created_at", "2017-08-01 10:12:01.954336"], ["updated_at", "2017-08-01 10:12:01.954336"]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-08-01 10:12:01.969436"], ["last_sign_in_at", "2017-08-01 10:12:01.969436"], ["current_sign_in_ip", "10.0.2.2/32"], ["last_sign_in_ip", "10.0.2.2/32"], ["updated_at", "2017-08-01 10:12:01.973460"], ["id", 4]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/userfeed
+Completed 302 Found in 435ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/userfeed" for 10.0.2.2 at 2017-08-01 10:12:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/organisations
+  [1m[36mAnnouncement Load (0.6ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered groups/index.html.erb within layouts/organisations (5.1ms)
+  Rendered layouts/_navigation.html.erb (4.2ms)
+  Rendered layouts/_topnavbar.html.erb (2.0ms)
+Completed 200 OK in 209ms (Views: 129.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:12:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:15:01 +0000
+Started GET "/organisations/sign_out" for 10.0.2.2 at 2017-08-01 10:15:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mOrganisation Load (1.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 351ms (ActiveRecord: 20.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-08-01 10:15:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 7235ms (Views: 7200.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:15:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sign_up" for 10.0.2.2 at 2017-08-01 10:15:14 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:15:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  Rendering organisations/registrations/new.html.erb within layouts/application
+  Rendered organisations/shared/_links.html.erb (2.2ms)
+  Rendered organisations/registrations/new.html.erb within layouts/application (85.0ms)
+Completed 200 OK in 254ms (Views: 238.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:15:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/events" for 10.0.2.2 at 2017-08-01 10:15:20 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:15:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/organisations/sign_in" for 10.0.2.2 at 2017-08-01 10:15:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering organisations/sessions/new.html.erb within layouts/application
+  Rendered organisations/shared/_links.html.erb (2.2ms)
+  Rendered organisations/sessions/new.html.erb within layouts/application (79.5ms)
+Completed 200 OK in 328ms (Views: 315.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:15:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:15:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/organisations/sign_in" for 10.0.2.2 at 2017-08-01 10:15:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "organisation"=>{"email"=>"persco@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mOrganisation Load (1.2ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."email" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["email", "persco@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "organisations" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "organisations"."id" = $4[0m  [["current_sign_in_at", "2017-08-01 10:15:35.935390"], ["sign_in_count", 2], ["updated_at", "2017-08-01 10:15:35.939481"], ["id", 7]]
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/events
+Completed 302 Found in 407ms (ActiveRecord: 14.4ms)
+
+
+Started GET "/events" for 10.0.2.2 at 2017-08-01 10:15:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EventsController#index as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/organisations
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered events/index.html.erb within layouts/organisations (5.8ms)
+  Rendered layouts/_navigation.html.erb (6.0ms)
+  Rendered layouts/_topnavbar.html.erb (2.7ms)
+Completed 200 OK in 305ms (Views: 127.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:15:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sign_out" for 10.0.2.2 at 2017-08-01 10:16:36 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:16:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-08-01 10:16:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 96ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:16:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:17:03 +0000
+Started GET "/organisations/sign_up" for 10.0.2.2 at 2017-08-01 10:17:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  Rendering organisations/registrations/new.html.erb within layouts/application
+  Rendered organisations/shared/_links.html.erb (1.8ms)
+  Rendered organisations/registrations/new.html.erb within layouts/application (7003.7ms)
+Completed 200 OK in 7316ms (Views: 7202.0ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:17:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:17:22 +0000
+Started GET "/organisations/sign_in" for 10.0.2.2 at 2017-08-01 10:17:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering organisations/sessions/new.html.erb within layouts/application
+  Rendered organisations/shared/_links.html.erb (2.3ms)
+  Rendered organisations/sessions/new.html.erb within layouts/application (138.0ms)
+Completed 200 OK in 409ms (Views: 380.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:17:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:17:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/organisations/sign_in" for 10.0.2.2 at 2017-08-01 10:17:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "organisation"=>{"email"=>"persco@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mOrganisation Load (2.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."email" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["email", "persco@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "organisations" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "organisations"."id" = $5[0m  [["current_sign_in_at", "2017-08-01 10:17:35.485167"], ["last_sign_in_at", "2017-08-01 10:15:35.935390"], ["sign_in_count", 3], ["updated_at", "2017-08-01 10:17:35.490373"], ["id", 7]]
+  [1m[35m (35.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 559ms (ActiveRecord: 39.0ms)
+
+
+Started GET "/dashboard" for 10.0.2.2 at 2017-08-01 10:17:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered organisations/index.html.erb within layouts/organisations (256.4ms)
+  Rendered layouts/_navigation.html.erb (6.5ms)
+  Rendered layouts/_topnavbar.html.erb (2.5ms)
+Completed 200 OK in 411ms (Views: 360.7ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:17:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/sign_up" for 10.0.2.2 at 2017-08-01 10:18:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:18:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.4ms)
+  Rendered users/registrations/new.html.erb within layouts/application (86.1ms)
+Completed 200 OK in 430ms (Views: 364.9ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:18:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/sign_in" for 10.0.2.2 at 2017-08-01 10:18:37 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:18:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.9ms)
+  Rendered users/sessions/new.html.erb within layouts/application (52.5ms)
+Completed 200 OK in 265ms (Views: 261.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:18:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/password/new" for 10.0.2.2 at 2017-08-01 10:18:46 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:18:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::PasswordsController#new as HTML
+  Rendering users/passwords/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.0ms)
+  Rendered users/passwords/new.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 194ms (Views: 136.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:18:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/sign_up" for 10.0.2.2 at 2017-08-01 10:18:50 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:18:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.9ms)
+  Rendered users/registrations/new.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 174ms (Views: 171.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:18:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/users" for 10.0.2.2 at 2017-08-01 10:26:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:26:30 +0000
+Processing by Devise::RegistrationsController#create as HTML
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Parameters: {"utf8"=>"✓", "user"=>{"first_name"=>"josh", "Last_name"=>"kells", "email"=>"josh.kells@mest.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: first_name, Last_name
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "josh.kells@mest.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "josh.kells@mest.com"], ["encrypted_password", "$2a$11$jUxxhb89vmGjwPMaz6IY8uW41VbGnGOpKbjbsaadqzZ8HGN7UuZ6S"], ["created_at", "2017-08-01 10:26:31.114595"], ["updated_at", "2017-08-01 10:26:31.114595"]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-08-01 10:26:31.129098"], ["last_sign_in_at", "2017-08-01 10:26:31.129098"], ["current_sign_in_ip", "10.0.2.2/32"], ["last_sign_in_ip", "10.0.2.2/32"], ["updated_at", "2017-08-01 10:26:31.133006"], ["id", 5]]
+  [1m[35m (21.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/userfeed
+Completed 302 Found in 528ms (ActiveRecord: 29.6ms)
+
+
+Started GET "/userfeed" for 10.0.2.2 at 2017-08-01 10:26:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  [1m[36mAnnouncement Load (0.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered groups/index.html.erb within layouts/users (5.6ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (9.1ms)
+Completed 200 OK in 277ms (Views: 175.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:26:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/5" for 10.0.2.2 at 2017-08-01 10:26:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:26:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/users
+  Rendered users/show.html.erb within layouts/users (2.2ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.7ms)
+Completed 200 OK in 147ms (Views: 90.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:26:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:27:08 +0000
+Started GET "/users/5/edit" for 10.0.2.2 at 2017-08-01 10:27:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/users
+  Rendered users/_form.html.erb (12.7ms)
+  Rendered users/edit.html.erb within layouts/users (81.6ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.2ms)
+Completed 200 OK in 223ms (Views: 167.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:27:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:28:08 +0000
+Started PATCH "/users/5" for 10.0.2.2 at 2017-08-01 10:28:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"first_name"=>"Koo fori", "email"=>"josh.kells@mest.com", "phone_number"=>"0242206604", "profession"=>"Rails Developer", "education"=>"University of Ghana", "skills"=>"Rails , Ruby , Machine Learning", "YearGroup"=>"2011"}, "commit"=>"Update", "id"=>"5"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "first_name" = $1, "phone_number" = $2, "profession" = $3, "education" = $4, "skills" = $5, "YearGroup" = $6, "updated_at" = $7 WHERE "users"."id" = $8[0m  [["first_name", "Koo fori"], ["phone_number", "0242206604"], ["profession", "Rails Developer"], ["education", "University of Ghana"], ["skills", "Rails , Ruby , Machine Learning"], ["YearGroup", "2011"], ["updated_at", "2017-08-01 10:28:08.504940"], ["id", 5]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 29ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/users/5" for 10.0.2.2 at 2017-08-01 10:28:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/users
+  Rendered users/show.html.erb within layouts/users (2.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (4.2ms)
+Completed 200 OK in 136ms (Views: 87.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:28:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:28:12 +0000
+Started GET "/groups/skills" for 10.0.2.2 at 2017-08-01 10:28:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#skills as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/skills.html.erb within layouts/users
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered groups/skills.html.erb within layouts/users (7.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (9.9ms)
+Completed 200 OK in 328ms (Views: 94.3ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:28:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/groups/skills" for 10.0.2.2 at 2017-08-01 10:28:16 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:28:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#skills as HTML
+  [1m[36mOrganisation Load (2.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/skills.html.erb within layouts/users
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered groups/skills.html.erb within layouts/users (4.8ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (7.6ms)
+Completed 200 OK in 178ms (Views: 100.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:28:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:28:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/skillsearch?utf8=%E2%9C%93&search=Rails&commit=Search" for 10.0.2.2 at 2017-08-01 10:28:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skillsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Rails", "commit"=>"Search"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/skillsearch.html.erb within layouts/users
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN (SELECT "users"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, ''))), (to_tsquery('simple', ''' ' || 'Rails' || ' ''' || ':*')), 2)) AS rank FROM "users" WHERE (((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'Rails' || ' ''' || ':*'))))) AS pg_search_7dfb4cf67742cb0660305e ON "users"."id" = pg_search_7dfb4cf67742cb0660305e.pg_search_id ORDER BY pg_search_7dfb4cf67742cb0660305e.rank DESC, "users"."id" ASC, "users"."skills" ASC[0m
+  Rendered users/skillsearch.html.erb within layouts/users (7.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.2ms)
+Completed 200 OK in 205ms (Views: 112.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:28:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+Started GET "/users/sign_out" for 10.0.2.2 at 2017-08-01 10:31:09 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:31:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 46ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-08-01 10:31:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 106ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:31:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sign_up" for 10.0.2.2 at 2017-08-01 10:31:12 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:31:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  Rendering organisations/registrations/new.html.erb within layouts/application
+  Rendered organisations/shared/_links.html.erb (2.8ms)
+  Rendered organisations/registrations/new.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 223ms (Views: 218.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:31:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/sign_up" for 10.0.2.2 at 2017-08-01 10:31:26 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:31:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.0ms)
+  Rendered users/registrations/new.html.erb within layouts/application (62.8ms)
+Completed 200 OK in 244ms (Views: 239.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:31:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/dashboard" for 10.0.2.2 at 2017-08-01 10:31:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/organisations/sign_in" for 10.0.2.2 at 2017-08-01 10:31:32 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:31:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering organisations/sessions/new.html.erb within layouts/application
+  Rendered organisations/shared/_links.html.erb (2.8ms)
+  Rendered organisations/sessions/new.html.erb within layouts/application (50.6ms)
+Completed 200 OK in 222ms (Views: 210.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:31:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/organisations/sign_in" for 10.0.2.2 at 2017-08-01 10:32:12 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:32:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "organisation"=>{"email"=>"persco@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mOrganisation Load (1.2ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."email" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["email", "persco@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE "organisations" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "organisations"."id" = $5[0m  [["current_sign_in_at", "2017-08-01 10:32:12.718727"], ["last_sign_in_at", "2017-08-01 10:17:35.485167"], ["sign_in_count", 4], ["updated_at", "2017-08-01 10:32:12.723917"], ["id", 7]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 414ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/dashboard" for 10.0.2.2 at 2017-08-01 10:32:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered organisations/index.html.erb within layouts/organisations (15.7ms)
+  Rendered layouts/_navigation.html.erb (4.8ms)
+  Rendered layouts/_topnavbar.html.erb (2.0ms)
+Completed 200 OK in 185ms (Views: 137.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:32:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/users" for 10.0.2.2 at 2017-08-01 10:32:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:32:52 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"first_name"=>"fred", "Last_name"=>"boateng", "email"=>"fred.boateng@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Unpermitted parameters: first_name, Last_name
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "fred.boateng@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "fred.boateng@gmail.com"], ["encrypted_password", "$2a$11$3xG/B5jOLp1JznWgluhxvOKXVb8pGR/jjIou87Pn9EvAv4v3rcng."], ["created_at", "2017-08-01 10:32:52.308179"], ["updated_at", "2017-08-01 10:32:52.308179"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-08-01 10:32:52.317791"], ["last_sign_in_at", "2017-08-01 10:32:52.317791"], ["current_sign_in_ip", "10.0.2.2/32"], ["last_sign_in_ip", "10.0.2.2/32"], ["updated_at", "2017-08-01 10:32:52.320454"], ["id", 6]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/userfeed
+Completed 302 Found in 410ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/userfeed" for 10.0.2.2 at 2017-08-01 10:32:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  [1m[36mAnnouncement Load (0.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered groups/index.html.erb within layouts/users (3.9ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (8.4ms)
+Completed 200 OK in 131ms (Views: 87.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:32:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:33:02 +0000
+Started GET "/groups/skills" for 10.0.2.2 at 2017-08-01 10:33:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#skills as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/skills.html.erb within layouts/users
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered groups/skills.html.erb within layouts/users (5.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (8.0ms)
+Completed 200 OK in 147ms (Views: 87.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:33:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/skillsearch?utf8=%E2%9C%93&search=rails&commit=Search" for 10.0.2.2 at 2017-08-01 10:33:07 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:33:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skillsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"rails", "commit"=>"Search"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/skillsearch.html.erb within layouts/users
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN (SELECT "users"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, ''))), (to_tsquery('simple', ''' ' || 'rails' || ' ''' || ':*')), 2)) AS rank FROM "users" WHERE (((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'rails' || ' ''' || ':*'))))) AS pg_search_7dfb4cf67742cb0660305e ON "users"."id" = pg_search_7dfb4cf67742cb0660305e.pg_search_id ORDER BY pg_search_7dfb4cf67742cb0660305e.rank DESC, "users"."id" ASC, "users"."skills" ASC[0m
+  Rendered users/skillsearch.html.erb within layouts/users (6.5ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.9ms)
+Completed 200 OK in 155ms (Views: 99.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:33:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/groups/events" for 10.0.2.2 at 2017-08-01 10:33:26 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:33:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered groups/events.html.erb within layouts/users (5.0ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (8.7ms)
+Completed 200 OK in 206ms (Views: 96.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:33:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/groups/jobs" for 10.0.2.2 at 2017-08-01 10:33:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:33:29 +0000
+Processing by GroupsController#jobs as HTML
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered groups/jobs.html.erb within layouts/users (6.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (7.5ms)
+Completed 200 OK in 252ms (Views: 91.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:33:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/groups/skills" for 10.0.2.2 at 2017-08-01 10:33:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:33:31 +0000
+Processing by GroupsController#skills as HTML
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mOrganisation Load (1.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/skills.html.erb within layouts/users
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered groups/skills.html.erb within layouts/users (6.5ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (7.8ms)
+Completed 200 OK in 142ms (Views: 88.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:33:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/userfeed" for 10.0.2.2 at 2017-08-01 10:33:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:33:33 +0000
+Processing by GroupsController#index as HTML
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mOrganisation Load (1.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  [1m[36mAnnouncement Load (0.5ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered groups/index.html.erb within layouts/users (3.9ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (7.7ms)
+Completed 200 OK in 136ms (Views: 86.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:33:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/groups/jobs" for 10.0.2.2 at 2017-08-01 10:36:59 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:36:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered groups/jobs.html.erb within layouts/users (5.8ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (9.8ms)
+Completed 200 OK in 158ms (Views: 95.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:36:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/groups/skills" for 10.0.2.2 at 2017-08-01 10:40:00 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:40:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#skills as HTML
+  [1m[36mOrganisation Load (1.8ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/skills.html.erb within layouts/users
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered groups/skills.html.erb within layouts/users (9.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (6.5ms)
+Completed 200 OK in 300ms (Views: 169.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:40:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/skillsearch?utf8=%E2%9C%93&search=rails&commit=Search" for 10.0.2.2 at 2017-08-01 10:40:04 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:40:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skillsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"rails", "commit"=>"Search"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/skillsearch.html.erb within layouts/users
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN (SELECT "users"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, ''))), (to_tsquery('simple', ''' ' || 'rails' || ' ''' || ':*')), 2)) AS rank FROM "users" WHERE (((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'rails' || ' ''' || ':*'))))) AS pg_search_7dfb4cf67742cb0660305e ON "users"."id" = pg_search_7dfb4cf67742cb0660305e.pg_search_id ORDER BY pg_search_7dfb4cf67742cb0660305e.rank DESC, "users"."id" ASC, "users"."skills" ASC[0m
+  Rendered users/skillsearch.html.erb within layouts/users (5.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.2ms)
+Completed 200 OK in 143ms (Views: 92.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 10:40:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:07:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:07:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:07:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:07:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:07:42 +0000
+Started GET "/groups/jobs" for 10.0.2.2 at 2017-08-01 11:07:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered groups/jobs.html.erb within layouts/users (6.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (8.3ms)
+Completed 200 OK in 147ms (Views: 94.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:07:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/jobs/jobsearch?utf8=%E2%9C%93&search=necthub&commit=Search" for 10.0.2.2 at 2017-08-01 11:07:52 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:07:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by JobsController#jobsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"necthub", "commit"=>"Search"}
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering jobs/jobsearch.html.erb within layouts/organisations
+  [1m[36mJob Load (1.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" INNER JOIN (SELECT "jobs"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("jobs"."company_name"::text, '')) || to_tsvector('simple', coalesce("jobs"."position"::text, ''))), (to_tsquery('simple', ''' ' || 'necthub' || ' ''' || ':*')), 2)) AS rank FROM "jobs" WHERE (((to_tsvector('simple', coalesce("jobs"."company_name"::text, '')) || to_tsvector('simple', coalesce("jobs"."position"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'necthub' || ' ''' || ':*'))))) AS pg_search_5d9a17cb70b9733aadc073 ON "jobs"."id" = pg_search_5d9a17cb70b9733aadc073.pg_search_id ORDER BY pg_search_5d9a17cb70b9733aadc073.rank DESC, "jobs"."id" ASC, "jobs"."company_name" ASC[0m
+  Rendered jobs/jobsearch.html.erb within layouts/organisations (16.4ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_topnavbar.html.erb (1.8ms)
+Completed 200 OK in 261ms (Views: 141.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:07:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:33:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/jobs/jobsearch?utf8=%E2%9C%93&search=necthub&commit=Search" for 10.0.2.2 at 2017-08-01 11:33:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by JobsController#jobsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"necthub", "commit"=>"Search"}
+  [1m[36mOrganisation Load (1.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering jobs/jobsearch.html.erb within layouts/organisations
+  [1m[36mJob Load (1.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" INNER JOIN (SELECT "jobs"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("jobs"."company_name"::text, '')) || to_tsvector('simple', coalesce("jobs"."position"::text, ''))), (to_tsquery('simple', ''' ' || 'necthub' || ' ''' || ':*')), 2)) AS rank FROM "jobs" WHERE (((to_tsvector('simple', coalesce("jobs"."company_name"::text, '')) || to_tsvector('simple', coalesce("jobs"."position"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'necthub' || ' ''' || ':*'))))) AS pg_search_5d9a17cb70b9733aadc073 ON "jobs"."id" = pg_search_5d9a17cb70b9733aadc073.pg_search_id ORDER BY pg_search_5d9a17cb70b9733aadc073.rank DESC, "jobs"."id" ASC, "jobs"."company_name" ASC[0m
+  Rendered jobs/jobsearch.html.erb within layouts/organisations (8.3ms)
+  Rendered layouts/_navigation.html.erb (6.1ms)
+  Rendered layouts/_topnavbar.html.erb (3.2ms)
+Completed 200 OK in 602ms (Views: 536.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:33:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:35:56 +0000
+Started GET "/jobs/jobsearch?utf8=%E2%9C%93&search=necthub&commit=Search" for 10.0.2.2 at 2017-08-01 11:35:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by JobsController#jobsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"necthub", "commit"=>"Search"}
+  [1m[36mOrganisation Load (1.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering jobs/jobsearch.html.erb within layouts/users
+  [1m[36mJob Load (2.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" INNER JOIN (SELECT "jobs"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("jobs"."company_name"::text, '')) || to_tsvector('simple', coalesce("jobs"."position"::text, ''))), (to_tsquery('simple', ''' ' || 'necthub' || ' ''' || ':*')), 2)) AS rank FROM "jobs" WHERE (((to_tsvector('simple', coalesce("jobs"."company_name"::text, '')) || to_tsvector('simple', coalesce("jobs"."position"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'necthub' || ' ''' || ':*'))))) AS pg_search_5d9a17cb70b9733aadc073 ON "jobs"."id" = pg_search_5d9a17cb70b9733aadc073.pg_search_id ORDER BY pg_search_5d9a17cb70b9733aadc073.rank DESC, "jobs"."id" ASC, "jobs"."company_name" ASC[0m
+  Rendered jobs/jobsearch.html.erb within layouts/users (78.2ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (45.9ms)
+Completed 200 OK in 7560ms (Views: 7213.6ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:36:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/6" for 10.0.2.2 at 2017-08-01 11:52:27 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:52:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/users
+  Rendered users/show.html.erb within layouts/users (3.3ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.7ms)
+Completed 200 OK in 153ms (Views: 92.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:52:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/6/edit" for 10.0.2.2 at 2017-08-01 11:52:31 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:52:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/users
+  Rendered users/_form.html.erb (33.5ms)
+  Rendered users/edit.html.erb within layouts/users (84.0ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.6ms)
+Completed 200 OK in 249ms (Views: 163.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:52:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:53:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started PATCH "/users/6" for 10.0.2.2 at 2017-08-01 11:53:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"first_name"=>"Boateng", "email"=>"fred.boateng@gmail.com", "phone_number"=>"0242206604", "profession"=>"React Developer", "education"=>"University of Ghana", "skills"=>"React , Rails", "YearGroup"=>"2013"}, "commit"=>"Update", "id"=>"6"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "first_name" = $1, "phone_number" = $2, "profession" = $3, "education" = $4, "skills" = $5, "YearGroup" = $6, "updated_at" = $7 WHERE "users"."id" = $8[0m  [["first_name", "Boateng"], ["phone_number", "0242206604"], ["profession", "React Developer"], ["education", "University of Ghana"], ["skills", "React , Rails"], ["YearGroup", "2013"], ["updated_at", "2017-08-01 11:53:27.872380"], ["id", 6]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 38ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/users/6" for 10.0.2.2 at 2017-08-01 11:53:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/users
+  Rendered users/show.html.erb within layouts/users (2.3ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.7ms)
+Completed 200 OK in 117ms (Views: 76.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 11:53:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/dashboard" for 10.0.2.2 at 2017-08-01 12:33:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (1.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:33:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered organisations/index.html.erb within layouts/organisations (495.1ms)
+  Rendered layouts/_navigation.html.erb (6.1ms)
+  Rendered layouts/_topnavbar.html.erb (6.3ms)
+Completed 200 OK in 1254ms (Views: 1097.3ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:33:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/fundraisings" for 10.0.2.2 at 2017-08-01 12:35:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FundraisingsController#index as HTML
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:35:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mOrganisation Load (5.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering fundraisings/index.html.erb within layouts/organisations
+  [1m[36mFundraising Load (0.3ms)[0m  [1m[34mSELECT "fundraisings".* FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered fundraisings/index.html.erb within layouts/organisations (7.7ms)
+  Rendered layouts/_navigation.html.erb (3.3ms)
+  Rendered layouts/_topnavbar.html.erb (1.5ms)
+Completed 200 OK in 492ms (Views: 160.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:35:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/networks/index" for 10.0.2.2 at 2017-08-01 12:35:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:35:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound - The action 'show' could not be found for NetworksController:
+  actionpack (5.0.4) lib/abstract_controller/base.rb:121:in `process'
+  actionview (5.0.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.4) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.4) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.4) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:35:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/427a0c118cb3a30b/variables" for 10.0.2.2 at 2017-08-01 12:35:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/networks" for 10.0.2.2 at 2017-08-01 12:35:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NetworksController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering networks/index.html.erb within layouts/organisations
+  Rendered networks/index.html.erb within layouts/organisations (1.2ms)
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:35:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Completed 500 Internal Server Error in 7662ms (ActiveRecord: 0.5ms)
+
+
+
+Sprockets::Rails::Helper::AssetNotPrecompiled - Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( networks.css )` to `config/initializers/assets.rb` and restart your server:
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:363:in `raise_unless_precompiled_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:337:in `digest_path'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:325:in `asset_path'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:102:in `block in resolve_asset_path'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:242:in `block in resolve_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:241:in `resolve_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:101:in `resolve_asset_path'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:79:in `compute_asset_path'
+  actionview (5.0.4) lib/action_view/helpers/asset_url_helper.rb:144:in `asset_path'
+  actionview (5.0.4) lib/action_view/helpers/asset_url_helper.rb:281:in `stylesheet_path'
+  actionview (5.0.4) lib/action_view/helpers/asset_tag_helper.rb:100:in `block in stylesheet_link_tag'
+  actionview (5.0.4) lib/action_view/helpers/asset_tag_helper.rb:96:in `stylesheet_link_tag'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:185:in `block in stylesheet_link_tag'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:183:in `stylesheet_link_tag'
+  app/views/layouts/organisations.html.erb:10:in `_app_views_layouts_organisations_html_erb___1007967891__582485688'
+  actionview (5.0.4) lib/action_view/template.rb:159:in `block in render'
+  activesupport (5.0.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.4) lib/action_view/template.rb:354:in `instrument'
+  actionview (5.0.4) lib/action_view/template.rb:157:in `render'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (5.0.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (5.0.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (5.0.4) lib/action_view/rendering.rb:104:in `_render_template'
+  actionpack (5.0.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (5.0.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+  actionpack (5.0.4) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+  actionpack (5.0.4) lib/abstract_controller/rendering.rb:26:in `render'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:36:in `render'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (5.0.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (5.0.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (5.0.4) lib/action_controller/metal/implicit_render.rb:36:in `default_render'
+  actionpack (5.0.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+  actionpack (5.0.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.4) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.4) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.4) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/778c982d5300f3c6/variables" for 10.0.2.2 at 2017-08-01 12:35:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:35:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/groups" for 10.0.2.2 at 2017-08-01 12:36:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  [1m[36mAnnouncement Load (0.9ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered groups/index.html.erb within layouts/users (5.2ms)
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:36:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (21.6ms)
+Completed 200 OK in 245ms (Views: 108.9ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:36:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:36:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/networks" for 10.0.2.2 at 2017-08-01 12:36:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:36:22 +0000
+Processing by NetworksController#index as HTML
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mOrganisation Load (10.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering networks/index.html.erb within layouts/organisations
+  Rendered networks/index.html.erb within layouts/organisations (1.0ms)
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 10.0ms)
+
+
+
+Sprockets::Rails::Helper::AssetNotPrecompiled - Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( networks.css )` to `config/initializers/assets.rb` and restart your server:
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:363:in `raise_unless_precompiled_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:337:in `digest_path'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:325:in `asset_path'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:102:in `block in resolve_asset_path'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:242:in `block in resolve_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:241:in `resolve_asset'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:101:in `resolve_asset_path'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:79:in `compute_asset_path'
+  actionview (5.0.4) lib/action_view/helpers/asset_url_helper.rb:144:in `asset_path'
+  actionview (5.0.4) lib/action_view/helpers/asset_url_helper.rb:281:in `stylesheet_path'
+  actionview (5.0.4) lib/action_view/helpers/asset_tag_helper.rb:100:in `block in stylesheet_link_tag'
+  actionview (5.0.4) lib/action_view/helpers/asset_tag_helper.rb:96:in `stylesheet_link_tag'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:185:in `block in stylesheet_link_tag'
+  sprockets-rails (3.2.0) lib/sprockets/rails/helper.rb:183:in `stylesheet_link_tag'
+  app/views/layouts/organisations.html.erb:10:in `_app_views_layouts_organisations_html_erb___1007967891__574418468'
+  actionview (5.0.4) lib/action_view/template.rb:159:in `block in render'
+  activesupport (5.0.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.4) lib/action_view/template.rb:354:in `instrument'
+  actionview (5.0.4) lib/action_view/template.rb:157:in `render'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (5.0.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (5.0.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (5.0.4) lib/action_view/rendering.rb:104:in `_render_template'
+  actionpack (5.0.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (5.0.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+  actionpack (5.0.4) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+  actionpack (5.0.4) lib/abstract_controller/rendering.rb:26:in `render'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:36:in `render'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (5.0.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (5.0.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (5.0.4) lib/action_controller/metal/implicit_render.rb:36:in `default_render'
+  actionpack (5.0.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+  actionpack (5.0.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.4) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.4) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.4) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:36:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/ceb84198dc61b334/variables" for 10.0.2.2 at 2017-08-01 12:36:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:38:12 +0000
+Started GET "/networks" for 10.0.2.2 at 2017-08-01 12:38:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NetworksController#index as HTML
+  [1m[36mOrganisation Load (2.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering networks/index.html.erb within layouts/organisations
+  Rendered networks/index.html.erb within layouts/organisations (15.8ms)
+  Rendered layouts/_navigation.html.erb (6.6ms)
+  Rendered layouts/_topnavbar.html.erb (3.3ms)
+Completed 200 OK in 16394ms (Views: 15707.8ms | ActiveRecord: 33.9ms)
+
+
+Started GET "/assets/networks-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 10.0.2.2 at 2017-08-01 12:38:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/networks-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" for 10.0.2.2 at 2017-08-01 12:38:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:38:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/networks" for 10.0.2.2 at 2017-08-01 12:39:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:39:32 +0000
+Processing by NetworksController#index as HTML
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mOrganisation Load (1.1ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering networks/index.html.erb within layouts/organisations
+  Rendered networks/index.html.erb within layouts/organisations (1.2ms)
+  Rendered layouts/_navigation.html.erb (5.2ms)
+  Rendered layouts/_topnavbar.html.erb (1.6ms)
+Completed 200 OK in 195ms (Views: 131.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 12:39:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "groups" ON "users"."id" = "groups"."user_id" WHERE "groups"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "groups" ON "users"."id" = "groups"."user_id" WHERE "groups"."organisation_id" = $1[0m  [["organisation_id", 2]]
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "groups" ON "users"."id" = "groups"."user_id" WHERE "groups"."organisation_id" = $1[0m  [["organisation_id", 3]]
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "groups" ON "users"."id" = "groups"."user_id" WHERE "groups"."organisation_id" = $1[0m  [["organisation_id", 4]]
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "organisations"[0m
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "groups" ON "users"."id" = "groups"."user_id" WHERE "groups"."organisation_id" = $1[0m  [["organisation_id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" INNER JOIN "memberships" ON "organisations"."id" = "memberships"."organisation_id" WHERE "memberships"."user_id" = $1[0m  [["user_id", 5]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" INNER JOIN "groups" ON "organisations"."id" = "groups"."organisation_id" WHERE "groups"."user_id" = $1[0m  [["user_id", 6]]
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:52:45 +0000
+Started GET "/organisations/sign_up" for 10.0.2.2 at 2017-08-01 16:52:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  [1m[36mOrganisation Load (1.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Redirected to http://localhost:3000/dashboard
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 370ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/dashboard" for 10.0.2.2 at 2017-08-01 16:52:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (0.7ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 7]]
+  Rendered organisations/index.html.erb within layouts/organisations (696.8ms)
+  Rendered layouts/_navigation.html.erb (8.2ms)
+  Rendered layouts/_topnavbar.html.erb (3.9ms)
+Completed 200 OK in 11695ms (Views: 11475.2ms | ActiveRecord: 17.1ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:52:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/organisations/sign_out" for 10.0.2.2 at 2017-08-01 16:53:28 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:53:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 105ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2017-08-01 16:53:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 171ms (Views: 119.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:53:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:53:34 +0000
+Started GET "/organisations/sign_up" for 10.0.2.2 at 2017-08-01 16:53:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  Rendering organisations/registrations/new.html.erb within layouts/application
+  Rendered organisations/shared/_links.html.erb (2.2ms)
+  Rendered organisations/registrations/new.html.erb within layouts/application (191.3ms)
+Completed 200 OK in 446ms (Views: 429.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:53:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:54:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/organisations" for 10.0.2.2 at 2017-08-01 16:54:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "organisation"=>{"organisation_name"=>"University of Ghana", "email"=>"ug@edu.gh", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrganisation Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "organisations" WHERE "organisations"."email" = $1 LIMIT $2[0m  [["email", "ug@edu.gh"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "organisations" ("email", "encrypted_password", "created_at", "updated_at", "organisation_name") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "ug@edu.gh"], ["encrypted_password", "$2a$11$RLpMuOzctPbQvmNFfUEPEefCM5Z1i76Qsp2VqS3eaVaxHTqWMx/9a"], ["created_at", "2017-08-01 16:54:19.524366"], ["updated_at", "2017-08-01 16:54:19.524366"], ["organisation_name", "University of Ghana"]]
+  [1m[35m (30.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "organisations" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "organisations"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-08-01 16:54:19.561851"], ["last_sign_in_at", "2017-08-01 16:54:19.561851"], ["current_sign_in_ip", "10.0.2.2/32"], ["last_sign_in_ip", "10.0.2.2/32"], ["updated_at", "2017-08-01 16:54:19.565157"], ["id", 8]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 563ms (ActiveRecord: 34.6ms)
+
+
+Started GET "/dashboard" for 10.0.2.2 at 2017-08-01 16:54:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrganisationsController#index as HTML
+  [1m[36mOrganisation Load (1.2ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering organisations/index.html.erb within layouts/organisations
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "membershipdata" WHERE "membershipdata"."organisation_id" = $1[0m  [["organisation_id", 8]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "fundraisings" WHERE "fundraisings"."organisation_id" = $1[0m  [["organisation_id", 8]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 8]]
+  Rendered organisations/index.html.erb within layouts/organisations (33.0ms)
+  Rendered layouts/_navigation.html.erb (7.6ms)
+  Rendered layouts/_topnavbar.html.erb (3.1ms)
+Completed 200 OK in 485ms (Views: 366.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:54:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/sign_up" for 10.0.2.2 at 2017-08-01 16:54:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:54:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.9ms)
+  Rendered users/registrations/new.html.erb within layouts/application (82.2ms)
+Completed 200 OK in 309ms (Views: 306.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:54:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/users" for 10.0.2.2 at 2017-08-01 16:55:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:55:42 +0000
+Processing by Devise::RegistrationsController#create as HTML
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Parameters: {"utf8"=>"✓", "user"=>{"first_name"=>"Kofi", "Last_name"=>"Mensah", "email"=>"kofi.mensah@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: first_name, Last_name
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kofi.mensah@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "kofi.mensah@gmail.com"], ["encrypted_password", "$2a$11$easpwnrN9aA8HyAOwijrZOHSjUgrCTgsJNRToAJxSbj/wIUB9Xj1q"], ["created_at", "2017-08-01 16:55:42.403007"], ["updated_at", "2017-08-01 16:55:42.403007"]]
+  [1m[35m (26.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-08-01 16:55:42.437547"], ["last_sign_in_at", "2017-08-01 16:55:42.437547"], ["current_sign_in_ip", "10.0.2.2/32"], ["last_sign_in_ip", "10.0.2.2/32"], ["updated_at", "2017-08-01 16:55:42.440893"], ["id", 7]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/userfeed
+Completed 302 Found in 441ms (ActiveRecord: 29.8ms)
+
+
+Started GET "/userfeed" for 10.0.2.2 at 2017-08-01 16:55:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  [1m[36mAnnouncement Load (0.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 8]]
+  Rendered groups/index.html.erb within layouts/users (4.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (8.8ms)
+Completed 200 OK in 262ms (Views: 126.4ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:55:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:55:52 +0000
+Started GET "/groups/events" for 10.0.2.2 at 2017-08-01 16:55:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#events as HTML
+  [1m[36mOrganisation Load (1.1ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering groups/events.html.erb within layouts/users
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."organisation_id" = $1[0m  [["organisation_id", 8]]
+  Rendered groups/events.html.erb within layouts/users (6.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (6.9ms)
+Completed 200 OK in 224ms (Views: 90.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:55:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:55:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/groups/jobs" for 10.0.2.2 at 2017-08-01 16:55:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (1.2ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 8]]
+  Rendered groups/jobs.html.erb within layouts/users (7.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (7.7ms)
+Completed 200 OK in 250ms (Views: 97.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:55:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:55:57 +0000
+Started GET "/groups/skills" for 10.0.2.2 at 2017-08-01 16:55:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#skills as HTML
+  [1m[36mOrganisation Load (0.9ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering groups/skills.html.erb within layouts/users
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "groups" ON "users"."id" = "groups"."user_id" WHERE "groups"."organisation_id" = $1[0m  [["organisation_id", 8]]
+  Rendered groups/skills.html.erb within layouts/users (7.7ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (8.5ms)
+Completed 200 OK in 250ms (Views: 90.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 16:55:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:07:05 +0000
+Started GET "/groups/jobs" for 10.0.2.2 at 2017-08-01 17:07:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#jobs as HTML
+  [1m[36mOrganisation Load (1.5ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering groups/jobs.html.erb within layouts/users
+  [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs" WHERE "jobs"."organisation_id" = $1[0m  [["organisation_id", 8]]
+  Rendered groups/jobs.html.erb within layouts/users (29.2ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (48.4ms)
+Completed 200 OK in 7923ms (Views: 7489.6ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:07:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:07:31 +0000
+Started GET "/users/skills" for 10.0.2.2 at 2017-08-01 17:07:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skills as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/skills.html.erb within layouts/users
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/skills.html.erb within layouts/users (79.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (7.2ms)
+Completed 200 OK in 336ms (Views: 270.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:07:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/skillsearch?utf8=%E2%9C%93&search=Business&commit=Search" for 10.0.2.2 at 2017-08-01 17:12:04 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:12:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skillsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Business", "commit"=>"Search"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/skillsearch.html.erb within layouts/users
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN (SELECT "users"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))), (to_tsquery('simple', ''' ' || 'Business' || ' ''' || ':*')), 2)) AS rank FROM "users" WHERE (((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'Business' || ' ''' || ':*'))))) AS pg_search_7dfb4cf67742cb0660305e ON "users"."id" = pg_search_7dfb4cf67742cb0660305e.pg_search_id ORDER BY pg_search_7dfb4cf67742cb0660305e.rank DESC, "users"."id" ASC, "users"."skills" ASC[0m
+  Rendered users/skillsearch.html.erb within layouts/users (66.6ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.7ms)
+Completed 200 OK in 404ms (Views: 182.3ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:12:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:14:28 +0000
+Started GET "/users/skills" for 10.0.2.2 at 2017-08-01 17:14:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skills as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/skills.html.erb within layouts/users
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/skills.html.erb within layouts/users (22.1ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.7ms)
+Completed 200 OK in 132ms (Views: 92.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:14:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:14:34 +0000
+Started GET "/users/skillsearch?utf8=%E2%9C%93&search=Nimoo&commit=Search" for 10.0.2.2 at 2017-08-01 17:14:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skillsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Nimoo", "commit"=>"Search"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/skillsearch.html.erb within layouts/users
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN (SELECT "users"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))), (to_tsquery('simple', ''' ' || 'Nimoo' || ' ''' || ':*')), 2)) AS rank FROM "users" WHERE (((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'Nimoo' || ' ''' || ':*'))))) AS pg_search_7dfb4cf67742cb0660305e ON "users"."id" = pg_search_7dfb4cf67742cb0660305e.pg_search_id ORDER BY pg_search_7dfb4cf67742cb0660305e.rank DESC, "users"."id" ASC, "users"."skills" ASC[0m
+  Rendered users/skillsearch.html.erb within layouts/users (16.9ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.2ms)
+Completed 200 OK in 153ms (Views: 102.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:14:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/skills" for 10.0.2.2 at 2017-08-01 17:14:41 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:14:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skills as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/skills.html.erb within layouts/users
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/skills.html.erb within layouts/users (25.5ms)
+  Rendered layouts/_usertopnavbar.html.erb (4.3ms)
+Completed 200 OK in 167ms (Views: 112.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:14:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:14:47 +0000
+Started GET "/users/skillsearch?utf8=%E2%9C%93&search=Isaac&commit=Search" for 10.0.2.2 at 2017-08-01 17:14:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skillsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Isaac", "commit"=>"Search"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/skillsearch.html.erb within layouts/users
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN (SELECT "users"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))), (to_tsquery('simple', ''' ' || 'Isaac' || ' ''' || ':*')), 2)) AS rank FROM "users" WHERE (((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'Isaac' || ' ''' || ':*'))))) AS pg_search_7dfb4cf67742cb0660305e ON "users"."id" = pg_search_7dfb4cf67742cb0660305e.pg_search_id ORDER BY pg_search_7dfb4cf67742cb0660305e.rank DESC, "users"."id" ASC, "users"."skills" ASC[0m
+  Rendered users/skillsearch.html.erb within layouts/users (14.6ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.3ms)
+Completed 200 OK in 128ms (Views: 86.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:14:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:21:57 +0000
+Started GET "/userfeed" for 10.0.2.2 at 2017-08-01 17:21:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (1.4ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  [1m[36mAnnouncement Load (1.7ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 8]]
+  Rendered groups/index.html.erb within layouts/users (15.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (42.7ms)
+Completed 200 OK in 8379ms (Views: 7980.8ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:22:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/memberprofiles" for 10.0.2.2 at 2017-08-01 17:22:15 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:22:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#memberprofiles as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/memberprofiles.html.erb within layouts/users
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/memberprofiles.html.erb within layouts/users (590.6ms)
+Completed 500 Internal Server Error in 671ms (ActiveRecord: 1.2ms)
+
+
+
+NameError - undefined local variable or method `skill' for #<#<Class:0xb329c24c>:0xbaa32590>:
+  app/views/users/memberprofiles.html.erb:44:in `block in _app_views_users_memberprofiles_html_erb___90029736__644554148'
+  activerecord (5.0.4) lib/active_record/relation/delegation.rb:38:in `each'
+  app/views/users/memberprofiles.html.erb:39:in `_app_views_users_memberprofiles_html_erb___90029736__644554148'
+  actionview (5.0.4) lib/action_view/template.rb:159:in `block in render'
+  activesupport (5.0.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.4) lib/action_view/template.rb:354:in `instrument'
+  actionview (5.0.4) lib/action_view/template.rb:157:in `render'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (5.0.4) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (5.0.4) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (5.0.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (5.0.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (5.0.4) lib/action_view/rendering.rb:104:in `_render_template'
+  actionpack (5.0.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (5.0.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+  actionpack (5.0.4) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+  actionpack (5.0.4) lib/abstract_controller/rendering.rb:26:in `render'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:36:in `render'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (5.0.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (5.0.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (5.0.4) lib/action_controller/metal/implicit_render.rb:36:in `default_render'
+  actionpack (5.0.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+  actionpack (5.0.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.4) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.4) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.4) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:22:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/8c2ccaa6b9c60b37/variables" for 10.0.2.2 at 2017-08-01 17:22:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/memberprofiles" for 10.0.2.2 at 2017-08-01 17:23:09 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:23:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#memberprofiles as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/memberprofiles.html.erb within layouts/users
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/memberprofiles.html.erb within layouts/users (26.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.8ms)
+Completed 200 OK in 145ms (Views: 101.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 17:23:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:02:03 +0000
+Started GET "/users/skillsearch?utf8=%E2%9C%93&search=Nimo&commit=Search" for 10.0.2.2 at 2017-08-01 18:02:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skillsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Nimo", "commit"=>"Search"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/skillsearch.html.erb within layouts/users
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN (SELECT "users"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))), (to_tsquery('simple', ''' ' || 'Nimo' || ' ''' || ':*')), 2)) AS rank FROM "users" WHERE (((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'Nimo' || ' ''' || ':*'))))) AS pg_search_7dfb4cf67742cb0660305e ON "users"."id" = pg_search_7dfb4cf67742cb0660305e.pg_search_id ORDER BY pg_search_7dfb4cf67742cb0660305e.rank DESC, "users"."id" ASC, "users"."skills" ASC[0m
+  Rendered users/skillsearch.html.erb within layouts/users (51.7ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.9ms)
+Completed 200 OK in 198ms (Views: 138.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:02:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/skills" for 10.0.2.2 at 2017-08-01 18:24:46 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:24:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skills as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/skills.html.erb within layouts/users
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/skills.html.erb within layouts/users (41.3ms)
+  Rendered layouts/_usertopnavbar.html.erb (5.5ms)
+Completed 200 OK in 7674ms (Views: 7380.8ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:24:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/memberprofiles" for 10.0.2.2 at 2017-08-01 18:25:35 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:25:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#memberprofiles as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/memberprofiles.html.erb within layouts/users
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/memberprofiles.html.erb within layouts/users (20.6ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.1ms)
+Completed 200 OK in 135ms (Views: 92.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:25:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:25:43 +0000
+Started GET "/users/skillsearch?utf8=%E2%9C%93&search=Isaac&commit=Search" for 10.0.2.2 at 2017-08-01 18:25:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skillsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Isaac", "commit"=>"Search"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/skillsearch.html.erb within layouts/users
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN (SELECT "users"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))), (to_tsquery('simple', ''' ' || 'Isaac' || ' ''' || ':*')), 2)) AS rank FROM "users" WHERE (((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'Isaac' || ' ''' || ':*'))))) AS pg_search_7dfb4cf67742cb0660305e ON "users"."id" = pg_search_7dfb4cf67742cb0660305e.pg_search_id ORDER BY pg_search_7dfb4cf67742cb0660305e.rank DESC, "users"."id" ASC, "users"."skills" ASC[0m
+  Rendered users/skillsearch.html.erb within layouts/users (55.9ms)
+  Rendered layouts/_usertopnavbar.html.erb (5.9ms)
+Completed 200 OK in 205ms (Views: 143.9ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:25:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/memberprofiles" for 10.0.2.2 at 2017-08-01 18:25:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:25:50 +0000
+Processing by UsersController#memberprofiles as HTML
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/memberprofiles.html.erb within layouts/users
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/memberprofiles.html.erb within layouts/users (22.4ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.0ms)
+Completed 200 OK in 153ms (Views: 99.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:25:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/skillsearch?utf8=%E2%9C%93&search=Isaac&commit=Search" for 10.0.2.2 at 2017-08-01 18:25:57 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:25:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skillsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Isaac", "commit"=>"Search"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/skillsearch.html.erb within layouts/users
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN (SELECT "users"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))), (to_tsquery('simple', ''' ' || 'Isaac' || ' ''' || ':*')), 2)) AS rank FROM "users" WHERE (((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'Isaac' || ' ''' || ':*'))))) AS pg_search_7dfb4cf67742cb0660305e ON "users"."id" = pg_search_7dfb4cf67742cb0660305e.pg_search_id ORDER BY pg_search_7dfb4cf67742cb0660305e.rank DESC, "users"."id" ASC, "users"."skills" ASC[0m
+  Rendered users/skillsearch.html.erb within layouts/users (16.6ms)
+  Rendered layouts/_usertopnavbar.html.erb (2.8ms)
+Completed 200 OK in 135ms (Views: 90.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:25:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/skillsearch?utf8=%E2%9C%93&search=Isaac&commit=Search" for 10.0.2.2 at 2017-08-01 18:27:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:27:37 +0000
+Processing by UsersController#skillsearch as HTML
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Parameters: {"utf8"=>"✓", "search"=>"Isaac", "commit"=>"Search"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/skillsearch.html.erb within layouts/users
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN (SELECT "users"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))), (to_tsquery('simple', ''' ' || 'Isaac' || ' ''' || ':*')), 2)) AS rank FROM "users" WHERE (((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'Isaac' || ' ''' || ':*'))))) AS pg_search_7dfb4cf67742cb0660305e ON "users"."id" = pg_search_7dfb4cf67742cb0660305e.pg_search_id ORDER BY pg_search_7dfb4cf67742cb0660305e.rank DESC, "users"."id" ASC, "users"."skills" ASC[0m
+  Rendered users/skillsearch.html.erb within layouts/users (23.8ms)
+  Rendered layouts/_usertopnavbar.html.erb (7.6ms)
+Completed 200 OK in 200ms (Views: 126.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:27:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:27:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/memberprofiles" for 10.0.2.2 at 2017-08-01 18:27:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#memberprofiles as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/memberprofiles.html.erb within layouts/users
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/memberprofiles.html.erb within layouts/users (21.1ms)
+  Rendered layouts/_usertopnavbar.html.erb (5.4ms)
+Completed 200 OK in 150ms (Views: 111.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:27:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/skillsearch?utf8=%E2%9C%93&search=Isaac&commit=Search" for 10.0.2.2 at 2017-08-01 18:27:46 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:27:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skillsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Isaac", "commit"=>"Search"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/skillsearch.html.erb within layouts/users
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN (SELECT "users"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))), (to_tsquery('simple', ''' ' || 'Isaac' || ' ''' || ':*')), 2)) AS rank FROM "users" WHERE (((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'Isaac' || ' ''' || ':*'))))) AS pg_search_7dfb4cf67742cb0660305e ON "users"."id" = pg_search_7dfb4cf67742cb0660305e.pg_search_id ORDER BY pg_search_7dfb4cf67742cb0660305e.rank DESC, "users"."id" ASC, "users"."skills" ASC[0m
+  Rendered users/skillsearch.html.erb within layouts/users (14.5ms)
+  Rendered layouts/_usertopnavbar.html.erb (8.9ms)
+Completed 200 OK in 141ms (Views: 92.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:27:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:28:03 +0000
+Started GET "/userfeed" for 10.0.2.2 at 2017-08-01 18:28:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (2.3ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  [1m[36mAnnouncement Load (1.3ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 8]]
+  Rendered groups/index.html.erb within layouts/users (15.6ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (57.2ms)
+Completed 200 OK in 7828ms (Views: 7329.9ms | ActiveRecord: 31.5ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:28:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/memberprofiles" for 10.0.2.2 at 2017-08-01 18:29:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:29:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#memberprofiles as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/memberprofiles.html.erb within layouts/users
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/memberprofiles.html.erb within layouts/users (22.9ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.9ms)
+Completed 200 OK in 135ms (Views: 96.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:29:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/skillsearch?utf8=%E2%9C%93&search=Nimoo&commit=Search" for 10.0.2.2 at 2017-08-01 18:29:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:29:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#skillsearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Nimoo", "commit"=>"Search"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/skillsearch.html.erb within layouts/users
+  Rendered users/skillsearch.html.erb within layouts/users (48.2ms)
+Completed 500 Internal Server Error in 122ms (ActiveRecord: 0.8ms)
+
+
+
+NoMethodError - undefined method `each' for nil:NilClass:
+  app/views/users/skillsearch.html.erb:39:in `_app_views_users_skillsearch_html_erb___528724613__644714938'
+  actionview (5.0.4) lib/action_view/template.rb:159:in `block in render'
+  activesupport (5.0.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.4) lib/action_view/template.rb:354:in `instrument'
+  actionview (5.0.4) lib/action_view/template.rb:157:in `render'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (5.0.4) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (5.0.4) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (5.0.4) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (5.0.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (5.0.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (5.0.4) lib/action_view/rendering.rb:104:in `_render_template'
+  actionpack (5.0.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (5.0.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+  actionpack (5.0.4) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+  actionpack (5.0.4) lib/abstract_controller/rendering.rb:26:in `render'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:36:in `render'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (5.0.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/vagrant/.rbenv/versions/2.3.3/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (5.0.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (5.0.4) lib/action_controller/metal/implicit_render.rb:36:in `default_render'
+  actionpack (5.0.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.4) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.4) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.4) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.4) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.4) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:29:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/21e7cc1f3059bafa/variables" for 10.0.2.2 at 2017-08-01 18:29:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:32:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:32:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/memberprofiles" for 10.0.2.2 at 2017-08-01 18:32:54 +0000
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:32:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#memberprofiles as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/memberprofiles.html.erb within layouts/users
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/memberprofiles.html.erb within layouts/users (45.6ms)
+  Rendered layouts/_usertopnavbar.html.erb (7.8ms)
+Completed 200 OK in 8431ms (Views: 8126.8ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:33:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:33:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/memberprofilesearch?utf8=%E2%9C%93&search=Nimoo&commit=Search" for 10.0.2.2 at 2017-08-01 18:33:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#memberprofilesearch as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Nimoo", "commit"=>"Search"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering users/memberprofilesearch.html.erb within layouts/users
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN (SELECT "users"."id" AS pg_search_id, (ts_rank((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))), (to_tsquery('simple', ''' ' || 'Nimoo' || ' ''' || ':*')), 2)) AS rank FROM "users" WHERE (((to_tsvector('simple', coalesce("users"."education"::text, '')) || to_tsvector('simple', coalesce("users"."skills"::text, '')) || to_tsvector('simple', coalesce("users"."first_name"::text, '')) || to_tsvector('simple', coalesce("users"."Last_name"::text, '')) || to_tsvector('simple', coalesce("users"."phone_number"::text, '')) || to_tsvector('simple', coalesce("users"."profession"::text, ''))) @@ (to_tsquery('simple', ''' ' || 'Nimoo' || ' ''' || ':*'))))) AS pg_search_7dfb4cf67742cb0660305e ON "users"."id" = pg_search_7dfb4cf67742cb0660305e.pg_search_id ORDER BY pg_search_7dfb4cf67742cb0660305e.rank DESC, "users"."id" ASC, "users"."skills" ASC[0m
+  Rendered users/memberprofilesearch.html.erb within layouts/users (56.1ms)
+  Rendered layouts/_usertopnavbar.html.erb (3.1ms)
+Completed 200 OK in 183ms (Views: 131.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:33:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:33:28 +0000
+Started GET "/userfeed" for 10.0.2.2 at 2017-08-01 18:33:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mOrganisation Load (1.0ms)[0m  [1m[34mSELECT  "organisations".* FROM "organisations" WHERE "organisations"."id" = $1 ORDER BY "organisations"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering groups/index.html.erb within layouts/users
+  [1m[36mAnnouncement Load (0.8ms)[0m  [1m[34mSELECT "announcements".* FROM "announcements" WHERE "announcements"."organisation_id" = $1[0m  [["organisation_id", 8]]
+  Rendered groups/index.html.erb within layouts/users (4.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendered layouts/_usertopnavbar.html.erb (8.1ms)
+Completed 200 OK in 244ms (Views: 90.8ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/robots.txt" for 10.0.2.2 at 2017-08-01 18:33:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2310131145680354640);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateInvites (20170731192158)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (41.3ms)[0m  [1m[35mDROP TABLE "invites"[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170731192158"]]
+  [1m[35m (39.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(2310131145680354640)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2310131145680354640);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddNetworkIdToMemberships (20170731185412)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "memberships" DROP CONSTRAINT "fk_rails_c868e64da2"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "memberships" DROP "network_id"[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170731185412"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2310131145680354640)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2310131145680354640);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateNetworks (20170731184900)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.7ms)[0m  [1m[35mDROP TABLE "networks"[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170731184900"]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2310131145680354640)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2310131145680354640);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMemberships (20170731181109)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.9ms)[0m  [1m[35mDROP TABLE "memberships"[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170731181109"]]
+  [1m[35m (42.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2310131145680354640)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2310131145680354640);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddSubdomainToOrganisations (20170729123934)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "organisations" DROP "subdomain"[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170729123934"]]
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2310131145680354640)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m

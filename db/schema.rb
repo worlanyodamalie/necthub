@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170731192158) do
+ActiveRecord::Schema.define(version: 20170727202948) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,14 +58,6 @@ ActiveRecord::Schema.define(version: 20170731192158) do
     t.index ["user_id"], name: "index_groups_on_user_id", using: :btree
   end
 
-  create_table "invites", force: :cascade do |t|
-    t.string   "token"
-    t.integer  "organisation_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-    t.index ["organisation_id"], name: "index_invites_on_organisation_id", using: :btree
-  end
-
   create_table "jobs", force: :cascade do |t|
     t.string   "company_name"
     t.string   "position"
@@ -88,25 +80,6 @@ ActiveRecord::Schema.define(version: 20170731192158) do
     t.string   "WorkPlace"
     t.string   "PhoneNumber"
     t.index ["organisation_id"], name: "index_membershipdata_on_organisation_id", using: :btree
-  end
-
-  create_table "memberships", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "organisation_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-    t.integer  "network_id"
-    t.index ["network_id"], name: "index_memberships_on_network_id", using: :btree
-    t.index ["organisation_id"], name: "index_memberships_on_organisation_id", using: :btree
-    t.index ["user_id"], name: "index_memberships_on_user_id", using: :btree
-  end
-
-  create_table "networks", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "organisation_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-    t.index ["organisation_id"], name: "index_networks_on_organisation_id", using: :btree
   end
 
   create_table "organisations", force: :cascade do |t|
@@ -158,11 +131,6 @@ ActiveRecord::Schema.define(version: 20170731192158) do
   add_foreign_key "fundraisings", "organisations"
   add_foreign_key "groups", "organisations"
   add_foreign_key "groups", "users"
-  add_foreign_key "invites", "organisations"
   add_foreign_key "jobs", "organisations"
   add_foreign_key "membershipdata", "organisations"
-  add_foreign_key "memberships", "networks"
-  add_foreign_key "memberships", "organisations"
-  add_foreign_key "memberships", "users"
-  add_foreign_key "networks", "organisations"
 end
