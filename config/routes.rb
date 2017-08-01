@@ -11,10 +11,10 @@ Rails.application.routes.draw do
   devise_for :users, path: 'users' , :controllers => { registration: "signups" }
 
 
-  root 'http://www.necthub.com'
-
-  get '/home', to: 'static_pages#home'
-
+  #root 'static_pages#home', to: redirect("http://www.necthub.com/")
+  root 'static_pages#home'
+  #get '/home', to: 'static_pages#home'
+  #get "/home" => redirect("http://www.necthub.com/")
 
 
 
@@ -53,7 +53,7 @@ Rails.application.routes.draw do
   end
 
 
-  resources :networks
+  # resources :networks
 
   resources :fundraisings do
     collection do
@@ -98,6 +98,6 @@ Rails.application.routes.draw do
   end
 
   resources :announcements
-  resources :memberships
+  #resources :memberships
 
 end
