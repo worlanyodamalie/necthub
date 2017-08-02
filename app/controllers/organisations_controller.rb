@@ -1,7 +1,9 @@
 class OrganisationsController < ApplicationController
-  before_action :authenticate_organisation!
+  before_action :authenticate_organisation!, except: [:invite, :join]
 
   layout "organisations"
+
+  layout "application", :only => [:invite]
 
   def index
 
@@ -20,6 +22,32 @@ class OrganisationsController < ApplicationController
   def sms
     @organisations = current_organisation.membershipdata
   end
+
+
+  def join
+    organisation = Organisation.find_by(id: params[:id])
+    puts '@' * 300
+    puts organisation
+    if organisation
+      user = User.new(email: params[:email], password: params[:password])
+      if user.save
+        user.groups << Group.new(user: user, organisation: organisation)
+        redirect_to organisation_groups_path(organisation.id)
+      else
+        render :invite
+      end
+    end
+  end
+
+ def invite
+   @organisation = Organisation.find_by(id: params[:id])
+ end
+
+
+ def share
+ end
+
+
 
   def send_message
   end

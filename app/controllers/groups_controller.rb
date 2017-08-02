@@ -1,16 +1,16 @@
 class GroupsController < ApplicationController
-  before_action :authenticate_organisation!
+  before_action :authenticate_user!
 
   #before_action :authenticate_user!
 
 
 
-  layout "organisations",  :only => [:network]
+  layout "organisations"
 
   layout "users", :only => [:events,:jobs,:skills,:index]
 
   def index
-     @group_announcements = current_organisation.announcements.all
+     @group_announcements = current_user.current_organisation.announcements.all
   end
 
   # def new
@@ -18,28 +18,26 @@ class GroupsController < ApplicationController
   # end
 
   def events
-     @group_events = current_organisation.events.all
+     @group_events = current_user.current_organisation.events.all
   end
 
   def jobs
-    @group_jobs = current_organisation.jobs.all
+    @group_jobs = current_user.current_organisation.jobs.all
   end
 
   def skills
     @group_skills = current_organisation.users.all
   end
 
-  def directory
-    @group_directories = currrent_organisation.users.all
-  end
+  # def directory
+  #   @group_directories = currrent_organisation.users.all
+  # end
 
-  def invite
-    redirect_to jobs_groups_url
-  end
+  # def invite
+  #   redirect_to jobs_groups_url
+  # end
 
- def network
- end
-
+ 
   # def create
   #   @group = current_organisation.groups.build(group_params)
   #   if @group.save

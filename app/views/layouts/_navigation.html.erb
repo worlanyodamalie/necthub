@@ -35,9 +35,10 @@
             </li>
 
             <li class="<%= is_active_controller('groups') %>">
-            
-                <a href="#"><i class="fa fa-group"></i> <span class="nav-label" data-i18n="nav.tables">Manage Network</span><span class="fa arrow"></span></a>
+
+             <a href="#"><i class="fa fa-group"></i> <span class="nav-label" data-i18n="nav.tables">Manage Network</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse <%= is_active_controller('tables') %>">
+                    <li class="<%= is_active_action('orgnaisations') %>"><%= link_to "Invite", share_organisations_path %> </li>
                     <li class="<%= is_active_action('announcements') %>"><%= link_to "Post Announcements", announcements_path %> </li>
                     <li class="<%= is_active_action('jobs') %>"><%= link_to "Post Jobs", jobs_path %></li>
                     <li class="<%= is_active_action('events') %>"><%= link_to "Post Events", events_path %></li>

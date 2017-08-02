@@ -36,12 +36,20 @@ Rails.application.routes.draw do
        get :send_message
        post :send_sms
        get :send_email
+       get :share
     end
+      member do
+        post :join
+        get :invite
+      end
      resources :membershipdata
 
      resources :events
 
-     resources :fundraisings
+     #resources :fundraisings
+
+    resources :groups
+
   end
 
   devise_scope :organisation do
@@ -91,9 +99,6 @@ Rails.application.routes.draw do
 
       get :fundraising
 
-      get :network
-
-      get :directory
       end
   end
 

@@ -41,5 +41,8 @@ devise :database_authenticatable, :registerable,
     end.sorted
   end
 
+  def current_organisation
+    organisations.first
+  end
 
 end

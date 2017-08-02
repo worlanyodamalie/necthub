@@ -31,15 +31,18 @@
             <div class="ibox float-e-margins">
                 <div class="ibox-content border-bottom text-center p-md" style="background-color: #1ab394; color: #ffffff;">
                     <br />
-                    <img src="http://res.cloudinary.com/necthub/image/upload/v1500854799/profile_hq1hjc.jpg" class="img-circle" style="border: 5px solid #ffffff" />
+                <!-- <img src="http://res.cloudinary.com/necthub/image/upload/v1500854799/profile_hq1hjc.jpg" class="img-circle" style="border: 5px solid #ffffff" />   -->
+                <%= image_tag current_user.user_pic.uthumb.url if current_user.user_pic? %>
+
+
                     <br />
                 </div>
                 <div class="ibox-content border-bottom text-center p-md">
-                    Chris Bimpong
+                    <%= current_user.first_name%>  <%= current_user.Last_name%>
                 <hr />
-                    Entrepreneur
+                    <%= current_user.profession%>
                 <hr />
-                    MEST
+                    <%= current_user.education %>
                 </div>
             </div>
         </div>
