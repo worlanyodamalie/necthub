@@ -42,7 +42,8 @@ devise :database_authenticatable, :registerable,
   end
 
   def current_organisation
-    organisations.first
+    organisations.third
+    #organisations
   end
 
 end

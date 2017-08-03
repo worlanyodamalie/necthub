@@ -9,8 +9,11 @@ class GroupsController < ApplicationController
 
   layout "users", :only => [:events,:jobs,:skills,:index]
 
+
+
   def index
      @group_announcements = current_user.current_organisation.announcements.all
+     #@group_announcements = current_organisation.announcements.all
   end
 
   # def new
@@ -26,7 +29,7 @@ class GroupsController < ApplicationController
   end
 
   def skills
-    @group_skills = current_organisation.users.all
+    @group_skills = current_user.current_organisation.users.all
   end
 
   # def directory
@@ -37,7 +40,7 @@ class GroupsController < ApplicationController
   #   redirect_to jobs_groups_url
   # end
 
- 
+
   # def create
   #   @group = current_organisation.groups.build(group_params)
   #   if @group.save

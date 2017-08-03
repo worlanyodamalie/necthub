@@ -32,7 +32,8 @@ class OrganisationsController < ApplicationController
       user = User.new(email: params[:email], password: params[:password])
       if user.save
         user.groups << Group.new(user: user, organisation: organisation)
-        redirect_to organisation_groups_path(organisation.id)
+        #redirect_to organisation_groups_path(organisation.id)
+        redirect_to userfeed_path
       else
         render :invite
       end
